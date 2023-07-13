@@ -12,13 +12,13 @@ class cfgpatches
 
 class Extended_PostInit_EventHandlers {
     class jen_chat_keybindings {
-        init = "call compileScript ['\jen_chatwheel\xeh_postinit.sqf']";
+        init = "call compileScript ['ChatWheelRedux\xeh_postinit.sqf']";
     };
 };
 
 class Extended_PreInit_EventHandlers {
     class jen_chat_settings {
-        init = "call compileScript ['\jen_chatwheel\xeh_preinit.sqf']";
+        init = "call compileScript ['ChatWheelRedux\xeh_preinit.sqf']";
     };
 };
 
@@ -30,7 +30,7 @@ class cfgfunctions
         {
             class chat
             {
-                file = "\jen_chatwheel\functions\jen_chat.sqf";
+                file = "ChatWheelRedux\functions\jen_chat.sqf";
             };
         };
     };
