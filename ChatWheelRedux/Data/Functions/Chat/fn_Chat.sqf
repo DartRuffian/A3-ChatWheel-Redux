@@ -32,7 +32,8 @@ CWR_speak =
             _contactcall = ["Contact!", _facing, _azimuthstring] joinstring " ";
             [_contactcall] spawn CWR_nearorfar;
         };
-        case ("callOutVic") :
+
+        case ("callOutVic"):
         {
             private _bearing = direction player;
             private _facing = _bearing call CWR_GetDirFromBearing;
@@ -41,7 +42,8 @@ CWR_speak =
             _contactcall = ["Vehicle!", _facing, _azimuthstring] joinstring " ";
             [_contactcall] spawn CWR_nearorfar;
         };
-        case ("callOutFort") :
+
+        case ("callOutFort"):
         {
             private _bearing = direction player;
             private _facing = _bearing call CWR_GetDirFromBearing;
@@ -50,6 +52,7 @@ CWR_speak =
             _contactcall = ["Fortification!", _facing, _azimuthstring] joinstring " ";
             [_contactcall] spawn CWR_nearorfar;
         };
+        
         default
         {
             params ["_message"];
