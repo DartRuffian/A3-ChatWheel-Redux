@@ -30,9 +30,7 @@ CWR_speak =
 
             _azimuthstring = ["Bearing ", _bearing, "!"] joinstring "";
             _contactcall = ["Contact!", _facing, _azimuthstring] joinstring " ";
-            _caller = player;
             [_contactcall] spawn CWR_nearorfar;
-            //[_caller, _contactcall] remoteExeccall ["groupChat", (units group _caller)];
         };
         case ("callOutVic") :
         {
@@ -41,9 +39,7 @@ CWR_speak =
 
             _azimuthstring = ["Bearing ", _bearing, "!"] joinstring "";
             _contactcall = ["Vehicle!", _facing, _azimuthstring] joinstring " ";
-            _caller = player;
             [_contactcall] spawn CWR_nearorfar;
-            //[_caller, _contactcall] remoteExeccall ["groupChat", (units group _caller)];
         };
         case ("callOutFort") :
         {
@@ -52,9 +48,7 @@ CWR_speak =
 
             _azimuthstring = ["Bearing ", _bearing, "!"] joinstring "";
             _contactcall = ["Fortification!", _facing, _azimuthstring] joinstring " ";
-            _caller = player;
             [_contactcall] spawn CWR_nearorfar;
-            //[_caller, _contactcall] remoteExeccall ["groupChat", (units group _caller)];
         };
         default
         {
