@@ -1,37 +1,62 @@
-class cfgpatches
+class CfgPatches
 {
-    class jen_chat
+    class ChatWheelRedux
     {
-        author = "Jenna";
-        weapons[]={};
-        units[]={};
+        author = "DartRuffian";
+        weapons[] = {};
+        units[] = {};
         requiredversion = 0.1;
-        requiredaddons[]={};
-    };
-};
-
-class Extended_PostInit_EventHandlers {
-    class jen_chat_keybindings {
-        init = "call compileScript ['ChatWheelRedux\xeh_postinit.sqf']";
-    };
-};
-
-class Extended_PreInit_EventHandlers {
-    class jen_chat_settings {
-        init = "call compileScript ['ChatWheelRedux\xeh_preinit.sqf']";
-    };
-};
-
-class cfgfunctions
-{
-    class jen
-    {
-        class functions
+        requiredaddons[] =
         {
-            class chat
-            {
-                file = "ChatWheelRedux\functions\jen_chat.sqf";
-            };
+            "cba_settings",
+            "cba_keybinding"
         };
     };
 };
+
+
+class CfgFunctions
+{
+    class CWR
+    {
+        class Settings
+        {
+            file = "ChatWheelRedux\Data\Functions\Settings";
+            class ConfigureAddonKeybinds {};
+            class ConfigureAddonOptions {};
+        };
+
+        class Chat
+        {
+            file = "ChatWheelRedux\Data\Functions\Chat";
+            class Chat {};
+            class ConfigureMenus {};
+        };
+    };
+};
+
+
+class Extended_PreInit_EventHandlers
+{
+    class CWR_ConfigureKeybinds
+    {
+        init = "call CWR_fnc_ConfigureAddonKeybinds;";
+    };
+    class CWR_ConfigureOptions
+    {
+        init = "call CWR_fnc_ConfigureAddonOptions;";
+    };
+    class CWR_ConfigureChatMenus
+    {
+        init = "call CWR_fnc_ConfigureMenus;";
+    };
+};
+
+
+// class Extended_PostInit_EventHandlers
+// {
+//     class CWR_Something
+//     {
+//         init = "call CWR_fnc_Something;";
+//     };
+// };
