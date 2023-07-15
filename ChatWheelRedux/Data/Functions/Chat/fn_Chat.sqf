@@ -60,5 +60,12 @@ CWR_Speak =
 };
 
 
-["Speak!", "b", CWR_messagemenulist, "", "[CWR_messagesList select %2] call CWR_Speak"] call BIS_fnc_CreateMenu;
-showCommandingMenu "#USER:b_0";
+[
+    "Speak!",
+    "CWR_Root",
+    [CWR_messagesHashMap] call CBA_fnc_hashKeys,
+    "",
+    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_Speak"
+] call BIS_fnc_CreateMenu;
+
+showCommandingMenu "#USER:CWR_Root_0";
