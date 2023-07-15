@@ -8,10 +8,10 @@
     ["Default"],
     0,
     {
-        CWR_messageslist set [8, _this];
+        CWR_messagesList set [8, _this];
     },
     true
-] call CBA_fnc_addSetting;
+] call CBA_fnc_AddSetting;
 
 
 [
@@ -22,10 +22,10 @@
     ["Default"],
     0,
     {
-        CWR_messageslist set [9, _this];
+        CWR_messagesList set [9, _this];
     },
     true
-] call CBA_fnc_addSetting;
+] call CBA_fnc_AddSetting;
 
 [
     "CWR_chat_message3",
@@ -35,10 +35,10 @@
     ["Default"],
     0,
     {
-        CWR_messageslist set [10, _this];
+        CWR_messagesList set [10, _this];
     },
     true
-] call CBA_fnc_addSetting;
+] call CBA_fnc_AddSetting;
 
 [
     "CWR_chat_message4",
@@ -48,7 +48,7 @@
     ["Default"],
     0,
     {
-        CWR_messageslist set [11, _this];
+        CWR_messagesList set [11, _this];
     },
     true
-] call CBA_fnc_addSetting;
+] call CBA_fnc_AddSetting;

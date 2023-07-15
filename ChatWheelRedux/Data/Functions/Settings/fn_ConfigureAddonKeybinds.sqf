@@ -14,4 +14,4 @@
     false, // Hold Key
     0,     // Hold Key Delay
     false  // Overwrite
-] call CBA_fnc_addKeybind;
+] call CBA_fnc_AddKeybind;
