@@ -18,6 +18,7 @@ CWR_NearOrFar =
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
 };
 
+
 CWR_Speak =
 {
     params ["_message"];
@@ -49,7 +50,7 @@ CWR_Speak =
             params ["_message"];
             
             // Why is chat not global...
-            [player, _message] remoteExeccall ["groupChat", (units group player)];
+            [player, _message] remoteExecCall ["groupChat", (units group player)];
         };
     };
 };
