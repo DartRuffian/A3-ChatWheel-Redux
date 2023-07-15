@@ -34,13 +34,26 @@ CWR_messagesHashMap =
 
 
 // Distance Menu, used to get the user's choice of close, medium, or far distances
-CWR_NearOrFar =
+CWR_OpenDistanceMenu =
 {
+    /*
+    * Author: DartRuffian
+    * Gets a selected distance from a user using a BIS command menu and sends it to CWR_fnc_SendMessage.
+    *
+    * Arguments:
+    * 0: The message to add the distance to <String>
+    *
+    * Return Value:
+    * None
+    *
+    * Example:
+    * "Contact!" call CWR_OpenDistanceMenu;
+    */
     params ["_message"];
     sleep 0.05;
     
     private _distanceList = ["Close!", "Mid!", "Far!"];
-    CWR_distanceMessageList = _distanceList apply { _message + " " + str _x };
+    CWR_distanceMessageList = _distanceList apply { _message + " " + _x };
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
     

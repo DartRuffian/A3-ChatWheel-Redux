@@ -24,7 +24,7 @@ switch (true) do
 
         _message insert [0, "Contact!"];
         _contactCall = [_message, "[callOut]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
-        [_contactCall] spawn CWR_NearOrFar;
+        [_contactCall] spawn CWR_OpenDistanceMenu;
     };
 
     case ("[currentWeapon]" in _message):
