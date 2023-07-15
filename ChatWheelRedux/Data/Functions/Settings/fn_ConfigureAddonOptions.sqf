@@ -8,7 +8,7 @@
     ["Default"],
     0,
     {
-        CWR_messagesList set [8, _this];
+        [CWR_messagesHashMap, "Custom 1", _this] call CBA_fnc_hashSet;
     },
     true
 ] call CBA_fnc_AddSetting;
@@ -22,7 +22,7 @@
     ["Default"],
     0,
     {
-        CWR_messagesList set [9, _this];
+        [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
     },
     true
 ] call CBA_fnc_AddSetting;
@@ -35,7 +35,7 @@
     ["Default"],
     0,
     {
-        CWR_messagesList set [10, _this];
+        [CWR_messagesHashMap, "Custom 3", _this] call CBA_fnc_hashSet;
     },
     true
 ] call CBA_fnc_AddSetting;
@@ -48,7 +48,7 @@
     ["Default"],
     0,
     {
-        CWR_messagesList set [11, _this];
+        [CWR_messagesHashMap, "Custom 4", _this] call CBA_fnc_hashSet;
     },
     true
 ] call CBA_fnc_AddSetting;
