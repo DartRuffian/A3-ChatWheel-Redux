@@ -7,11 +7,11 @@ CWR_messagesHashMap =
         ["Help", "Help me!"],
         ["Apologize", "Sorry!"],
         ["Follow", "Follow me!"],
-        ["Contact", "Infantry [callOut]!"],
-        // "[callout]" is replaced with the bearing, direction, and a distance, and 
+        ["Contact", "Infantry [contact]!"],
+        // "[contact]" is replaced with the bearing, direction, and a distance, and 
         // "Contact!" is appended to the beginning
-        ["Vehicle", "Vehicle [callOut]!"],
-        ["Fortification", "Fortification [callOut]!"],
+        ["Vehicle", "Vehicle [contact]!"],
+        ["Fortification", "Fortification [contact]!"],
         ["Low Ammo", "I need ammo for my [weapon]!"],
         // "[weapon]" is replaced with the displayName of the player's current weapon
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
