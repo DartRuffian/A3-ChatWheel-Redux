@@ -5,7 +5,7 @@
     "EDITBOX",
     "Custom Message 1",
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
-    ["Default"],
+    "Default",
     0,
     {
         [CWR_messagesHashMap, "Custom 1", _this] call CBA_fnc_hashSet;
@@ -18,7 +18,7 @@
     "EDITBOX",
     "Custom Message 2",
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
-    ["Default"],
+    "Default",
     0,
     {
         [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
@@ -30,7 +30,7 @@
     "EDITBOX",
     "Custom Message 3",
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
-    ["Default"],
+    "Default",
     0,
     {
         [CWR_messagesHashMap, "Custom 3", _this] call CBA_fnc_hashSet;
@@ -42,7 +42,7 @@
     "EDITBOX",
     "Custom Message 4",
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
-    ["Default"],
+    "Default",
     0,
     {
         [CWR_messagesHashMap, "Custom 4", _this] call CBA_fnc_hashSet;
