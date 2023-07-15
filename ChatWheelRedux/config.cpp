@@ -24,6 +24,7 @@ class CfgFunctions
             file = "ChatWheelRedux\Data\Functions\Settings";
             class ConfigureAddonKeybinds {};
             class ConfigureAddonOptions {};
+            class CreateTagMenu {};
         };
 
         class Chat
@@ -62,10 +63,10 @@ class Extended_PreInit_EventHandlers
 };
 
 
-// class Extended_PostInit_EventHandlers
-// {
-//     class CWR_Something
-//     {
-//         init = "call CWR_fnc_Something;";
-//     };
-// };
+class Extended_PostInit_EventHandlers
+{
+    class CWR_ConfigureTagDiary
+    {
+        init = "call CWR_fnc_CreateTagMenu;";
+    };
+};
