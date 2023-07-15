@@ -32,6 +32,14 @@ class CfgFunctions
             class Chat {};
             class ConfigureMenus {};
         };
+
+        class Utils
+        {
+            file = "ChatWheelRedux\Data\Functions\Utils";
+            class GetDirFromBearing {};
+            class StringReplace {};
+            class RemoveQuotes {};
+        };
     };
 };
 

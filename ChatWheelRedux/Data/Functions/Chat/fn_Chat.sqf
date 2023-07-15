@@ -8,7 +8,13 @@ CWR_NearOrFar =
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
 
-    ["How far?", "b", _distanceList, "", "[CWR_distanceMessageList select %2] call CWR_Speak"] call BIS_fnc_CreateMenu;
+    [
+        "How far?",
+        "b",
+        _distanceList,
+        "",
+        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_Speak"
+    ] call BIS_fnc_CreateMenu;
     showCommandingMenu "#USER:b_0";
 };
 
@@ -16,36 +22,17 @@ CWR_Speak =
 {
     params ["_message"];
 
-    switch (_message) do
+    switch (true) do
     {
 
-        case ("callOut"):
+        case ("[callOut]" in _message):
         {
             private _bearing = round direction player;
             private _facing = _bearing call CWR_fnc_GetDirFromBearing;
 
-            _azimuthString = ["Bearing ", _bearing, "!"] joinString "";
-            _contactCall = ["Contact!", _facing, _azimuthString] joinString " ";
-            [_contactCall] spawn CWR_NearOrFar;
-        };
-
-        case ("callOutVic"):
-        {
-            private _bearing = round direction player;
-            private _facing = _bearing call CWR_fnc_GetDirFromBearing;
-
-            _azimuthString = ["Bearing ", _bearing, "!"] joinString "";
-            _contactCall = ["Vehicle!", _facing, _azimuthString] joinString " ";
-            [_contactCall] spawn CWR_NearOrFar;
-        };
-
-        case ("callOutFort"):
-        {
-            private _bearing = round direction player;
-            private _facing = _bearing call CWR_fnc_GetDirFromBearing;
-
-            _azimuthString = ["Bearing ", _bearing, "!"] joinString "";
-            _contactCall = ["Fortification!", _facing, _azimuthString] joinString " ";
+            // "Infantry [callOut]"
+            _message insert [0, "Contact!"];
+            _contactCall = [_message, "[callOut]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
             [_contactCall] spawn CWR_NearOrFar;
         };
 
