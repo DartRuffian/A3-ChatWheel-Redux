@@ -10,12 +10,12 @@ CWR_NearOrFar =
 
     [
         "How far?",
-        "b",
+        "CWR_Menu_Distance",
         _distanceList,
         "",
         "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_Speak"
     ] call BIS_fnc_CreateMenu;
-    showCommandingMenu "#USER:b_0";
+    showCommandingMenu "#USER:CWR_Menu_Distance_0";
 };
 
 CWR_Speak =
@@ -49,10 +49,10 @@ CWR_Speak =
 
 [
     "Speak!",
-    "CWR_Root",
+    "CWR_Menu_Root",
     [CWR_messagesHashMap] call CBA_fnc_hashKeys,
     "",
     "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_Speak"
 ] call BIS_fnc_CreateMenu;
 
-showCommandingMenu "#USER:CWR_Root_0";
+showCommandingMenu "#USER:CWR_Menu_Root_0";
