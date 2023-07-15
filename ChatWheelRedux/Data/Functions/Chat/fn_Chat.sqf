@@ -48,6 +48,7 @@ CWR_speak =
 
         default
         {
+            params ["_message"];
             // Why is chat not global...
             [player, _message] remoteExeccall ["groupChat", (units group player)];
         };
