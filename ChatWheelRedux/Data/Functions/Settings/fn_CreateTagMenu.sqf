@@ -72,10 +72,10 @@ _FormatCode =
     
     player createDiaryRecord ["CWR_TagsSubject", ["Examples", ((_x#0 call _FormatSubtitle) + "<br />" + ([_raw, _formatted] joinString "<br />becomes<br />"))], taskNull, "NONE", false];
 } forEach _tags;
-player createDiaryRecord ["CWR_TagsSubject", ["Examples", "Tag Examples!" call _FormatTitle], taskNull, "NONE", false];
+player createDiaryRecord ["CWR_TagsSubject", ["Examples", "Tag Examples" call _FormatTitle], taskNull, "NONE", false];
 
 {
     // List of each tag and what it does
     player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", ((_x#0 call _FormatSubtitle) + "<br />" + _x#1)], taskNull, "NONE", false];
 } forEach _tags;
-player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", "Tags!" call _FormatTitle], taskNull, "NONE", false];
+player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", "Message Tags" call _FormatTitle], taskNull, "NONE", false];
