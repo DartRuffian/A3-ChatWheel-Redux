@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * "I need ammo for my [currentWeapon]" call CWR_fnc_SendMessage;
+ * "I need ammo for my [weapon]" call CWR_fnc_SendMessage;
  * // Sends "I need ammo for my [KC] DC-15S" to all members in the player's group
  */
 
@@ -27,10 +27,10 @@ switch (true) do
         [_message] spawn CWR_OpenDistanceMenu;
     };
 
-    case ("[currentWeapon]" in _message):
+    case ("[weapon]" in _message):
     {
         private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
-        _message = [_message, "[currentWeapon]", _currentWeapon] call CWR_fnc_StringReplace;
+        _message = [_message, "[weapon]", _currentWeapon] call CWR_fnc_StringReplace;
         _message call CWR_fnc_SendMessage;
     };
 
