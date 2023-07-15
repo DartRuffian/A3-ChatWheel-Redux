@@ -23,14 +23,13 @@ switch (true) do
         private _facing = _bearing call CWR_fnc_GetDirFromBearing;
 
         _message insert [0, "Contact!"];
-        _contactCall = [_message, "[callOut]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
-        [_contactCall] spawn CWR_OpenDistanceMenu;
+        _message = [_message, "[callOut]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
+        [_message] spawn CWR_OpenDistanceMenu;
     };
 
     case ("[currentWeapon]" in _message):
     {
-        private _currentWeapon = currentWeapon player;
-        _currentWeapon = getText (configFile >> "CfgWeapons" >> _currentWeapon >> "displayName");
+        private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
         _message = [_message, "[currentWeapon]", _currentWeapon] call CWR_fnc_StringReplace;
         _message call CWR_fnc_SendMessage;
     };
