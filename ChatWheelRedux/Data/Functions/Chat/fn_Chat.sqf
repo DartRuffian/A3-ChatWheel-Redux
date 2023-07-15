@@ -36,6 +36,14 @@ CWR_Speak =
             [_contactCall] spawn CWR_NearOrFar;
         };
 
+        case ("[currentWeapon]" in _message):
+        {
+            private _currentWeapon = currentWeapon player;
+            _currentWeapon = getText (configFile >> "CfgWeapons" >> _currentWeapon >> "displayName");
+            _message = [_message, "[currentWeapon]", _currentWeapon] call CWR_fnc_StringReplace;
+            _message call CWR_Speak;
+        };
+
         default
         {
             params ["_message"];
