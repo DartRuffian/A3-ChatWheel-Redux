@@ -3,16 +3,9 @@ CWR_nearorfar =
     params ["_message"];
     sleep 0.05;
     
-    _caller = player;
     _distancelist = ["Close!", "Mid!", "Far!"];
-    CWR_distantmessageslist = [];
-    {
-        CWR_distantmessageslist pushback ([_message,_x] joinstring " ");
-    } foreach _distancelist;
-    ["How far?", "b", _distancelist, "",
 
-
-    "[CWR_distantmessageslist select %2] call CWR_speak"] call BIS_FNC_createmenu;
+    ["How far?", "b", _distancelist, "", "[CWR_distantmessageslist select %2] call CWR_speak"] call BIS_FNC_createmenu;
     showCommandingMenu "#USER:b_0";
 };
 
@@ -52,12 +45,11 @@ CWR_speak =
             _contactcall = ["Fortification!", _facing, _azimuthstring] joinstring " ";
             [_contactcall] spawn CWR_nearorfar;
         };
-        
+
         default
         {
-            params ["_message"];
-            _caller = player;
-            [_caller, _message] remoteExeccall ["groupChat", (units group _caller)];
+            // Why is chat not global...
+            [player, _message] remoteExeccall ["groupChat", (units group player)];
         };
     };
 };
