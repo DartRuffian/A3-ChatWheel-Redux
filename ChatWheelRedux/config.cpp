@@ -29,7 +29,7 @@ class CfgFunctions
         class Chat
         {
             file = "ChatWheelRedux\Data\Functions\Chat";
-            class Chat {};
+            class OpenChatWheel {};
             class SendMessage {};
             class ConfigureMenus {};
         };

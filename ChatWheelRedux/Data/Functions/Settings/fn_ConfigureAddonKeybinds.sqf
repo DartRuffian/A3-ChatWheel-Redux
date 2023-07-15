@@ -7,7 +7,7 @@
     "CWR_OpenMenu",
     ["Open Menu", "Opens the custom chat menu."],
     {
-        call CWR_fnc_Chat;
+        call CWR_fnc_OpenChatWheel;
     },     // KeyDown
     {},    // KeyUp
     [],    // Default Key
