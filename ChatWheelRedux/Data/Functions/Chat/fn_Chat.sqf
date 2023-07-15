@@ -4,7 +4,7 @@ CWR_NearOrFar =
     sleep 0.05;
     
     private _distanceList = ["Close!", "Mid!", "Far!"];
-    CWR_distanceMessageList = _distanceList apply {_message + " " + str _x};
+    CWR_distanceMessageList = _distanceList apply { _message + " " + str _x };
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
 
@@ -16,7 +16,7 @@ CWR_Speak =
 {
     params ["_message"];
 
-    switch(_message) do
+    switch (_message) do
     {
 
         case ("callOut"):
@@ -52,6 +52,7 @@ CWR_Speak =
         default
         {
             params ["_message"];
+            
             // Why is chat not global...
             [player, _message] remoteExeccall ["groupChat", (units group player)];
         };
