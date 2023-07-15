@@ -13,46 +13,9 @@ CWR_NearOrFar =
         "CWR_Menu_Distance",
         _distanceList,
         "",
-        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_Speak"
+        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
     ] call BIS_fnc_CreateMenu;
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
-};
-
-
-CWR_Speak =
-{
-    params ["_message"];
-
-    switch (true) do
-    {
-
-        case ("[callOut]" in _message):
-        {
-            private _bearing = round direction player;
-            private _facing = _bearing call CWR_fnc_GetDirFromBearing;
-
-            // "Infantry [callOut]"
-            _message insert [0, "Contact!"];
-            _contactCall = [_message, "[callOut]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
-            [_contactCall] spawn CWR_NearOrFar;
-        };
-
-        case ("[currentWeapon]" in _message):
-        {
-            private _currentWeapon = currentWeapon player;
-            _currentWeapon = getText (configFile >> "CfgWeapons" >> _currentWeapon >> "displayName");
-            _message = [_message, "[currentWeapon]", _currentWeapon] call CWR_fnc_StringReplace;
-            _message call CWR_Speak;
-        };
-
-        default
-        {
-            params ["_message"];
-            
-            // Why is chat not global...
-            [player, _message] remoteExecCall ["groupChat", (units group player)];
-        };
-    };
 };
 
 
@@ -61,7 +24,7 @@ CWR_Speak =
     "CWR_Menu_Root",
     [CWR_messagesHashMap] call CBA_fnc_hashKeys,
     "",
-    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_Speak"
+    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_SendMessage"
 ] call BIS_fnc_CreateMenu;
 
 showCommandingMenu "#USER:CWR_Menu_Root_0";
