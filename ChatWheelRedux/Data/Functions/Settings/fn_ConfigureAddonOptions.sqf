@@ -72,3 +72,14 @@
     {},
     true
 ] call CBA_fnc_AddSetting;
+
+[
+    "CWR_Voice_CoolDown",
+    "SLIDER",
+    ["Custom VoiceLines Cooldown", "The minimum amount of time between custom voicelines. This cooldown is per player."],
+    ["ARMA 3 Chat Wheel - Redux", "Voice"],
+    [0, 15, 3, 0],
+    1,
+    {},
+    true
+] call CBA_fnc_AddSetting;

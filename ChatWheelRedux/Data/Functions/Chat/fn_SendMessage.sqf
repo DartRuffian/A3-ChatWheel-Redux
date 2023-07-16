@@ -57,9 +57,14 @@ switch (true) do
         private _config = (configFile >> "CWR_VoiceLines" >> _configName);
         if (isClass _config) then
         {
-            private _voiceLine = selectRandom getArray (_config >> "voiceLines");
-            private _nearbyUnits = nearestObjects [player, ["Man"], 30];
-            [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_PlayLocalSound", (_nearbyUnits)];
+            if ((time - (player getVariable ["CWR_playerLastUsedVoice", 0])) > CWR_Voice_CoolDown ) then
+            {
+                private _voiceLine = selectRandom getArray (_config >> "voiceLines");
+                private _nearbyUnits = nearestObjects [player, ["Man"], 30];
+                [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_PlayLocalSound", (_nearbyUnits)];
+                
+                player setVariable ["CWR_playerLastUsedVoice", time];
+            };
         };
 
         _message call CWR_fnc_SendMessage; // Used to check for further tags and send the chat message
