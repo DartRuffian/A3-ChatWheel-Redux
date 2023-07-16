@@ -14,6 +14,7 @@ CWR_messagesHashMap =
         ["Fortification", "Fortification [contact]!"],
         ["Low Ammo", "I need ammo for my [weapon]!"],
         // "[weapon]" is replaced with the displayName of the player's current weapon
+        ["ACE Check", "Status [status]!"],
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
         ["Custom 2", "Default Message"],
         ["Custom 3", "Default Message"],
@@ -36,19 +37,6 @@ CWR_messagesHashMap =
 // Distance Menu, used to get the user's choice of close, medium, or far distances
 CWR_OpenDistanceMenu =
 {
-    /*
-    * Author: DartRuffian
-    * Gets a selected distance from a user using a BIS command menu and sends it to CWR_fnc_SendMessage.
-    *
-    * Arguments:
-    * 0: The message to add the distance to <String>
-    *
-    * Return Value:
-    * None
-    *
-    * Example:
-    * "Contact!" call CWR_OpenDistanceMenu;
-    */
     params ["_message"];
     sleep 0.05;
     
@@ -66,4 +54,24 @@ CWR_OpenDistanceMenu =
     ] call BIS_fnc_CreateMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
+};
+
+
+CWR_OpenStatusMenu =
+{
+    params ["_message"];
+    sleep 0.05;
+    
+    private _statusList = ["Green", "Yellow", "Orange", "Red", "Black"];
+    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call CWR_fnc_StringReplace; };
+    
+    [
+        "How are you?",
+        "CWR_Menu_Status",
+        _statusList,
+        "",
+        "[[CWR_statusMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+    ] call BIS_fnc_CreateMenu;
+
+    showCommandingMenu "#USER:CWR_Menu_Status_0";
 };

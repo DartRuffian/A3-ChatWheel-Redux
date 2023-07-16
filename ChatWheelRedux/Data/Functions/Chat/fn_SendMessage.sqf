@@ -27,6 +27,11 @@ switch (true) do
         [_message] spawn CWR_OpenDistanceMenu;
     };
 
+    case ("[status]" in _message):
+    {
+        [_message] spawn CWR_OpenStatusMenu;
+    };
+
     case ("[weapon]" in _message):
     {
         private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
