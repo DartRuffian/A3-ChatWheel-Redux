@@ -43,7 +43,7 @@ reverse _tags; // Records are created in reverse order, this makes it appear in 
 // Blue  : 99cccc
 // Green : bdcc9c
 
-_FormatTitle =
+private _FormatTitle =
 {
     params ["_str"];
 
@@ -51,7 +51,7 @@ _FormatTitle =
     _str;
 };
 
-_FormatSubtitle =
+private _FormatSubtitle =
 {
     params ["_str"];
 
@@ -59,7 +59,7 @@ _FormatSubtitle =
     _str;
 };
 
-_FormatCode =
+private _FormatCode =
 {
     params ["_str"];
 
