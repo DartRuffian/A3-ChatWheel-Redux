@@ -22,6 +22,18 @@ CWR_messagesHashMap =
 ] call CBA_fnc_hashCreate;
 
 
+CWR_launcherMessagesHashMap =
+[
+    [
+        ["Permission to fire?", "[vl-FirePerm]Permission to fire?"],
+        ["Clear backblast!", "[vl-ClearBack]Clear backblast!"],
+        ["Backblast clear!", "[vl-BackClear]Backblast clear!"],
+        ["Rocket! Rocket! Rocket!", "[vl-RocketFire]Rocket! Rocket! Rocket!"]
+    ],
+    "Default Message"
+] call CBA_fnc_hashCreate;
+
+
 // Main Root Menu, this is what's opened by the keybind
 [
     "Speak!",
@@ -80,19 +92,13 @@ CWR_OpenLauncherMenu =
     params ["_message"];
     sleep 0.05;
     
-    private _launcherList =
-    [
-        "[vl-FirePerm]Permission to fire?",
-        "[vl-ClearBack]Clear backblast!",
-        "[vl-BackClear]Backblast clear!",
-        "[vl-RocketFire]Rocket! Rocket! Rocket!"
-    ];
-    CWR_launcherMessageList = _launcherList apply { [_message, "[launcher]", _x] call CWR_fnc_StringReplace; };
+    CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply
+    { [_message, "[launcher]", _x] call CWR_fnc_StringReplace; };
     
     [
         "Launcher",
         "CWR_Menu_Launcher",
-        _launcherList,
+        [CWR_launcherMessagesHashMap] call CBA_fnc_hashKeys,
         "",
         "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
     ] call BIS_fnc_CreateMenu;
