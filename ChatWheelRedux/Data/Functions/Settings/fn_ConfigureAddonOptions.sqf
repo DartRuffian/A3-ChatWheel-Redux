@@ -48,3 +48,15 @@
         [CWR_messagesHashMap, "Custom 4", _this] call CBA_fnc_hashSet;
     }
 ] call CBA_fnc_AddSetting;
+
+
+[
+    "CWR_TagMenu_UseNewLine",
+    "CHECKBOX",
+    ["Separate examples with newline", "If enabled, example messages are separate with a newline, rather than an arrow."],
+    ["ARMA 3 Chat Wheel - Redux", "Tag Menu"],
+    true,
+    0,
+    {},
+    true
+] call CBA_fnc_AddSetting;
