@@ -39,6 +39,11 @@ switch (true) do
         _message call CWR_fnc_SendMessage;
     };
 
+    case ("[launcher]" in _message):
+    {
+        [_message] spawn CWR_OpenLauncherMenu;
+    };
+
     default
     {
         params ["_message"];

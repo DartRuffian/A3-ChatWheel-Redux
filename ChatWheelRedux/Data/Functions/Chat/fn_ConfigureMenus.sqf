@@ -12,6 +12,7 @@ CWR_messagesHashMap =
         ["Fortification", "Fortification [contact]!"],
         ["Low Ammo", "I need ammo for my [weapon]!"],
         ["ACE Check", "Status [status]!"],
+        ["Launchers", "[launcher]"],
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
         ["Custom 2", "Default Message"],
         ["Custom 3", "Default Message"],
@@ -71,4 +72,24 @@ CWR_OpenStatusMenu =
     ] call BIS_fnc_CreateMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Status_0";
+};
+
+
+CWR_OpenLauncherMenu =
+{
+    params ["_message"];
+    sleep 0.05;
+    
+    private _launcherList = ["Permission to fire?", "Clear backblast!", "Backblast clear!", "Rocket! Rocket! Rocket!"];
+    CWR_launcherMessageList = _launcherList apply { [_message, "[launcher]", _x] call CWR_fnc_StringReplace; };
+    
+    [
+        "Launcher",
+        "CWR_Menu_Launcher",
+        _launcherList,
+        "",
+        "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+    ] call BIS_fnc_CreateMenu;
+
+    showCommandingMenu "#USER:CWR_Menu_Launcher_0";
 };

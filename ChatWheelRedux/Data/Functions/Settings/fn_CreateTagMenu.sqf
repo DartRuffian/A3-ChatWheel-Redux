@@ -32,6 +32,11 @@ private _tags =
         ["I'm holding a [weapon]!", "I'm holding a MX!"]
     ],
     [
+        "[launcher]",
+        "[launcher] is not intended to be used with custom messages, but is compatible. [launcher] will open the launcher sub-menu, with rocket launcher related options. Such as 'Permission to fire?', 'Clear backblast!', etc.",
+        ["[launcher]", "Permission to fire?"]
+    ],
+    [
         "[status]",
         '[status] will prompt the user to open a submenu and select a status of Green, Yellow, Orange, Red, or Black. The selected option then replaced "[status]".',
         ["Status [status]!", "Status Red!"]
