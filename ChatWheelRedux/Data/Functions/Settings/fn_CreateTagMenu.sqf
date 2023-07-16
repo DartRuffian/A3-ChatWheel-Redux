@@ -30,6 +30,11 @@ private _tags =
         "[weapon]",
         "[weapon] will be replaced with the name of the weapon the player is currently holding.",
         ["I'm holding a [weapon]!", "I'm holding a MX!"]
+    ],
+    [
+        "[status]",
+        '[status] will prompt the user to open a submenu and select a status of Green, Yellow, Orange, Red, or Black. The selected option then replaced "[status]".',
+        ["Status [status]!", "Status Red!"]
     ]
 ];
 reverse _tags; // Records are created in reverse order, this makes it appear in the same order it's written in
