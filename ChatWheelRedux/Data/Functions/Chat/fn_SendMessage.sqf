@@ -47,12 +47,10 @@ switch (true) do
     // Voice line tag, plays random sound from config class that matches the name in the tag
     // Checks for "[vl-ABC] ..."
     // regexMatch checks if the entire string matches the pattern, not just a part of it
-    case (count (_message regexFind ["\[vl-[A-z]+\]"]) > 0):
+    case (count (_message call CWR_fnc_FindAllVoicelineTags) > 0):
     {
-        private _tag = _message regexFind ["\[vl-[A-z]+\]/i"] select 0 select 0 select 0;// [[["[vl-Test]",10]]]
-        private _configName = _tag;            // Original tag is needed to remove it from the message
-        _configName = _configName trim ["[]", 0];  // Remove "[" or "]" from both sides
-        _configName = _configName trim ["vl-", 1]; // Remove "vl-" from the left side
+        private _tag = _message call CWR_fnc_FindAllVoicelineTags select 0 select 0 select 0; // Returns nested array
+        private _configName = _tag call CWR_fnc_GetConfigNameFromTag;
 
         _message = [_message, _tag, ""] call CWR_fnc_StringReplace;
 

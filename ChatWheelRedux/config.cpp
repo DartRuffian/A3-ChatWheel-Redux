@@ -45,6 +45,8 @@ class CfgFunctions
             class GetDirFromBearing {};
             class StringReplace {};
             class RemoveQuotes {};
+            class FindAllVoicelineTags {};
+            class GetConfigNameFromTag {};
         };
     };
 };
