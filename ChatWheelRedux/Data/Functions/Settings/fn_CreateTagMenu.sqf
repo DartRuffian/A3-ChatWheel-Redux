@@ -15,6 +15,8 @@
 // Normal text settings:
 // "<font size='13' face='RobotoCondensed'>Normal Text</font>"
 
+if (isServer) exitWith {}; // Exit if the server, all UI stuff
+
 // Main menu that everything will be in
 player createDiarySubject ["CWR_TagsSubject", "Chat Wheel Tags"];
 
@@ -40,6 +42,11 @@ private _tags =
         "[status]",
         '[status] will prompt the user to open a submenu and select a status of Green, Yellow, Orange, Red, or Black. The selected option then replaced "[status]".',
         ["Status [status]!", "Status Red!"]
+    ],
+    [
+        "[vl-ABC]",
+        '[vl-ABC] is used to play voicelines for specific actions. The "ABC" part of the tag is the class defined in "CWR_VoiceLines", so in this case, a random file from configFile >> "CWR_VoiceLines" >> "ABC" >> "voiceLines" will be played. If no voicelines are set up, the tag is still removed from the message but no sound effect is played.',
+        ["[vl-NeedMedic]I need a medic!", "I need a medic!"]
     ]
 ];
 reverse _tags; // Records are created in reverse order, this makes it appear in the same order it's written in
