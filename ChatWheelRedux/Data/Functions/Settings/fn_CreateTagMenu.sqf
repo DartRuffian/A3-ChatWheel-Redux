@@ -67,7 +67,7 @@ private _FormatCode =
     _str;
 };
 
-_separator = if (CWR_TagMenu_UseNewLine) then [{ "<br />becomes<br />" }, { " <font size='11'>→</font>	 " }];
+_separator = if (CWR_TagMenu_UseNewLine) then [{ "<br />becomes<br />" }, { " <font size='11'>→</font>   " }];
 
 // The records are somewhat finnicky, if you add a record to a different a submenu, you can't access the previous submenu.
 // Submenus and records are also added from bottom to top, so everything needs to be added in reverse.
