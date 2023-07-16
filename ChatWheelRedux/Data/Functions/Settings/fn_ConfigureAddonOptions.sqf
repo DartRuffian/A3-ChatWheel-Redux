@@ -60,3 +60,15 @@
     {},
     true
 ] call CBA_fnc_AddSetting;
+
+
+[
+    "CWR_Voice_EnableVoiceLines",
+    "CHECKBOX",
+    ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade, using a chat wheel option, etc."],
+    ["ARMA 3 Chat Wheel - Redux", "Voice"],
+    true,
+    0,
+    {},
+    true
+] call CBA_fnc_AddSetting;

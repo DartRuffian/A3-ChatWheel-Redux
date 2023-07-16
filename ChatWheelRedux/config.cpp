@@ -15,6 +15,9 @@ class CfgPatches
 };
 
 
+#include "CWR_VoiceLines.hpp"
+
+
 class CfgFunctions
 {
     class CWR
@@ -33,6 +36,7 @@ class CfgFunctions
             class OpenChatWheel {};
             class SendMessage {};
             class ConfigureMenus {};
+            class PlayLocalSound {};
         };
 
         class Utils

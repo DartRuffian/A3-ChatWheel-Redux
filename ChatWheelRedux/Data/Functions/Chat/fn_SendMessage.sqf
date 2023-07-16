@@ -44,6 +44,29 @@ switch (true) do
         [_message] spawn CWR_OpenLauncherMenu;
     };
 
+    // Voice line tag, plays random sound from config class that matches the name in the tag
+    // Checks for "[vl-ABC] ..."
+    // regexMatch checks if the entire string matches the pattern, not just a part of it
+    case (count (_message regexFind ["\[vl-[A-z]+\]"]) > 0):
+    {
+        private _tag = _message regexFind ["\[vl-[A-z]+\]/i"] select 0 select 0 select 0;// [[["[vl-Test]",10]]]
+        private _configName = _tag;            // Original tag is needed to remove it from the message
+        _configName = _configName trim ["[]", 0];  // Remove "[" or "]" from both sides
+        _configName = _configName trim ["vl-", 1]; // Remove "vl-" from the left side
+
+        _message = [_message, _tag, ""] call CWR_fnc_StringReplace;
+
+        private _config = (configFile >> "CWR_VoiceLines" >> _configName);
+        if (isClass _config) then
+        {
+            private _voiceLine = selectRandom getArray (_config >> "voiceLines");
+            private _nearbyUnits = nearestObjects [player, ["Man"], 30];
+            [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_PlayLocalSound", (_nearbyUnits)];
+        };
+
+        _message call CWR_fnc_SendMessage; // Used to check for further tags and send the chat message
+    };
+
     default
     {
         params ["_message"];

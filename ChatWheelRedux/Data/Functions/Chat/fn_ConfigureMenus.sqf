@@ -3,15 +3,15 @@
 CWR_messagesHashMap =
 [
     [
-        ["Medic", "I need a medic!"],
-        ["Help", "Help me!"],
-        ["Apologize", "Sorry!"],
-        ["Follow", "Follow me!"],
-        ["Contact", "Infantry [contact]!"],
-        ["Vehicle", "Vehicle [contact]!"],
-        ["Fortification", "Fortification [contact]!"],
-        ["Low Ammo", "I need ammo for my [weapon]!"],
-        ["ACE Check", "Status [status]!"],
+        ["Medic", "[vl-NeedMedic]I need a medic!"],
+        ["Help", "[vl-NeedHelp]Help me!"],
+        ["Apologize", "[vl-Sorry]Sorry!"],
+        ["Follow", "[vl-Follow]Follow me!"],
+        ["Contact", "[vl-ContactInf]Infantry [contact]!"],
+        ["Vehicle", "[vl-ContactVic]Vehicle [contact]!"],
+        ["Fortification", "[vl-ContactFort]Fortification [contact]!"],
+        ["Low Ammo", "[vl-NeedAmmo]I need ammo for my [weapon]!"],
+        ["ACE Check", "[vl-Status]Status [status]!"],
         ["Launchers", "[launcher]"],
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
         ["Custom 2", "Default Message"],
@@ -80,7 +80,13 @@ CWR_OpenLauncherMenu =
     params ["_message"];
     sleep 0.05;
     
-    private _launcherList = ["Permission to fire?", "Clear backblast!", "Backblast clear!", "Rocket! Rocket! Rocket!"];
+    private _launcherList =
+    [
+        "[vl-FirePerm]Permission to fire?",
+        "[vl-ClearBack]Clear backblast!",
+        "[vl-BackClear]Backblast clear!",
+        "[vl-RocketFire]Rocket! Rocket! Rocket!"
+    ];
     CWR_launcherMessageList = _launcherList apply { [_message, "[launcher]", _x] call CWR_fnc_StringReplace; };
     
     [
