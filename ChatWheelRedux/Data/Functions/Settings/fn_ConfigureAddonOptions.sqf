@@ -81,5 +81,5 @@
     [0, 15, 3, 0],
     1,
     {},
-    true
+    false
 ] call CBA_fnc_AddSetting;
