@@ -15,9 +15,6 @@ class CfgPatches
 };
 
 
-#include "CWR_VoiceLines.hpp"
-
-
 class CfgFunctions
 {
     class CWR
