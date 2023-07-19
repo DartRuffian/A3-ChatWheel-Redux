@@ -51,7 +51,7 @@ CWR_OpenDistanceMenu =
     sleep 0.05;
     
     private _distanceList = ["Close", "Mid", "Far"];
-    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] };
+    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_StringReplace; };
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
     

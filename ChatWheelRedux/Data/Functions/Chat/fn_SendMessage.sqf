@@ -30,7 +30,8 @@ switch (true) do
     case ("[bearing]" in _message):
     {
         private _bearing = round direction player;
-        _message = [_message, "[bearing]", _bearing] call CWR_fnc_StringReplace;
+        _message = [_message, "[bearing]", str _bearing] call CWR_fnc_StringReplace;
+        _message call CWR_fnc_SendMessage;
     };
 
     case ("[direction]" in _message):
@@ -39,6 +40,7 @@ switch (true) do
         private _facing = _bearing call CWR_fnc_GetDirFromBearing;
 
         _message = [_message, "[direction]", _facing] call CWR_fnc_StringReplace;
+        _message call CWR_fnc_SendMessage;
     };
 
     case ("[weapon]" in _message):
