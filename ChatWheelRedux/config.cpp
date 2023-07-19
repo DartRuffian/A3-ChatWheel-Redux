@@ -45,6 +45,12 @@ class CfgFunctions
             class FindAllVoicelineTags {};
             class GetConfigNameFromTag {};
         };
+
+        class EventHandlers
+        {
+            file = "ChatWheelRedux\Data\Functions\EventHandlers";
+            class ThrowGrenade {};
+        };
     };
 };
 
@@ -71,5 +77,9 @@ class Extended_PostInit_EventHandlers
     class CWR_ConfigureTagDiary
     {
         init = "call CWR_fnc_CreateTagMenu;";
+    };
+    class CWR_ThrowGrenadeEH
+    {
+        init = "['ace_firedPlayer', CWR_fnc_ThrowGrenade] call CBA_fnc_addEventHandler;";
     };
 };
