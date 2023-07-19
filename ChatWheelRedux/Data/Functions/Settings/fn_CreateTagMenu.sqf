@@ -42,6 +42,16 @@ private _tags =
         ["Status [status]!", "Status Red!"]
     ],
     [
+        "[bearing]",
+        "[bearing] is replaced with the compass bearing the player is currently facing.",
+        ["Facing [bearing].", "Facing 138."]
+    ],
+    [
+        "[direction]",
+        "[direction] is replaced with the direction the player is facing.",
+        ["Facing [direction].", "Facing Southeast."]
+    ],
+    [
         "[vl-ABC]",
         '[vl-ABC] is used to play voicelines for specific actions. The "ABC" part of the tag is the class defined in "CWR_VoiceLines", so in this case, a random file from configFile >> "CWR_VoiceLines" >> "ABC" >> "voiceLines" will be played. If no voicelines are set up, the tag is still removed from the message but no sound effect is played.',
         ["[vl-NeedMedic]I need a medic!", "I need a medic!"]

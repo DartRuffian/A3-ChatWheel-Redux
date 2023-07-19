@@ -32,6 +32,20 @@ switch (true) do
         [_message] spawn CWR_OpenStatusMenu;
     };
 
+    case ("[bearing]" in _message):
+    {
+        private _bearing = round direction player;
+        _message = [_message, "[bearing]", _bearing] call CWR_fnc_StringReplace;
+    };
+
+    case ("[direction]" in _message):
+    {
+        private _bearing = round direction player;
+        private _facing = _bearing call CWR_fnc_GetDirFromBearing;
+
+        _message = [_message, "[direction]", _facing] call CWR_fnc_StringReplace;
+    };
+
     case ("[weapon]" in _message):
     {
         private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
