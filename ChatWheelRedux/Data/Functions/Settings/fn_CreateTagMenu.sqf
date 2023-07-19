@@ -22,9 +22,9 @@ player createDiarySubject ["CWR_TagsSubject", "Chat Wheel Tags"];
 private _tags =
 [
     [
-        "[contact]",
-        '[contact] will prompt the user to open a submenu and select a distance after selection an option. This tag adds quite a bit to the message: <br />  - "Contact!" is added to the beginning <br />  - The direction the player is facing <br />  - The bearing the player is facing <br />  - The selected distance ("Close!", "Mid!", "Far!") is added to the end of the message.',
-        ["Infantry [contact]!", "Contact! Infantry North, bearing 0! Close!"]
+        "[distance] - Previosuly [contact]",
+        "[distance] will prompt the user to open a submenu to select a distance.",
+        ["Contact! Infantry [distance]!", "Contact! Infantry Close!"]
     ],
     [
         "[weapon]",

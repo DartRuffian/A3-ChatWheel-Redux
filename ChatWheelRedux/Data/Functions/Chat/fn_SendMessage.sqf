@@ -17,13 +17,8 @@ params ["_message"];
 
 switch (true) do
 {
-    case ("[contact]" in _message):
+    case ("[distance]" in _message):
     {
-        private _bearing = round direction player;
-        private _facing = _bearing call CWR_fnc_GetDirFromBearing;
-
-        _message = _message insert [0, "Contact! "];
-        _message = [_message, "[contact]", format ["%1, bearing %2", _facing, _bearing]] call CWR_fnc_StringReplace;
         [_message] spawn CWR_OpenDistanceMenu;
     };
 
