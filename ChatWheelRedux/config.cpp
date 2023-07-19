@@ -81,7 +81,7 @@ class Extended_PreInit_EventHandlers
 
 class Extended_PostInit_EventHandlers
 {
-    class CWR_ConfigureTagDiary
+    class CWR_CreateTagDiary
     {
         init = "call CWR_fnc_CreateTagMenu;";
     };
