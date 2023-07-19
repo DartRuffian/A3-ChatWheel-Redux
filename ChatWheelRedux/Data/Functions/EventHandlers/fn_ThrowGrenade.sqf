@@ -3,4 +3,5 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith {};
 // End early if not a grenade
 
-"[vl-ThrowGrenade]Grenade Out!" call CWR_fnc_SendMessage;
+private _nearbyUnits = nearestObjects [player, ["Man"], 30];
+[player, "[vl-ThrowGrenade]Grenade Out!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];

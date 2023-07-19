@@ -51,6 +51,17 @@
 
 
 [
+    "CWR_AutoMessages_Enabled",
+    "CHECKBOX",
+    ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
+    ["ARMA 3 Chat Wheel - Redux", "Automated Messages"],
+    true,
+    0,
+    {}
+] call CBA_fnc_AddSetting;
+
+
+[
     "CWR_TagMenu_UseNewLine",
     "CHECKBOX",
     ["Separate examples with newline", "If enabled, example messages are separate with a newline, rather than an arrow."],
