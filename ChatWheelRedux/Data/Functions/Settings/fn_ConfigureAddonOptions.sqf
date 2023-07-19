@@ -1,7 +1,7 @@
 // WIKI: https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#creating-a-setting
 
 [
-    "CWR_Message_Custom1",
+    "CWR_CustomMessages_1",
     "EDITBOX",
     ["Custom Message 1", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
@@ -14,7 +14,7 @@
 
 
 [
-    "CWR_Message_Custom2",
+    "CWR_CustomMessages_2",
     "EDITBOX",
     ["Custom Message 2", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
@@ -26,7 +26,7 @@
 ] call CBA_fnc_AddSetting;
 
 [
-    "CWR_Message_Custom3",
+    "CWR_CustomMessages_3",
     "EDITBOX",
     ["Custom Message 3", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
@@ -38,7 +38,7 @@
 ] call CBA_fnc_AddSetting;
 
 [
-    "CWR_Message_Custom4",
+    "CWR_CustomMessages_4",
     "EDITBOX",
     ["Custom Message 4", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
