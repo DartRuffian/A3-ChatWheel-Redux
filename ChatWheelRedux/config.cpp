@@ -34,6 +34,11 @@ class CfgFunctions
             class SendMessage {};
             class SendLocalMessage {};
             class ConfigureMenus {};
+        };
+
+        class Sounds
+        {
+            file = "ChatWheelRedux\Data\Functions\Sounds";
             class PlayLocalSound {};
         };
 
