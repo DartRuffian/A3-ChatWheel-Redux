@@ -87,6 +87,6 @@ class Extended_PostInit_EventHandlers
     };
     class CWR_ThrowGrenadeEH
     {
-        init = "['ace_firedPlayer', CWR_fnc_ThrowGrenade] call CBA_fnc_addEventHandler;";
+        init = "call CWR_fnc_ThrowGrenade;";
     };
 };
