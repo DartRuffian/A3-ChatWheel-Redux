@@ -9,7 +9,7 @@ if isClass (configFile >> "CfgPatches" >> "ace_common") then
         // End early if not a grenade
 
         private _nearbyUnits = nearestObjects [player, ["Man"], 30];
-        [player, "[vl-ThrowGrenade]Grenade Out!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
+        [player, "[vl-ThrowGrenade]Grenade out, [bearing]!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
     }] call CBA_fnc_addEventHandler;
 }
 else
@@ -22,6 +22,6 @@ else
         // End early if not a grenade
 
         private _nearbyUnits = nearestObjects [player, ["Man"], 30];
-        [player, "[vl-ThrowGrenade]Grenade Out!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
+        [player, "[vl-ThrowGrenade]Grenade out, [bearing]!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
     }];
 };
