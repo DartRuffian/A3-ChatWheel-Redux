@@ -18,5 +18,13 @@ params ["_unit", "_magazine"];
 
 if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith {};
 
+// Determine the type of grenade, assume explosive as default
+private _grenadeType = "Grenade";
+
+if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
+{
+    grenadeType = "Smoke";
+};
+
 private _nearbyUnits = (getPosATL _unit) nearEntities ["CAManBase", 30];
-[_unit, "[vl-ThrowGrenade]Grenade out, [bearing]!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
+[_unit, format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType]] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
