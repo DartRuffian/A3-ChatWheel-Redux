@@ -10,7 +10,7 @@
     {
         [CWR_messagesHashMap, "Custom 1", _this] call CBA_fnc_hashSet;
     }
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 
 [
@@ -23,7 +23,7 @@
     {
         [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
     }
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 [
     "CWR_CustomMessages_3",
@@ -35,7 +35,7 @@
     {
         [CWR_messagesHashMap, "Custom 3", _this] call CBA_fnc_hashSet;
     }
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 [
     "CWR_CustomMessages_4",
@@ -47,7 +47,7 @@
     {
         [CWR_messagesHashMap, "Custom 4", _this] call CBA_fnc_hashSet;
     }
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 
 [
@@ -58,7 +58,7 @@
     true,
     0,
     {}
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 
 [
@@ -70,7 +70,7 @@
     0,
     {},
     true
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 
 [
@@ -82,7 +82,7 @@
     0,
     {},
     false
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;
 
 [
     "CWR_Voice_CoolDown",
@@ -93,4 +93,4 @@
     1,
     {},
     false
-] call CBA_fnc_AddSetting;
+] call CBA_fnc_addSetting;

@@ -7,11 +7,11 @@
     "CWR_OpenMenu",
     ["Open Menu", "Opens the custom chat menu."],
     {
-        call CWR_fnc_OpenChatWheel;
+        call CWR_fnc_openChatWheel;
     },     // KeyDown
     {},    // KeyUp
     [],    // Default Key
     false, // Hold Key
     0,     // Hold Key Delay
     false  // Overwrite
-] call CBA_fnc_AddKeybind;
+] call CBA_fnc_addKeybind;

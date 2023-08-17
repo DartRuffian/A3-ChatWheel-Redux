@@ -27,4 +27,4 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
 };
 
 private _nearbyUnits = (getPosATL _unit) nearEntities ["CAManBase", 30];
-[_unit, format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType]] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
+[_unit, format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType]] remoteExecCall ["CWR_fnc_sendLocalMessage", (_nearbyUnits)];

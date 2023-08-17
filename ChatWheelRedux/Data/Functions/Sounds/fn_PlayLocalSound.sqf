@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * ["file.wss", getPosASL player] call CWR_fnc_PlayLocalSound;
+ * ["file.wss", getPosASL player] call CWR_fnc_playLocalSound;
  */
 
 params ["_file", "_position"];
