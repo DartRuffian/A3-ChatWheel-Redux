@@ -70,15 +70,15 @@ class Extended_PreInit_EventHandlers
 {
     class CWR_ConfigureKeybinds
     {
-        init = "call CWR_fnc_configureAddonKeybinds;";
+        init = QUOTE(call CWR_fnc_configureAddonKeybinds;);
     };
     class CWR_ConfigureOptions
     {
-        init = "call CWR_fnc_configureAddonOptions;";
+        init = QUOTE(call CWR_fnc_configureAddonOptions;);
     };
     class CWR_ConfigureChatMenus
     {
-        init = "call CWR_fnc_configureMenus;";
+        init = QUOTE(call CWR_fnc_configureMenus;);
     };
 };
 
@@ -87,7 +87,7 @@ class Extended_PostInit_EventHandlers
 {
     class CWR_CreateTagDiary
     {
-        init = "call CWR_fnc_createTagMenu;";
+        init = QUOTE(call CWR_fnc_createTagMenu;);
     };
     class CWR_ThrowGrenadeEH
     {
