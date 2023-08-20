@@ -85,15 +85,27 @@
 ] call CBA_fnc_addSetting;
 
 [
-    "CWR_Voice_CoolDown",
-    "SLIDER",
-    ["Custom VoiceLines Cooldown", "The minimum amount of time between custom voicelines. This cooldown is per player."],
+    "CWR_Voice_EnableVoiceLines",
+    "CHECKBOX",
+    ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade, using a chat wheel option, etc."],
     ["ARMA 3 Chat Wheel - Redux", "Voice"],
-    [0, 15, 3, 0],
-    1,
+    true,
+    0,
     {},
     false
 ] call CBA_fnc_addSetting;
+
+CWR_Voice_RCUnitsSendsMessages = false; // Wip
+// [
+//     "CWR_Voice_RCUnitsSendsMessages",
+//     "CHECKBOX",
+//     ["RC Units Send Messages", "If enabled, remote (zeus) controlled units will send messages and say voice lines."],
+//     ["ARMA 3 Chat Wheel - Redux", "Voice"],
+//     true,
+//     0,
+//     {},
+//     true
+// ] call CBA_fnc_addSetting;
 
 [
     "CWR_Voice_CoolDown",
