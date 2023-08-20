@@ -17,6 +17,7 @@
 params ["_unit", "_magazine"];
 
 if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith {};
+"Grenade thrown" call CWR_fnc_devLog;
 
 // Determine the type of grenade, assume explosive as default
 private _grenadeType = "Grenade";
