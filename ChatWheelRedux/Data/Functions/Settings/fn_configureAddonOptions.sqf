@@ -74,12 +74,23 @@
 
 
 [
-    "CWR_Voice_EnableVoiceLines",
-    "CHECKBOX",
-    ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade, using a chat wheel option, etc."],
+    "CWR_Voice_VoiceRadius",
+    "SLIDER",
+    ["Custom VoiceLines Radius", "The radius of voice lines and automated messages."],
     ["ARMA 3 Chat Wheel - Redux", "Voice"],
-    true,
-    0,
+    [10, 50, 30, 0],
+    1,
+    {},
+    false
+] call CBA_fnc_addSetting;
+
+[
+    "CWR_Voice_CoolDown",
+    "SLIDER",
+    ["Custom VoiceLines Cooldown", "The minimum amount of time between custom voicelines. This cooldown is per player."],
+    ["ARMA 3 Chat Wheel - Redux", "Voice"],
+    [0, 15, 3, 0],
+    1,
     {},
     false
 ] call CBA_fnc_addSetting;

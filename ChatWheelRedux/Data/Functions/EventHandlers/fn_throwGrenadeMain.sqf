@@ -27,7 +27,7 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
     _grenadeType = "Smoke";
 };
 
-private _nearbyPlayers = [getPosATL _sender, 30] call CWR_fnc_getNearbyPlayers;
+private _nearbyPlayers = [getPosATL _sender, CWR_Voice_VoiceRadius] call CWR_fnc_getNearbyPlayers;
 
 // Tags are processed here to avoid mismatched data and multiple voice lines playing
 // If processed in the remoteExec, bearing would be *that* player's bearing and the voice
