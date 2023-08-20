@@ -1,17 +1,3 @@
-#include "CWR_VoiceLines.hpp" //! REMOVE FOR PRODUCTION
-
-
-
-
-
-
-
-
-
-
-
-
-
 class CfgPatches
 {
     class ChatWheelRedux
