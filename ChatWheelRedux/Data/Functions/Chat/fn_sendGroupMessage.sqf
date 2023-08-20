@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * "I need ammo for my [weapon]" call CWR_fnc_SendMessage;
+ * "I need ammo for my [weapon]" call CWR_fnc_sendGroupMessage;
  * // Sends "I need ammo for my [KC] DC-15S" to all members in the unit's group
  */
 

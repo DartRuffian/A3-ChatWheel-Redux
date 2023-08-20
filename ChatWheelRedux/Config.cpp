@@ -32,7 +32,7 @@ class CfgFunctions
             file = "ChatWheelRedux\Data\Functions\Chat";
             class OpenChatWheel {};
             class ProcessTags {};
-            class SendMessage {};
+            class sendGroupMessage {};
             class SendLocalMessage {};
             class ConfigureMenus {};
         };

@@ -40,7 +40,7 @@ CWR_launcherMessagesHashMap =
     "CWR_Menu_Root",
     [CWR_messagesHashMap] call CBA_fnc_hashKeys,
     "",
-    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_SendMessage"
+    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_sendGroupMessage"
 ] call BIS_fnc_createMenu;
 
 
@@ -60,7 +60,7 @@ CWR_OpenDistanceMenu =
         "CWR_Menu_Distance",
         _distanceList,
         "",
-        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_sendGroupMessage"
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
@@ -80,7 +80,7 @@ CWR_OpenStatusMenu =
         "CWR_Menu_Status",
         _statusList,
         "",
-        "[[CWR_statusMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        "[[CWR_statusMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_sendGroupMessage"
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Status_0";
@@ -100,7 +100,7 @@ CWR_OpenLauncherMenu =
         "CWR_Menu_Launcher",
         [CWR_launcherMessagesHashMap] call CBA_fnc_hashKeys,
         "",
-        "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_sendGroupMessage"
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Launcher_0";
