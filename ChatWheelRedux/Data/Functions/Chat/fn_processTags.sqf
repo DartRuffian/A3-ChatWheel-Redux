@@ -57,13 +57,11 @@ _message = switch (true) do
             if ((time - (player getVariable ["CWR_playerLastUsedVoice", 0])) > CWR_Voice_CoolDown ) then
             {
                 private _voiceLine = selectRandom getArray (_config >> "voiceLines");
-
-                private _nearbyUnits = (getPosATL player) nearEntities ["CAManBase", 30];
-                _nearbyUnits = _nearbyUnits select { isPlayer _x; };
+                private _nearbyPlayers = [getPosATL player, 30] call CWR_fnc_getNearbyPlayers;
 
                 {
                     [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_playLocalSound", _x];
-                } forEach _nearbyUnits;
+                } forEach _nearbyPlayers;
                 
                 player setVariable ["CWR_playerLastUsedVoice", time];
             };

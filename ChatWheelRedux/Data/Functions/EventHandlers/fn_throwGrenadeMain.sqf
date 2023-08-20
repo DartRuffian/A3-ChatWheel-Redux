@@ -27,8 +27,7 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
     _grenadeType = "Smoke";
 };
 
-private _nearbyUnits = (getPosATL _sender) nearEntities ["CAManBase", 30];
-_nearbyUnits = _nearbyUnits select { isPlayer _x; };
+private _nearbyPlayers = [getPosATL _sender, 30] call CWR_fnc_getNearbyPlayers;
 
 // Tags are processed here to avoid mismatched data and multiple voice lines playing
 // If processed in the remoteExec, bearing would be *that* player's bearing and the voice
@@ -37,4 +36,4 @@ _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType] call CWR_fnc_
 
 {
     [_sender, _message] remoteExecCall ["CWR_fnc_sendLocalMessage", _x];
-} forEach _nearbyUnits;
+} forEach _nearbyPlayers;

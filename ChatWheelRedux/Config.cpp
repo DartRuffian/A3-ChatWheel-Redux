@@ -1,3 +1,5 @@
+#include "CWR_VoiceLines.hpp"
+
 class CfgPatches
 {
     class ChatWheelRedux
@@ -52,6 +54,9 @@ class CfgFunctions
             class findAllVoicelineTags {};
             class getConfigNameFromTag {};
             class devLog {};
+
+            class isPlayer {};
+            class getNearbyPlayers {};
         };
 
         class EventHandlers
