@@ -94,3 +94,14 @@
     {},
     false
 ] call CBA_fnc_addSetting;
+
+[
+    "CWR_Debug_ShowMessages",
+    "CHECKBOX",
+    ["Show Debug Messages", "Shows debug messages for Chat Wheel Redux, useful for trying to figure out if something is going wrong."],
+    ["ARMA 3 Chat Wheel - Redux", "Debug"],
+    false,
+    0,
+    {},
+    false
+] call CBA_fnc_addSetting;

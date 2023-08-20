@@ -51,6 +51,7 @@ class CfgFunctions
             class RemoveQuotes {};
             class FindAllVoicelineTags {};
             class GetConfigNameFromTag {};
+            class devLog {};
         };
 
         class EventHandlers

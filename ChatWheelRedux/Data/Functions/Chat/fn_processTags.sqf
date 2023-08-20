@@ -1,5 +1,6 @@
 params ["_message"];
 
+_message call CWR_fnc_devLog;
 _message = switch (true) do
 {
     case ("[distance]" in _message):
