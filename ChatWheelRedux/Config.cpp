@@ -33,7 +33,7 @@ class CfgFunctions
             class OpenChatWheel {};
             class ProcessTags {};
             class sendGroupMessage {};
-            class SendLocalMessage {};
+            class sendLocalMessage {};
             class ConfigureMenus {};
         };
 
