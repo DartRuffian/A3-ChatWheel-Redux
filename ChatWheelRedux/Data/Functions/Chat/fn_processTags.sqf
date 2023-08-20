@@ -23,7 +23,7 @@ _message = switch (true) do
     case ("[direction]" in _message):
     {
         private _bearing = round direction player;
-        private _facing = _bearing call CWR_fnc_GetDirFromBearing;
+        private _facing = _bearing call CWR_fnc_getDirFromBearing;
 
         _message = [_message, "[direction]", _facing] call CWR_fnc_stringReplace;
         _message call CWR_fnc_processTags;

@@ -36,35 +36,35 @@ class CfgFunctions
         class Settings
         {
             file = "ChatWheelRedux\Data\Functions\Settings";
-            class ConfigureAddonKeybinds {};
-            class ConfigureAddonOptions {};
-            class CreateTagMenu {};
+            class configureAddonKeybinds {};
+            class configureAddonOptions {};
+            class createTagMenu {};
         };
 
         class Chat
         {
             file = "ChatWheelRedux\Data\Functions\Chat";
-            class OpenChatWheel {};
-            class ProcessTags {};
+            class openChatWheel {};
+            class processTags {};
             class sendGroupMessage {};
             class sendLocalMessage {};
-            class ConfigureMenus {};
+            class configureMenus {};
         };
 
         class Sounds
         {
             file = "ChatWheelRedux\Data\Functions\Sounds";
-            class PlayLocalSound {};
+            class playLocalSound {};
         };
 
         class Utils
         {
             file = "ChatWheelRedux\Data\Functions\Utils";
-            class GetDirFromBearing {};
-            class StringReplace {};
-            class RemoveQuotes {};
-            class FindAllVoicelineTags {};
-            class GetConfigNameFromTag {};
+            class getDirFromBearing {};
+            class stringReplace {};
+            class removeQuotes {};
+            class findAllVoicelineTags {};
+            class getConfigNameFromTag {};
             class devLog {};
         };
 
@@ -84,15 +84,15 @@ class Extended_PreInit_EventHandlers
 {
     class CWR_ConfigureKeybinds
     {
-        init = "call CWR_fnc_ConfigureAddonKeybinds;";
+        init = "call CWR_fnc_configureAddonKeybinds;";
     };
     class CWR_ConfigureOptions
     {
-        init = "call CWR_fnc_ConfigureAddonOptions;";
+        init = "call CWR_fnc_configureAddonOptions;";
     };
     class CWR_ConfigureChatMenus
     {
-        init = "call CWR_fnc_ConfigureMenus;";
+        init = "call CWR_fnc_configureMenus;";
     };
 };
 
@@ -101,7 +101,7 @@ class Extended_PostInit_EventHandlers
 {
     class CWR_CreateTagDiary
     {
-        init = "call CWR_fnc_CreateTagMenu;";
+        init = "call CWR_fnc_createTagMenu;";
     };
     class CWR_ThrowGrenadeEH
     {
