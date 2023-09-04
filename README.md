@@ -14,7 +14,7 @@
 
 ---
 
-> "Thank you Dart for making my "minimum fit for purpose" mod I made for, like, three of my unit members into something legit super accessible to the broader community."
+> "Thank you Dart for making my 'minimum fit for purpose' mod I made for, like, three of my unit members into something legit super accessible to the broader community."
 > <br>- _Jenna_, the original creator of the script this mod is based on. [Source (Legion Studios Discord)](https://ptb.discord.com/channels/461042140756180992/1130867599345987604/1130901200498343938)
 
 **Chat Wheel Redux** (_CWR_) is a mostly client-side communication mod, allowing players without the ability to speak to communicate with other players easier. It is primarily intended for mute players who cannot communicate via microphone, but can also assist deaf or hard-of-hearing players if other players also use the mod to help communicate with them.
