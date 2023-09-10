@@ -27,5 +27,5 @@ If your issue is not listed, please create one with the appropiate [label](https
 ## Usage & Modification
 This mod can be freely used by any player or any server.<br>
 You are free to modify the mod for you or your group's own purposes if you:
- - Notify me on [Discord](https://discord.gg/4y2c8nT8AX).
+ - Notify me on Discord (dartruffian).
  - Acknowledge that a fork Chat Wheel Redux is included in your mod(s).
