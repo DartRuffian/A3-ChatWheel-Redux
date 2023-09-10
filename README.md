@@ -7,7 +7,6 @@
 </div>
 
 [![Developers](https://img.shields.io/github/contributors/DartRuffian/A3-ChatWheel-Redux?logo=github&label=Dev%20Team%20Size&labelColor=444D56)](https://github.com/DartRuffian/A3-ChatWheel-Redux/graphs/contributors)
-[![Discord](https://img.shields.io/discord/1148102660210315264?logo=discord&label=Discord&&labelColor=24292E&color=5865F2)](https://discord.gg/4y2c8nT8AX)
 [![Last Updated](https://img.shields.io/steam/update-date/3005504621?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621)
 
 </div>
