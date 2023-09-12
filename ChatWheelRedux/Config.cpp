@@ -55,6 +55,8 @@ class CfgFunctions
 
             class isPlayer {};
             class getNearbyPlayers {};
+
+            class sortByDistance {};
         };
 
         class EventHandlers

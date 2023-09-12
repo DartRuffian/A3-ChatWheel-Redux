@@ -27,13 +27,7 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         private _nearbyPlayers = [getPosATL _unit, CWR_Voice_VoiceRadius, CWR_Voice_RCUnitsSendsMessages] call CWR_fnc_getNearbyPlayers;
         format ["_nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
-        // TODO: Move to own function
-        private _sortByDistance = _nearbyPlayers apply
-        {
-            [_unit distance _x, _x];
-        };
-        _sortByDistance sort true;
-        _nearbyPlayers = _sortByDistance apply { _x#1 };
+        _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
         format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
         {
