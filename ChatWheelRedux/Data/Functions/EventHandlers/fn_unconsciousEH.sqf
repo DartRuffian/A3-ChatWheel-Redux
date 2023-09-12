@@ -32,9 +32,6 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
         format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
-        {
-            format ["Creating message for %1", _x] call CWR_fnc_devLog;
-            [_nearbyPlayers#1, format ["%1 is down!", name _unit]] remoteExecCall ["CWR_fnc_sendLocalMessage", _x];
-        } forEach _nearbyPlayers;
+        [_nearbyPlayers#1, format ["%1 is down!", name _unit]] call CWR_fnc_sendLocalMessage;
     }
 ] call CBA_fnc_addEventHandler;
