@@ -36,8 +36,10 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
 
         [_closestPlayer, format ["%1 is down!", name _unit]] call CWR_fnc_sendLocalMessage;
 
+        private _isOnCooldown = ((time - (_closestPlayer getVariable ["CWR_playerLastUsedVoice", -CWR_Voice_CoolDown])) < CWR_Voice_CoolDown);
+
         private _config = (configFile >> "CWR_VoiceLines" >> "Unconscious");
-        if (isClass _config) then
+        if (isClass _config and !_isOnCooldown) then
         {
             private _voiceLine = selectRandom getArray (_config >> "voiceLines");
             [_voiceLine, getPosASL _closestPlayer] call CWR_fnc_playLocalSound;
