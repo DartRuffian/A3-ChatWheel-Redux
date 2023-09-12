@@ -97,6 +97,14 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
 ] call CBA_fnc_addSetting;
 
 [
+    "CWR_Voice_VoiceVolume",
+    "SLIDER",
+    ["Voice Lines Volume", "Volume for custom voice lines."],
+    ["ARMA 3 Chat Wheel - Redux", "Voice"],
+    [0, 5, 1, 1]
+] call CBA_fnc_addSetting;
+
+[
     "CWR_Voice_EnableVoiceLines",
     "CHECKBOX",
     ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade, using a chat wheel option, etc."],
