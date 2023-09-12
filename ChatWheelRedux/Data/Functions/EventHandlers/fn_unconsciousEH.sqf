@@ -13,6 +13,7 @@
  */
 
 
+if (isDedicated) exitWith {};
 if !(isClass (configFile >> "CfgPatches" >> "ace_medical")) exitWith {};
 if !(CWR_AutoMessages_Uncon) exitWith {};
 
@@ -22,7 +23,6 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         params ["_unit", "_state"];
         if !(isPlayer _unit) exitWith {};
         if !(_state) exitWith {};
-        if (isDedicated) exitWith {};
 
         private _nearbyPlayers = [getPosATL _unit, CWR_Voice_VoiceRadius, CWR_Voice_RCUnitsSendsMessages] call CWR_fnc_getNearbyPlayers;
         format ["_nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
