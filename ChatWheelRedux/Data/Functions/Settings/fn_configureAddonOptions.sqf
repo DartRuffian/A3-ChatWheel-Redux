@@ -88,7 +88,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
 [
     "CWR_Voice_VoiceRadius",
     "SLIDER",
-    ["Custom VoiceLines Radius", "The radius of voice lines and automated messages."],
+    ["Voice Lines Radius", "The radius of voice lines and automated messages."],
     ["ARMA 3 Chat Wheel - Redux", "Voice"],
     [10, 50, 30, 0],
     1,
