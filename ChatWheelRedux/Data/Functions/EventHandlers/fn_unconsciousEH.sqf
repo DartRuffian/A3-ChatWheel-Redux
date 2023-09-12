@@ -32,6 +32,16 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
         format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
-        [_nearbyPlayers#1, format ["%1 is down!", name _unit]] call CWR_fnc_sendLocalMessage;
+        private _closestPlayer = _nearbyPlayers#1;
+
+        [_closestPlayer, format ["%1 is down!", name _unit]] call CWR_fnc_sendLocalMessage;
+
+        private _config = (configFile >> "CWR_VoiceLines" >> "Unconscious");
+        if (isClass _config) then
+        {
+            private _voiceLine = selectRandom getArray (_config >> "voiceLines");
+            [_voiceLine, getPosASL _closestPlayer] call CWR_fnc_playLocalSound;
+            _closestPlayer setVariable ["CWR_playerLastUsedVoice", time];
+        };
     }
 ] call CBA_fnc_addEventHandler;
