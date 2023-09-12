@@ -11,6 +11,8 @@ class CfgPatches
         requiredversion = 0.1;
         requiredaddons[] =
         {
+            "cba_events",
+            "cba_hashes",
             "cba_settings",
             "cba_keybinding"
         };
