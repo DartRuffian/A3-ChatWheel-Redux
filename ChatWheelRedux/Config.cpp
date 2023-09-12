@@ -63,6 +63,7 @@ class CfgFunctions
             class throwGrenadeMain {};
             class throwGrenadeEH {};
             class throwGrenadeEHACE {};
+            class unconsciousEH {};
         };
     };
 };
@@ -95,5 +96,9 @@ class Extended_PostInit_EventHandlers
     class CWR_ThrowGrenadeEH
     {
         init = QUOTE(if isClass (configFile >> 'CfgPatches' >> 'ace_common') then { call CWR_fnc_throwGrenadeEHACE; } else { call CWR_fnc_throwGrenadeEH; };);
+    };
+    class CWR_UnconciousEH
+    {
+        init = QUOTE(call CWR_fnc_unconsciousEH);
     };
 };

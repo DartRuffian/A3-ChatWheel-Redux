@@ -60,6 +60,18 @@
     {}
 ] call CBA_fnc_addSetting;
 
+if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
+{
+    [
+        "CWR_AutoMessages_Uncon",
+        "CHECKBOX",
+        ["Unconscious Messages", "When a player goes unconscious, the closest player will make a call out. The max radius is still bound by CWR_Voice_VoiceRadius."],
+        ["ARMA 3 Chat Wheel - Redux", "Automated Messages"],
+        true,
+        1,
+        {}
+    ] call CBA_fnc_addSetting;
+};
 
 [
     "CWR_TagMenu_UseNewLine",
