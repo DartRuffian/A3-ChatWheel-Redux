@@ -54,7 +54,7 @@ _message = switch (true) do
         private _config = (configFile >> "CWR_VoiceLines" >> _configName);
         if (isClass _config) then
         {
-            if ((time - (player getVariable ["CWR_playerLastUsedVoice", 0])) > CWR_Voice_CoolDown ) then
+            if ((time - (player getVariable ["CWR_playerLastUsedVoice", -CWR_Voice_CoolDown])) > CWR_Voice_CoolDown ) then
             {
                 private _voiceLine = selectRandom getArray (_config >> "voiceLines");
                 private _nearbyPlayers = [getPosATL player, CWR_Voice_VoiceRadius, CWR_Voice_RCUnitsSendsMessages] call CWR_fnc_getNearbyPlayers;
@@ -62,7 +62,7 @@ _message = switch (true) do
                 {
                     [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_playLocalSound", _x];
                 } forEach _nearbyPlayers;
-                
+
                 player setVariable ["CWR_playerLastUsedVoice", time];
             };
         };
@@ -73,7 +73,7 @@ _message = switch (true) do
     default
     {
         params ["_message"];
-        
+
         _message;
     };
 };
