@@ -7,8 +7,8 @@
     ],
     "settings":
     {
-        "editor.insertSpaces": true,
-        "editor.detectIndentation": false,
+        // "editor.insertSpaces": true,
+        // "editor.detectIndentation": false,
 
         "files.autoSave": "onFocusChange",
         "files.trimFinalNewlines": true,

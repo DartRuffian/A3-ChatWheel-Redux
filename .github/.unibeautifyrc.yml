@@ -1,0 +1,10 @@
+---
+CPP:
+  indent_char: " "
+  indent_size: 4
+  wrap_line_length: 80
+  beautifiers: "Prettier"
+SQF:
+  indent_char: " "
+  indent_size: 4
+  wrap_line_length: 80
