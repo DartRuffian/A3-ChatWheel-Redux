@@ -1,8 +1,8 @@
 #define MAINPREFIX DA
-#define PREFIX MOD PREFIX
-#define MOD_NAME FULL NAME
+#define PREFIX CWR
+#define MOD_NAME Chat Wheel Redux
 
-#include "\DA\MOD PREFIX\addons\Core\script_version.hpp"
+#include "\DA\CWR\addons\Core\script_version.hpp"
 
 #define REQUIRED_VERSION 2.14
 

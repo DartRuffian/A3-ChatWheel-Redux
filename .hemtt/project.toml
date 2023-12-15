@@ -1,6 +1,6 @@
-name = "193rd Aux Mod"
+name = "Chat Wheel Redux"
 author = "DartRuffian"
-prefix = "MOD PREFIX"
+prefix = "CWR"
 mainprefix = "DA"
 
 [version]
@@ -10,21 +10,18 @@ git_hash = 0
 [files]
 include = [
     "mod.cpp",
-    # "meta.cpp",
-    # "logo_MOD PREFIX_ca.paa",
-    # "logo_MOD PREFIX_over_ca.paa",
+    # "logo_cwr_ca.paa",
+    # "logo_cwr_over_ca.paa",
     "LICENSE",
     "README.md"
 ]
 exclude = [
-    "*.spp",
-    "*.spp.painter_lock",
     "*.psd"
 ]
 
 [properties]
 author = "DartRuffian"
-url = "https://github.com/Dart-Armory/MOD NAME"
+url = "https://github.com/Dart-Armory/ChatWheel-Redux"
 
 [hemtt.launch.default]
 workshop = [
