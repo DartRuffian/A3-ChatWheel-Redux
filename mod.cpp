@@ -1,0 +1,12 @@
+name = "MOD NAME";
+// picture = "logo_MOD PREFIX_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/Dart-Armory/MOD NAME";
+description = "MOD PREFIX - Version 0.0.0";
+// logo = "logo_MOD PREFIX_ca.paa";
+// logoOver = "logo_MOD PREFIX_over_ca.paa";
+tooltip = "MOD PREFIX";
+tooltipOwned = "MOD PREFIX Owned";
+overview = "Description";
+author = "DartRuffian";
+// overviewPicture = "logo_MOD PREFIX_ca.paa";

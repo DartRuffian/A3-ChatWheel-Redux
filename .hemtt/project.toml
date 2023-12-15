@@ -1,0 +1,52 @@
+name = "193rd Aux Mod"
+author = "DartRuffian"
+prefix = "MOD PREFIX"
+mainprefix = "DA"
+
+[version]
+path = "addons/Core/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "mod.cpp",
+    # "meta.cpp",
+    # "logo_MOD PREFIX_ca.paa",
+    # "logo_MOD PREFIX_over_ca.paa",
+    "LICENSE",
+    "README.md"
+]
+exclude = [
+    "*.spp",
+    "*.spp.painter_lock",
+    "*.psd"
+]
+
+[properties]
+author = "DartRuffian"
+url = "https://github.com/Dart-Armory/MOD NAME"
+
+[hemtt.launch.default]
+workshop = [
+    "450814997", # CBA
+    "463939057", # ACE
+    "2369477168" # ADT
+]
+presets = []
+dlc = []
+optionals = []
+parameters = []
+
+[hemtt.launch.previews]
+workshop = [
+    "450814997", # CBA
+    "463939057", # ACE
+    "2369477168" # ADT
+]
+presets = []
+dlc = []
+optionals = []
+parameters = [
+    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\Previews\\missions\\Previews.VR\\mission.sqm",
+    "-name=Previews"
+]
