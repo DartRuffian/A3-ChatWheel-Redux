@@ -25,7 +25,7 @@ class CfgFunctions
     {
         class Settings
         {
-            file = "ChatWheelRedux\Data\Functions\Settings";
+            file = QPATHTOF(functions\settings);
             class configureAddonKeybinds {};
             class configureAddonOptions {};
             class createTagMenu {};
@@ -33,7 +33,7 @@ class CfgFunctions
 
         class Chat
         {
-            file = "ChatWheelRedux\Data\Functions\Chat";
+            file = QPATHTOF(functions\chat);
             class openChatWheel {};
             class processTags {};
             class sendGroupMessage {};
@@ -43,13 +43,13 @@ class CfgFunctions
 
         class Sounds
         {
-            file = "ChatWheelRedux\Data\Functions\Sounds";
+            file = QPATHTOF(functions\sounds);
             class playLocalSound {};
         };
 
         class Utils
         {
-            file = "ChatWheelRedux\Data\Functions\Utils";
+            file = QPATHTOF(functions\utils);
             class getDirFromBearing {};
             class stringReplace {};
             class removeQuotes {};
@@ -65,7 +65,7 @@ class CfgFunctions
 
         class EventHandlers
         {
-            file = "ChatWheelRedux\Data\Functions\EventHandlers";
+            file = QPATHTOF(functions\eventHandlers);
             class throwGrenadeMain {};
             class throwGrenadeEH {};
             class throwGrenadeEHACE {};
