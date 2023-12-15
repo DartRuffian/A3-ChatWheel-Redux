@@ -74,8 +74,6 @@ class CfgFunctions
     };
 };
 
-#define QUOTE(CODE) #CODE
-
 class Extended_PreInit_EventHandlers
 {
     class CWR_ConfigureKeybinds
