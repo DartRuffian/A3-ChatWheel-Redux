@@ -1,18 +1,20 @@
+#include "script_component.hpp"
+
+
 class CfgPatches
 {
-    class ChatWheelRedux
+    class ADDON
     {
         author = "DartRuffian";
-        weapons[] = {};
-        units[] = {};
-        requiredversion = 0.1;
-        requiredaddons[] =
+        name = COMPONENT_NAME;
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] =
         {
-            "cba_events",
-            "cba_hashes",
-            "cba_settings",
-            "cba_keybinding"
+            QCLASS(Core)
         };
+        units[] = {};
+        weapons[] = {};
+        VERSION_CONFIG;
     };
 };
 
