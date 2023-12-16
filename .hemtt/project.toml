@@ -30,7 +30,7 @@ workshop = [
 ]
 presets = []
 dlc = []
-optionals = []
+optionals = ["VanillaVoice"]
 parameters = []
 
 [hemtt.launch.ace]
@@ -41,5 +41,5 @@ workshop = [
 ]
 presets = []
 dlc = []
-optionals = []
+optionals = ["VanillaVoice"]
 parameters = []
