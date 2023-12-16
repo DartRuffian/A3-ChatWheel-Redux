@@ -2,5 +2,5 @@
 
 class RscTitles
 {
-    #include "RscChatWheel.hpp"
+    #include "ui/RscChatWheel.hpp"
 };
