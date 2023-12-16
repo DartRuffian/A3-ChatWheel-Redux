@@ -3,7 +3,7 @@
 #include "CWR_ChatWheel_Messages.hpp"
 #include "CWR_ChatWheel_VoiceLines.hpp"
 #include "ui/BaseControls.hpp"
-#include "ui/RscChatWheel.hpp"
+#include "ui/RscTitles.hpp"
 
 
 class CfgPatches
