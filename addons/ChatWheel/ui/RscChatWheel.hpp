@@ -1,4 +1,4 @@
-#include "a3\ui_f\hpp\defineCommonGrids.inc"
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
 
 class RscChatWheel
 {
