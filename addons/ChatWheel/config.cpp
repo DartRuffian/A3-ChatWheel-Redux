@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CWR_MessageList.hpp"
+#include "CWR_ChatWheel_VoiceLines.hpp"
 
 
 class CfgPatches
