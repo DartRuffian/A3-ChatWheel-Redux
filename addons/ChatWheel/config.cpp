@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CWR_MessageList.hpp"
 
 
 class CfgPatches
