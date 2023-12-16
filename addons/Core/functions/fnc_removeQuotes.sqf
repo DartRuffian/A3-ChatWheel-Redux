@@ -16,16 +16,18 @@
  * ["Th'is m'essage 'h'as 'a' l'o't' 'o'f' q'u'o't'es in it.", false, true] call CWR_Core_fnc_removeQuotes;
  */
 
+// TODO: Make this function not required.
+
 params [["_str", "", [""]], ["_removeDouble", true, [true]], ["_removeSingle", true, [true]]];
 
-if (_removeSingle) then
-{
-    _str = [_str, "'", ""] call FUNC(stringReplace);
-};
+// if (_removeSingle) then
+// {
+//     _str = [_str, "'", ""] call FUNC(stringReplace);
+// };
 
-if (_removeDouble) then
-{
-    _str = [_str, '"', ""] call FUNC(stringReplace);
-};
+// if (_removeDouble) then
+// {
+//     _str = [_str, "'", ""] call FUNC(stringReplace);
+// };
 
 _str;
