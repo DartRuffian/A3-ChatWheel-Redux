@@ -26,7 +26,6 @@ url = "https://github.com/Dart-Armory/ChatWheel-Redux"
 [hemtt.launch.default]
 workshop = [
     "450814997", # CBA
-    "463939057", # ACE
     "2369477168" # ADT
 ]
 presets = []
@@ -34,7 +33,7 @@ dlc = []
 optionals = []
 parameters = []
 
-[hemtt.launch.previews]
+[hemtt.launch.ace]
 workshop = [
     "450814997", # CBA
     "463939057", # ACE
@@ -43,7 +42,4 @@ workshop = [
 presets = []
 dlc = []
 optionals = []
-parameters = [
-    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\Previews\\missions\\Previews.VR\\mission.sqm",
-    "-name=Previews"
-]
+parameters = []
