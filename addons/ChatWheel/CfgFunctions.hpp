@@ -20,26 +20,11 @@ class CfgFunctions
             class configureMenus {};
         };
 
-        class Sounds
-        {
-            file = QPATHTOF(functions\sounds);
-            class playLocalSound {};
-        };
-
         class Utils
         {
             file = QPATHTOF(functions\utils);
-            class getDirFromBearing {};
-            class stringReplace {};
-            class removeQuotes {};
             class findAllVoicelineTags {};
             class getConfigNameFromTag {};
-            class devLog {};
-
-            class isPlayer {};
-            class getNearbyPlayers {};
-
-            class sortByDistance {};
         };
 
         class EventHandlers
