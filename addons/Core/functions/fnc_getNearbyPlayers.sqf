@@ -23,6 +23,6 @@ if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-n
 private ["_nearbyUnits"];
 
 _nearbyUnits = _positionAGL nearEntities ["CAManBase", _radius];
-_nearbyUnits = _nearbyUnits select {[_x, _includeRemoteControlled] call FUNC(isPlayer);};
+_nearbyUnits = _nearbyUnits select {_x call FUNC(isPlayer);};
 
 _nearbyUnits;

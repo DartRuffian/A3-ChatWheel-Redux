@@ -16,13 +16,13 @@
 
 params ["_sender", "_message"];
 
-_message = _message call CWR_fnc_processTags;
+_message = _message call FUNC(processTags);
 
 // Submenus need to be opened with spawn, which returns the code of the
 // submenu function before an option is selected.
 if (typeName _message isNotEqualTo "STRING") exitWith {};
 
-if (CWR_AutoMessages_Enabled) then
+if (autoMessages_enabled) then
 {
     _sender groupChat _message;
 };

@@ -18,7 +18,7 @@
 params [["_file", "", [""]], ["_positionASL", [0,0,0], [[]], 3]];
 if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);};
 
-if (GVAR(enableVoiceLines)) then
+if (GVAR(voice_enabled)) then
 {
     playSound3D
     [
@@ -26,7 +26,7 @@ if (GVAR(enableVoiceLines)) then
         objNull,
         false,
         _positionASL,
-        GVAR(voiceVolume),
+        GVAR(voice_volume),
         1,
         0,
         0,
