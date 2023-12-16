@@ -15,8 +15,8 @@
  * ["file.wss", getPosASL player] call CWR_ChatWheel_fnc_playLocalSound;
  */
 
-params [["_file", "", [""]], ["_position", [0,0,0], [[]], 3]];
-if !(_position isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _position);};
+params [["_file", "", [""]], ["_positionASL", [0,0,0], [[]], 3]];
+if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);};
 
 if (GVAR(enableVoiceLines)) then
 {
@@ -25,7 +25,7 @@ if (GVAR(enableVoiceLines)) then
         _file,
         objNull,
         false,
-        _position,
+        _positionASL,
         GVAR(voiceVolume),
         1,
         0,

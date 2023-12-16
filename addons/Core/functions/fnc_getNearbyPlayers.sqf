@@ -16,13 +16,13 @@
 
 params
 [
-    ["_position", [0,0,0], [[]], 3],
+    ["_positionAGL", [0,0,0], [[]], 3],
     ["_radius", 0, [0]]
 ];
-if !(_position isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _position);};
+if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
 private ["_nearbyUnits"];
 
-_nearbyUnits = _position nearEntities ["CAManBase", _radius];
+_nearbyUnits = _positionAGL nearEntities ["CAManBase", _radius];
 _nearbyUnits = _nearbyUnits select {[_x, _includeRemoteControlled] call FUNC(isPlayer);};
 
 _nearbyUnits;
