@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Removes "[vl-" and "]" from the beginning and end of a voiceline tag.

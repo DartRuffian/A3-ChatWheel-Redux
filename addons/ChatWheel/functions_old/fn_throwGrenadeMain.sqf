@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Main code for the automated grenade messages. Handles formatting the message and sending it to nearby units.

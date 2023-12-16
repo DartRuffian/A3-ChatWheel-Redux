@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 // "ace_common found. Starting ACE Event Handler" call CWR_fnc_devLog;
 
 ["ace_firedPlayer",

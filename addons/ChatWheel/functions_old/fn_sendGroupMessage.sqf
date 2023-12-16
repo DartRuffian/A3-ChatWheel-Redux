@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Sends a message, optionally with [tags], as the player in the player's group.

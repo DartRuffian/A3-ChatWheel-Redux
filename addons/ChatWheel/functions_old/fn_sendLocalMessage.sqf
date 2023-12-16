@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Authors: DartRuffian
  * Determines whether a message should be sent based on user settings. If yes, it sends the message.

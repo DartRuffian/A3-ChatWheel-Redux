@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Event handler for ace_unconscious, plays a voice line when a player is knocked unconscious

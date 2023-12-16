@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Creates a diary tab showing all available tags and what they are replaced with.
@@ -96,7 +97,7 @@ _separator = if (CWR_TagMenu_UseNewLine) then [{ "<br />becomes<br />" }, { " <f
     // Example usages of tags
     private _raw = _x#2#0 call _formatCode;
     private _formatted = _x#2#1 call _formatCode;
-    
+
     player createDiaryRecord ["CWR_TagsSubject", ["Examples", ((_x#0 call _formatSubtitle) + "<br />" + ([_raw, _formatted] joinString _separator))], taskNull, "NONE", false];
 } forEach _tags;
 player createDiaryRecord ["CWR_TagsSubject", ["Examples", "Tag Examples" call _formatTitle], taskNull, "NONE", false];

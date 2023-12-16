@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 // "ace_common not loaded. Starting vanilla Event Handler" call CWR_fnc_devLog;
 
 player addEventHandler ["Fired",

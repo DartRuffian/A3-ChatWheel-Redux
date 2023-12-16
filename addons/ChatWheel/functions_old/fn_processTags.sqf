@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 params ["_message"];
 
 // _message call CWR_fnc_devLog;

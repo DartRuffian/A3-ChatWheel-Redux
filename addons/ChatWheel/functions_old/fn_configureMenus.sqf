@@ -1,5 +1,4 @@
-#define QUOTE(CODE) #CODE
-
+#include "..\script_component.hpp"
 // CBA's implementation of Hashmaps are sorted by insertion order, while BIS game's are not.
 // Order is important since the order of the keys is how they are displayed in the chat menu.
 CWR_messagesHashMap =
