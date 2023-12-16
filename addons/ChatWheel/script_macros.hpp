@@ -1,0 +1,1 @@
+#define IDD_CHATWHEEL_MAIN 500
