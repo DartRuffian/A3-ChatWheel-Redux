@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Authors: DartRuffian
  * Returns an array of players near a given position.

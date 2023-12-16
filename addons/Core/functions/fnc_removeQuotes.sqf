@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Removes double and/or single quotes from a given string.

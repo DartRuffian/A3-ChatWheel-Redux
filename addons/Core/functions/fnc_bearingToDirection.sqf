@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Converts a bearing, a number from 0 to 360 inclusive, to a direction, North; North East; etc.
