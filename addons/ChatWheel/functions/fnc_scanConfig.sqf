@@ -14,7 +14,7 @@
  */
 
 params [];
-private ["_messageConfig", "_messageList"];
+private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"];
 
 _messageConfig = configProperties [configFile >> QGVAR(messages)];
 _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
@@ -34,3 +34,18 @@ _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 } forEach _messageConfig;
 
 uiNamespace setVariable [QGVAR(messages), _messageList];
+
+_voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
+_voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashmap];
+
+{
+    _voiceLineList insert
+    [
+        [
+            configName _x,
+            [_x, "voiceLines", []] call BIS_fnc_returnConfigEntry
+        ]
+    ];
+} forEach _voiceLineConfig;
+
+uiNamespace setVariable [QGVAR(voiceLines), _voiceLineList];
