@@ -1,0 +1,12 @@
+name = "Chat Wheel Redux";
+// picture = "logo_cwr_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/Dart-Armory/ChatWheel-Redux";
+description = "CWR - Version 0.0.0";
+// logo = "logo_cwr_ca.paa";
+// logoOver = "logo_cwr_over_ca.paa";
+tooltip = "CWR";
+tooltipOwned = "CWR Owned";
+overview = "Description";
+author = "DartRuffian";
+// overviewPicture = "logo_cwr_ca.paa";

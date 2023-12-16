@@ -1,2 +1,13 @@
-Audio
-CWR_VoiceLines.hpp
+# HEMTT
+hemtt/
+.hemttout/
+releases/
+
+# Development
+references/
+
+# Textures
+Exports/
+*.spp
+*.spp.painter_lock
+*.psd

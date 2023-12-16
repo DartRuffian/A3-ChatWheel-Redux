@@ -1,0 +1,45 @@
+name = "Chat Wheel Redux"
+author = "DartRuffian"
+prefix = "CWR"
+mainprefix = "DA"
+
+[version]
+path = "addons/Core/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "mod.cpp",
+    # "logo_cwr_ca.paa",
+    # "logo_cwr_over_ca.paa",
+    "LICENSE",
+    "README.md"
+]
+exclude = [
+    "*.psd"
+]
+
+[properties]
+author = "DartRuffian"
+url = "https://github.com/Dart-Armory/ChatWheel-Redux"
+
+[hemtt.launch.default]
+workshop = [
+    "450814997", # CBA
+    "2369477168" # ADT
+]
+presets = []
+dlc = []
+optionals = []
+parameters = []
+
+[hemtt.launch.ace]
+workshop = [
+    "450814997", # CBA
+    "463939057", # ACE
+    "2369477168" # ADT
+]
+presets = []
+dlc = []
+optionals = []
+parameters = []
