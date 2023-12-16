@@ -11,7 +11,7 @@
  * The direction
  *
  * Example:
- * 90 call CWR_fnc_getDirFromBearing; // Returns "East"
+ * 90 call CWR_Core_fnc_getDirFromBearing; // Returns "East"
  */
 
 params [["_bearing", 0, [0]]];

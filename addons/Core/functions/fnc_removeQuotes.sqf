@@ -20,12 +20,12 @@ params [["_str", "", [""]], ["_removeDouble", true, [true]], ["_removeSingle", t
 
 if (_removeSingle) then
 {
-    _str = [_str, "'", ""] call CWR_fnc_stringReplace;
+    _str = [_str, "'", ""] call FUNC(stringReplace);
 };
 
 if (_removeDouble) then
 {
-    _str = [_str, '"', ""] call CWR_fnc_stringReplace;
+    _str = [_str, '"', ""] call FUNC(stringReplace);
 };
 
 _str;
