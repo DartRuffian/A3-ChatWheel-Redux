@@ -26,6 +26,4 @@ If your issue is not listed, please create one with the appropiate [label](https
 
 ## Usage & Modification
 This mod can be freely used by any player or any server.<br>
-You are free to modify the mod for you or your group's own purposes if you:
- - Notify me on Discord (dartruffian).
- - Acknowledge that a fork Chat Wheel Redux is included in your mod(s).
+Future work will remove the need to download and modify the scripts yourself, as the message options available will be moved to a config class instead of being defined in the scripts themselves.
