@@ -21,16 +21,16 @@ _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
 {
     _messageList insert
-	[
-		[
-			configName _x,
-			[
-				getText (_x >> "displayName"),
-				getText (_x >> "message"),
-				getText (_x >> "order")
-			]
-		]
-	];
+    [
+        [
+            configName _x,
+            [
+                getText (_x >> "displayName"),
+                getText (_x >> "message"),
+                getText (_x >> "order")
+            ]
+        ]
+    ];
 } forEach _messageConfig;
 
 uiNamespace setVariable [QGVAR(messages), _messageList];
