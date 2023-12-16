@@ -5,8 +5,6 @@ class CfgFunctions
         class Settings
         {
             file = QPATHTOF(functions\settings);
-            class configureAddonKeybinds {};
-            class configureAddonOptions {};
             class createTagMenu {};
         };
 
