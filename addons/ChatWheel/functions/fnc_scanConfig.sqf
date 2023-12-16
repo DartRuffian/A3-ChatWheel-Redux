@@ -7,7 +7,7 @@
  * None
  *
  * Return Value:
- * Hashmap of all messages, with message class name as key.
+ * None
  *
  * Example:
  * call CWR_ChatWheel_fnc_loadMessagesFromConfig;
@@ -34,4 +34,3 @@ _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 } forEach _messageConfig;
 
 uiNamespace setVariable [QGVAR(messages), _messageList];
-_messageList;
