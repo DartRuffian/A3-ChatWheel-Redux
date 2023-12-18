@@ -1,4 +1,4 @@
-#include "\a3\ui_f\hpp\defineDIKCodes.inc"
+#include "\DA\CWR\addons\Core\data\hpp\defineDIKCodes.inc"
 
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
