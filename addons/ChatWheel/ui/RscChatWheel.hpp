@@ -2,7 +2,7 @@ class CLASS(RscChatWheel)
 {
     idd = IDD_CHATWHEEL_MAIN;
     duration = 1e+6;
-    onLoad = "uiNamespace setVariable ['CWR_RscChatWheel', _this select 0];";
+    onLoad = "uiNamespace setVariable ['CWR_RscChatWheel', _this select 0]; call CWR_ChatWheel_fnc_populateChatWheel";
 
     class Controls
     {
