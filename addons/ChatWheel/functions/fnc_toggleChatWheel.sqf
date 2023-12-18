@@ -26,14 +26,6 @@ if (isNull _display) then
 
     _messagesCtrl lbSetCurSel 0;
 
-    (findDisplay IDD_MISSION) displayAddEventHandler
-    [
-        "mouseZChanged",
-        {
-            _this call FUNC(handleScroll);
-        }
-    ];
-
     _opened = true;
 }
 else
