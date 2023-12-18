@@ -35,7 +35,7 @@ class GVAR(Tags)
         example = "'Status [tag]' → 'Status Green'";
     };
 
-    class Status
+    class Launcher
     {
         description = "Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.";
         statement = QUOTE('not implemented');
