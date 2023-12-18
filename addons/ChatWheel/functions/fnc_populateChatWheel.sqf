@@ -29,6 +29,8 @@ params [];
             _x params ["_className", "_displayName", "_message", "_order"];
             _index = _messagesCtrl lbAdd _displayName;
             _messagesCtrl lbSetValue [_index, _order];
+            _messagesCtrl lbSetData [_index, _className];
+
         } forEach _messageList;
 
         _messagesCtrl lbSortBy ["VALUE"];
