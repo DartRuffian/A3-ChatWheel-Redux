@@ -14,7 +14,7 @@
 */
 
 params [];
-private ["_display", "_messagesCtrl", "_messageList"];
+private ["_display", "_messagesCtrl", "_messageList", "_index"];
 
 [
     {
@@ -26,9 +26,11 @@ private ["_display", "_messagesCtrl", "_messageList"];
         _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
         {
-            // TODO: Order items in list box by _order
             _y params ["_displayName", "_message", "_order"];
-            _messagesCtrl lbAdd _displayName;
+            _index = _messagesCtrl lbAdd _displayName;
+            _messagesCtrl lbSetValue [_index, _order];
         } forEach _messageList;
+
+        _messagesCtrl lbSortBy ["VALUE"];
     }
 ] call CBA_fnc_waitUntilAndExecute;
