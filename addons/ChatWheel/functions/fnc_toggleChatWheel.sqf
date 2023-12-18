@@ -14,7 +14,7 @@
  */
 
 params [];
-private ["_display", "_opened"];
+private ["_display", "_messagesCtrl", "_opened"];
 
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _opened = false;
@@ -22,6 +22,18 @@ _opened = false;
 if (isNull _display) then
 {
     (QGVAR(layer_chatWheel) call BIS_fnc_rscLayer) cutRsc [QCLASS(RscChatWheel), "PLAIN"];
+    _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
+
+    _messagesCtrl lbSetCurSel 0;
+
+    (findDisplay IDD_MISSION) displayAddEventHandler
+    [
+        "mouseZChanged",
+        {
+            _this call FUNC(handleScroll);
+        }
+    ];
+
     _opened = true;
 }
 else
