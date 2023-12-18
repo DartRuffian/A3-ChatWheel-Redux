@@ -14,7 +14,6 @@
  * player call CWR_Core_fnc_isPlayer;
  */
 
-
 params [["_unit", objNull, [objNull]], ["_includeRemoteControlled", true, [true]]];
 
 if (isNull _unit) exitWith {false};
