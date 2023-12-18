@@ -27,7 +27,7 @@ _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
             [
                 getText (_x >> "displayName"),
                 getText (_x >> "message"),
-                getText (_x >> "order")
+                getNumber (_x >> "order")
             ]
         ]
     ];
