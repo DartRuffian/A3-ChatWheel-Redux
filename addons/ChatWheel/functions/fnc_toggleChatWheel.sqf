@@ -14,15 +14,19 @@
  */
 
 params [];
-private ["_display"];
+private ["_display", "_opened"];
 
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_opened = false;
 
 if (isNull _display) then
 {
     (QGVAR(layer_chatWheel) call BIS_fnc_rscLayer) cutRsc [QCLASS(RscChatWheel), "PLAIN"];
+    _opened = true;
 }
 else
 {
     _display closeDisplay IDC_CANCEL;
 };
+
+_opened;
