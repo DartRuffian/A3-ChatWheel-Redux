@@ -3,9 +3,9 @@
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     GVAR(key_openMenu),
-    ["Open Menu", "Opens the custom chat menu."],
+    ["Open/Close Menu", "Opens or closes the chat menu."],
     {
-        call FUNC(openChatWheel);
+        call FUNC(toggleChatWheel);
     },     // KeyDown
     {},    // KeyUp
     [],    // Default Key
