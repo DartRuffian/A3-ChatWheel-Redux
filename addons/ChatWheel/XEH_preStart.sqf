@@ -2,7 +2,7 @@
 
 #include "XEH_PREP.hpp"
 
-uiNamespace setVariable [QGVAR(messages), createHashmap];
-uiNamespace setVariable [QGVAR(voiceLines), createHashmap];
+uiNamespace setVariable [QGVAR(messages), []];
+uiNamespace setVariable [QGVAR(voiceLines), []];
 
 call FUNC(scanConfig);
