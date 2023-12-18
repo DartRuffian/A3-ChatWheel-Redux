@@ -14,13 +14,13 @@
 */
 
 params [];
-private ["_display", "_messagesCtrl", "_messageList", "_index"];
 
 [
     {
         (!isNull (uiNamespace getVariable [QCLASS(RscChatWheel), displayNull]))
     },
     {
+        private ["_display", "_messagesCtrl", "_messageList", "_index"];
         _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
         _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
         _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
