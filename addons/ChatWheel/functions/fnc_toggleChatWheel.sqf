@@ -29,4 +29,5 @@ else
     _display closeDisplay IDC_CANCEL;
 };
 
+[QGVAR(menuToggled), [_opened]] call CBA_fnc_localEvent;
 _opened;
