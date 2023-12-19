@@ -45,7 +45,7 @@ class GVAR(Messages)
     class NeedAmmo
     {
         displayName = "Need Ammo";
-        message = "[vl-NeedAmmo]I need ammo for my [Weapon]!";
+        message = "[vl-NeedAmmo]I need ammo for my [weapon]!";
         order = 6;
     };
 

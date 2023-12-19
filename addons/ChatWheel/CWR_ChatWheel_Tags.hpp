@@ -29,7 +29,7 @@ class GVAR(Tags)
 
         class Options
         {
-            // Contact! Infantry [Direction], Bearing [Bearing]! [Distance]!
+            // Contact! Infantry [direction], Bearing [bearing]! [distance]!
             class Infantry
             {
                 displayName = "Infantry";
