@@ -19,7 +19,7 @@
 
 params [
     ["_str", "", [""]],
-    ["_find", [""], [""]],
+    ["_find", [""], []],
     ["_replace", "", []]
 ];
 private ["_return", "_len", "_pos"];
