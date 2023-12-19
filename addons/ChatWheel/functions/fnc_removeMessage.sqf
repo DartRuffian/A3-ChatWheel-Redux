@@ -10,19 +10,19 @@
  * Whether the message was removed successfully <BOOL>
  *
  * Example:
- * ["Custom1"] call CWR_ChatWheel_fnc_removeMessage;
+ * "Custom1" call CWR_ChatWheel_fnc_removeMessage;
  */
 
 params [
     ["_key", "", [""]]
-]
+];
 private ["_messageList"];
 TRACE_1("fnc_removeMessage", _key);
 
 _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
 if (_key in _messageList) then {
-    _messageList deleteAt [_key];
+    _messageList deleteAt _key;
     true;
 } else
 {
