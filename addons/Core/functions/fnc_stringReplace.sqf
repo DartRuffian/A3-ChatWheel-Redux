@@ -17,7 +17,11 @@
  * ["xxx is awesome, I love yyy!", ["xxx", "yyy"], "Arma"] call CWR_Core_fnc_stringReplace;
  */
 
-params [["_str", "", [""]], ["_find", [""], [""]], ["_replace", "", [""]]];
+params [
+    ["_str", "", [""]],
+    ["_find", [""], [""]],
+    ["_replace", "", [""]]
+];
 private ["_return", "_len", "_pos"];
 
 if (_str isEqualTo "") exitWith {WARNING_1("Empty string passed to %1",_fnc_scriptName)};
