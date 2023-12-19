@@ -28,7 +28,7 @@ class GVAR(VoiceLines)
     {
         voiceLines[] = {};
     };
-    class ContactFort
+    class ContactFortification
     {
         voiceLines[] = {};
     };

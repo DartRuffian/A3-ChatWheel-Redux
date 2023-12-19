@@ -10,7 +10,7 @@ CWR_messagesHashMap =
         ["Follow", "[vl-Follow]Follow me!"],
         ["Contact", "[vl-ContactInf]Contact! Infantry [direction], bearing [bearing]! [distance]!"],
         ["Vehicle", "[vl-ContactVic]Contact! Vehicle [direction], bearing [bearing]! [distance]!"],
-        ["Fortification", "[vl-ContactFort]Contact! Fortification [direction], bearing [bearing]! [distance]!"],
+        ["Fortification", "[vl-ContactFortification]Contact! Fortification [direction], bearing [bearing]! [distance]!"],
         ["Low Ammo", "[vl-NeedAmmo]I need ammo for my [weapon]!"],
         ["ACE Check", "[vl-Status]Status [status]!"],
         ["Launchers", "[launcher]"],

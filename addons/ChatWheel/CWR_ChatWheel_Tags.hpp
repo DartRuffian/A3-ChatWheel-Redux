@@ -45,7 +45,7 @@ class GVAR(Tags)
             class Fortification
             {
                 displayName = "Fortification";
-                statement = QUOTE('[vl-ContactFort]fortification');
+                statement = QUOTE('[vl-ContactFortification]fortification');
                 order = 2;
             };
         };
