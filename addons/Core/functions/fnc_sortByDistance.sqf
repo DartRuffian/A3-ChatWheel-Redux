@@ -22,7 +22,7 @@ params [
 ];
 private ["_sortByDistance"];
 if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
-if !(_objects isEqualTypeParams [objNull]) exitWith {WARNING_2("Array of non-objects passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
+if !(_objects isEqualTypeParams [objNull]) exitWith {WARNING_2("Array of non-objects passed to %1. (%2)", _fnc_scriptName, _objects);};
 TRACE_3("fnc_sortByDistance", _positionAGL, _objects, _order);
 
 _sortByDistance = _objects apply {
