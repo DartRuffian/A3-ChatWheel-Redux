@@ -23,13 +23,13 @@ params [];
         private ["_display", "_messagesCtrl", "_messageList", "_index"];
         _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
         _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
-        _messageList = uiNamespace getVariable [QGVAR(messages), []];
+        _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
         {
-            _x params ["_className", "_displayName", "_message", "_order"];
+            _y params ["_displayName", "_message", "_order"];
             _index = _messagesCtrl lbAdd _displayName;
             _messagesCtrl lbSetValue [_index, _order];
-            _messagesCtrl lbSetData [_index, _className];
+            _messagesCtrl lbSetData [_index, _x];
         } forEach _messageList;
 
         _messagesCtrl lbSortBy ["VALUE"];
