@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Authors: DartRuffian
+ * Author: DartRuffian
  * Checks if a given unit is a player, includes remote controlled units by default.
  *
  * Arguments:
@@ -14,14 +14,15 @@
  * player call CWR_Core_fnc_isPlayer;
  */
 
-params [["_unit", objNull, [objNull]], ["_includeRemoteControlled", true, [true]]];
+params [
+    ["_unit", objNull, [objNull]],
+    ["_includeRemoteControlled", true, [true]]
+];
 
 if (isNull _unit) exitWith {false};
 
-isPlayer _unit or
-{
-    _includeRemoteControlled &&
-    {
+isPlayer _unit or {
+    _includeRemoteControlled && {
         !isNull (_unit getVariable ["bis_fnc_moduleRemoteControl_owner", objNull])
     }
 };

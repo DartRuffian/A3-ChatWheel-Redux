@@ -18,7 +18,11 @@
 
 // TODO: Make this function not required.
 
-params [["_str", "", [""]], ["_removeDouble", true, [true]], ["_removeSingle", true, [true]]];
+params [
+	["_str", "", [""]],
+	["_removeDouble", true, [true]],
+	["_removeSingle", true, [true]]
+];
 
 // if (_removeSingle) then
 // {

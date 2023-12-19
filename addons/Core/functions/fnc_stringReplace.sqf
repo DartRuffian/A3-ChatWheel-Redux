@@ -22,8 +22,7 @@ private ["_return", "_len", "_pos"];
 
 if (_str isEqualTo "") exitWith {WARNING_1("Empty string passed to %1",_fnc_scriptName)};
 
-if (!(_find isEqualType [])) then
-{
+if (!(_find isEqualType [])) then {
     _find = [_find];
 };
 
@@ -32,8 +31,7 @@ if (!(_find isEqualType [])) then
     _len = count _x;
     _pos = _str find _x;
 
-    while {(_pos != -1) && (count _str > 0)} do
-    {
+    while {(_pos != -1) && (count _str > 0)} do {
         _return = _return + (_str select [0, _pos]) + _replace;
 
         _str = (_str select [_pos + _len]);

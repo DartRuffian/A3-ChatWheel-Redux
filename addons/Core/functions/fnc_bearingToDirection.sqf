@@ -19,8 +19,7 @@ private ["_direction"];
 
 _bearing = [_bearing, 0, 360] call BIS_fnc_clamp;
 
-_direction = switch (true) do
-{
+_direction = switch (true) do {
     case ((_bearing <= 22.5) or (_bearing >= 337.5)): {"North"};
     case (_bearing <= 67.5): {"Northeast"};
     case (_bearing <= 112.5): {"East"};

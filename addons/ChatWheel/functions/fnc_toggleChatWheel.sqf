@@ -19,13 +19,10 @@ private ["_display", "_messagesCtrl", "_opened"];
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _opened = false;
 
-if (isNull _display) then
-{
+if (isNull _display) then {
     call FUNC(openChatWheel);
     _opened = true;
-}
-else
-{
+} else {
     call FUNC(closeChatWheel);
 };
 

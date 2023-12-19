@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Authors: DartRuffian
+ * Author: DartRuffian
  * Returns an array of players near a given position.
  *
  * Arguments:
@@ -14,8 +14,7 @@
  * [getPosAGL player, 30] call CWR_Core_fnc_getNearbyPlayers;
  */
 
-params
-[
+params [
     ["_positionAGL", [0,0,0], [[]], 3],
     ["_radius", 0, [0]]
 ];

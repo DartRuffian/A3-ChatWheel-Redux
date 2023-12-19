@@ -21,12 +21,9 @@ _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 _selectedIndex = lbCurSel _messagesCtrl;
 
-if (_scroll) then
-{
+if (_scroll) then {
     _selectedIndex = _selectedIndex + 1;
-}
-else
-{
+} else {
     _selectedIndex = _selectedIndex - 1;
 };
 

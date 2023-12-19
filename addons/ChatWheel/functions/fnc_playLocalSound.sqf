@@ -15,13 +15,16 @@
  * ["file.wss", getPosASL player] call CWR_ChatWheel_fnc_playLocalSound;
  */
 
-params [["_file", "", [""]], ["_positionASL", [0,0,0], [[]], 3]];
-if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);};
+params [
+    ["_file", "", [""]],
+    ["_positionASL", [0,0,0], [[]], 3]
+];
+if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {
+    WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);
+};
 
-if (GVAR(voice_enabled)) then
-{
-    playSound3D
-    [
+if (GVAR(voice_enabled)) then {
+    playSound3D [
         _file,
         objNull,
         false,

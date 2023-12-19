@@ -20,8 +20,7 @@ _messageConfig = configProperties [configFile >> QGVAR(messages)];
 _messageList = uiNamespace getVariable [QGVAR(messages), []];
 
 {
-    _messageList pushBackUnique
-    [
+    _messageList pushBackUnique [
         configName _x,
         getText (_x >> "displayName"),
         getText (_x >> "message"),
@@ -35,8 +34,7 @@ _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
 _voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), []];
 
 {
-    _voiceLineList pushBackUnique
-    [
+    _voiceLineList pushBackUnique [
         configName _x,
         [_x, "voiceLines", []] call BIS_fnc_returnConfigEntry
     ];
