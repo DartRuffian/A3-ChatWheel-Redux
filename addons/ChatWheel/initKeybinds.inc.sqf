@@ -19,8 +19,13 @@
     QGVAR(key_selectMessage),
     ["Select Message", "Selects a message from the Chat Wheel to send"],
     {
-        call FUNC(selectMessage);
-        call FUNC(toggleChatWheel);
+        private ["_display"];
+        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+        if (!isNull _display) then
+        {
+            call FUNC(selectMessage);
+            call FUNC(closeChatWheel);
+        };
     },     // KeyDown
     {},    // KeyUp
     [DIK_SPACE, false, false, false],  // Default Key
