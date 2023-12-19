@@ -38,7 +38,7 @@ class GVAR(Messages)
     class Contact
     {
         displayName = "Contact";
-        message = "";
+        message = "[contact]";
         order = 5;
     };
 
@@ -52,14 +52,14 @@ class GVAR(Messages)
     class ACECheck
     {
         displayName = "ACE Check";
-        message = "";
+        message = "[status]";
         order = 7;
     };
 
     class Launcher
     {
         displayName = "Launcher";
-        message = "";
+        message = "[launcher]";
         order = 8;
     };
 };

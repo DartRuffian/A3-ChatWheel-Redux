@@ -24,7 +24,7 @@ class GVAR(Tags)
     class Contact
     {
         description = "Opens a new menu to select from 'Infantry', 'Vehicle', or 'Fortification'.";
-        statement = QUOTE('not implemented');
+        statement = "";
         example = "'Contact, [tag]!' → 'Contact, infantry!'";
 
         class Options
@@ -54,7 +54,7 @@ class GVAR(Tags)
     class Distance
     {
         description = "Opens a new menu to select from 'Close', 'Medium', or 'Far'.";
-        statement = QUOTE('not implemented');
+        statement = "";
         example = "'There's infantry [tag]' → 'There's infantry close'";
 
         class Options
@@ -83,7 +83,7 @@ class GVAR(Tags)
     class Status
     {
         description = "Opens a new menu to select from 'Call Check', 'Green', 'Yellow', 'Red', or 'Black'.";
-        statement = QUOTE('not implemented');
+        statement = "";
         example = "'Status [tag]' → 'Status green'";
 
         class Options
@@ -124,7 +124,7 @@ class GVAR(Tags)
     class Launcher
     {
         description = "Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.";
-        statement = QUOTE('not implemented');
+        statement = "";
         example = "'[tag]?' → 'Permission to fire?'";
 
         class Options
