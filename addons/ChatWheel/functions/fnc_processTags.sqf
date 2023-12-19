@@ -26,7 +26,6 @@ _message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in
     private ["_tag"];
     _tag = format ["[%1]", toLowerANSI _x];
     _y params ["", "_statement", ""];
-    INFO_2("Processing tag %1 in message %2", _y, _message);
 
     _message = [_message, _tag, call _statement] call EFUNC(Core,stringReplace);
 } forEach _tagsList;
