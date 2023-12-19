@@ -21,8 +21,8 @@ _messageConfig = configProperties [configFile >> QGVAR(messages)];
 _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
 if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
+    _messageList = createHashmap;
     {
-        _messageList = createHashmap;
         _messageList insert [[
             configName _x,
             [
@@ -40,8 +40,8 @@ _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
 _voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashmap];
 
 if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
+    _voiceLineList = createHashmap;
     {
-        _voiceLineList = createHashmap;
         _voiceLineList insert [[
             configName _x,
             [_x, "voiceLines", []] call BIS_fnc_returnConfigEntry
@@ -55,8 +55,8 @@ _tagsConfig = configProperties [configFile >> QGVAR(tags)];
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
 
 if (count _tagsList isEqualTo 0 or _reloadFromConfig) then {
+    _tagsList = createHashmap;
     {
-        _tagsList = createHashmap;
         _tagsList insert [[
             configName _x,
             [
