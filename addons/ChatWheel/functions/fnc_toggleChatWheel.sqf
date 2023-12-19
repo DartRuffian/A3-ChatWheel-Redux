@@ -27,5 +27,4 @@ if (isNull _display) then {
     call FUNC(closeChatWheel);
 };
 
-[QGVAR(menuToggled), [_opened]] call CBA_fnc_localEvent;
 _opened;
