@@ -1,0 +1,33 @@
+#include "..\script_component.hpp"
+/*
+ * Author: DartRuffian
+ * Processes a message for tags.
+ *
+ * Arguments:
+ * 0: The message to process <STRING>
+ *
+ * Return Value:
+ * The processed string <STRING>
+ *
+ * Example:
+ * "A message, optionally with [tags]" call CWR_ChatWheel_fnc_processTags;
+ */
+
+params [
+    ["_message", "", [""]]
+];
+private ["_tagsList"];
+TRACE_1("fnc_processTags", _message);
+
+_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
+
+{
+    private ["_tag"];
+    _tag = format ["[%1]", _x];
+    _y params ["", "_statement", ""];
+    INFO_2("Processing tag %1 in message %2", _y, _message);
+
+    _message = [_message, _tag, call _statement] call EFUNC(Core,stringReplace);
+} forEach _tagsList;
+
+_message;

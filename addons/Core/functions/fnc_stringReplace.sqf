@@ -20,7 +20,7 @@
 params [
     ["_str", "", [""]],
     ["_find", [""], [""]],
-    ["_replace", "", [""]]
+    ["_replace", "", []]
 ];
 private ["_return", "_len", "_pos"];
 TRACE_3("fnc_stringReplace", _str, _find, _replace);
