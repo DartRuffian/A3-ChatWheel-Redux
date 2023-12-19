@@ -8,7 +8,7 @@
  * 0: Bearing <NUMBER>
  *
  * Return Value:
- * The direction
+ * The direction the player
  *
  * Example:
  * 90 call CWR_Core_fnc_getDirFromBearing; // Returns "East"
