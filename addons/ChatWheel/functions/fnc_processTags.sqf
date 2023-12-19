@@ -20,10 +20,11 @@ private ["_tagsList"];
 TRACE_1("fnc_processTags", _message);
 
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
+_message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in [brackets]
 
 {
     private ["_tag"];
-    _tag = format ["[%1]", _x];
+    _tag = format ["[%1]", toLowerANSI _x];
     _y params ["", "_statement", ""];
     INFO_2("Processing tag %1 in message %2", _y, _message);
 
