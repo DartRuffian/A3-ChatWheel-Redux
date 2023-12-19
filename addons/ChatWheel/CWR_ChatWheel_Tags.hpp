@@ -18,7 +18,7 @@ class GVAR(Tags)
     {
         description = "Your current held weapon.";
         statement = QUOTE(getText (configFile >> 'CfgWeapons' >> currentWeapon player >> 'displayName'));
-        example = "'I'm holding a [tag]' → 'I'm holding a MX'";
+        example = "'I'm holding a [tag]' → 'I'm holding a MX 6.5mm'";
     };
 
     class Distance
