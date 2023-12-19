@@ -8,4 +8,5 @@ PREP(selectMessage);
 PREP(processTags);
 PREP(sendMessage);
 PREP(addMessage);
+PREP(removeMessage);
 PREP(playLocalSound);
