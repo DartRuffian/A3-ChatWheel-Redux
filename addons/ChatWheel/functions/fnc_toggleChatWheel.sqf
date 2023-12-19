@@ -24,7 +24,17 @@ if (isNull _display) then
     (QGVAR(layer_chatWheel) call BIS_fnc_rscLayer) cutRsc [QCLASS(RscChatWheel), "PLAIN"];
     _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
-    _messagesCtrl lbSetCurSel 0;
+    // Small delay needed before an element can be selected
+    [
+        {
+            _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+            _messagesCtrl = _display displayCtrl 501;
+
+            _messagesCtrl lbSetCurSel 0;
+        },
+        nil,
+        0.01
+    ] call CBA_fnc_waitAndExecute;
 
     _opened = true;
 }
