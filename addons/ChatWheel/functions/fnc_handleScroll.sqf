@@ -19,7 +19,7 @@ TRACE_1("fnc_handleScroll", _scroll);
 
 if (visibleMap) exitWith {};
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = GETUVAR(CLASS(RscChatWheel),displayNull);
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 _selectedIndex = lbCurSel _messagesCtrl;

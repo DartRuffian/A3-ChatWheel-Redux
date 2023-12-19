@@ -17,7 +17,7 @@ params [];
 private ["_display", "_messagesCtrl", "_selectedIndex", "_messageList", "_className"];
 TRACE_1("fnc_selectMessage", nil);
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = GETUVAR(CLASS(RscChatWheel),displayNull);
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 if (isNull _display or isNull _messagesCtrl) exitWith {
@@ -27,7 +27,7 @@ if (isNull _display or isNull _messagesCtrl) exitWith {
 _selectedIndex = lbCurSel _messagesCtrl;
 _className = _messagesCtrl lbData _selectedIndex;
 
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
+_messageList = GETUVAR(GVAR(messages),createHashmap);
 (_messageList get _className) params ["_displayName", "_message", "_order"];
 
 _message call FUNC(sendMessage);

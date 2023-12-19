@@ -29,7 +29,7 @@ private ["_messageList"];
 if (_key isEqualTo "" or _displayName isEqualTo "" or _message isEqualTo "") exitWith {false};
 TRACE_5("fnc_addMessage", _key, _displayName, _message, _order, _overwrite);
 
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+_messageList = GETUVAR(GVAR(messages),createHashmap);
 
 if (_key in _messageList and !_overwrite) exitWith {false};
 

@@ -19,7 +19,7 @@ params [
 private ["_tagsList"];
 TRACE_1("fnc_processTags", _message);
 
-_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
+_tagsList = GETUVAR(GVAR(tags),createHashmap);
 _message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in [brackets]
 
 {

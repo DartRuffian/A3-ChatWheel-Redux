@@ -18,7 +18,7 @@ private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"]
 TRACE_1("fnc_scanConfig", _reloadFromConfig);
 
 _messageConfig = configProperties [configFile >> QGVAR(messages)];
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+_messageList = GETUVAR(GVAR(messages),createHashmap);
 
 if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
     _messageList = createHashmap;
@@ -33,11 +33,11 @@ if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
         ]];
     } forEach _messageConfig;
 
-    uiNamespace setVariable [QGVAR(messages), _messageList];
+    SETUVAR(GVAR(messages),_messageList);
 };
 
 _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
-_voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashmap];
+_voiceLineList = GETUVAR(GVAR(voiceLines),createHashmap);
 
 if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
     _voiceLineList = createHashmap;
@@ -48,11 +48,11 @@ if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
         ]];
     } forEach _voiceLineConfig;
 
-    uiNamespace setVariable [QGVAR(voiceLines), _voiceLineList];
+    SETUVAR(GVAR(voiceLines),_voiceLinesList);
 };
 
 _tagsConfig = configProperties [configFile >> QGVAR(tags)];
-_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
+_tagsList = GETUVAR(GVAR(tags),createHashmap);
 
 if (count _tagsList isEqualTo 0 or _reloadFromConfig) then {
     _tagsList = createHashmap;
@@ -67,5 +67,5 @@ if (count _tagsList isEqualTo 0 or _reloadFromConfig) then {
         ]];
     } forEach _tagsConfig;
 
-    uiNamespace setVariable [QGVAR(tags), _tagsList];
+    SETUVAR(GVAR(tags),_tagsList);
 };

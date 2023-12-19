@@ -20,7 +20,7 @@
     ["Select Message", "Selects a message from the Chat Wheel to send"],
     {
         private ["_display"];
-        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+        _display = GETUVAR(CLASS(RscChatWheel),displayNull);
         if (!isNull _display) then
         {
             call FUNC(selectMessage);
