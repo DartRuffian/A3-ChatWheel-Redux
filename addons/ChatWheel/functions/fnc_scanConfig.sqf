@@ -47,3 +47,21 @@ _voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashmap];
 } forEach _voiceLineConfig;
 
 uiNamespace setVariable [QGVAR(voiceLines), _voiceLineList];
+
+_tagsConfig = configProperties [configFile >> QGVAR(tags)];
+_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
+
+{
+    _tagsList insert [
+        [
+            configName _x,
+            [
+                getText (_x >> "description"),
+                compile (getText (_x >> "statement")),
+                getText (_x >> "example")
+            ]
+        ]
+    ];
+} forEach _tagsConfig;
+
+uiNamespace setVariable [QGVAR(tags), _tagsList];
