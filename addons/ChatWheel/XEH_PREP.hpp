@@ -5,4 +5,5 @@ PREP(openChatWheel);
 PREP(closeChatWheel);
 PREP(toggleChatWheel);
 PREP(selectMessage);
+PREP(sendMessage);
 PREP(playLocalSound);
