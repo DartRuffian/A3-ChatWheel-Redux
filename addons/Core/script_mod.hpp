@@ -2,6 +2,10 @@
 #define PREFIX CWR
 #define MOD_NAME Chat Wheel Redux
 
+#ifdef __A3_DEBUG__
+    #include "\DA\CWR\addons\Core\script_debug.hpp"
+#endif
+
 #include "\DA\CWR\addons\Core\script_version.hpp"
 
 #define REQUIRED_VERSION 2.14

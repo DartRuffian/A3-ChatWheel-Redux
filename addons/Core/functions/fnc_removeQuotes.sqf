@@ -23,6 +23,7 @@ params [
 	["_removeDouble", true, [true]],
 	["_removeSingle", true, [true]]
 ];
+TRACE_3("fnc_removeQuotes", _str, _removeDouble, _removeSingle);
 
 // if (_removeSingle) then
 // {

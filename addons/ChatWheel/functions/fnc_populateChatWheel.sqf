@@ -14,6 +14,7 @@
 */
 
 params [];
+TRACE_1("fnc_populateChatWheel", nil);
 
 [
     {

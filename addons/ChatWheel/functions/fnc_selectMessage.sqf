@@ -15,6 +15,7 @@
 
 params [];
 private ["_display", "_messagesCtrl", "_selectedIndex", "_messageList", "_className"];
+TRACE_1("fnc_selectMessage", nil);
 
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;

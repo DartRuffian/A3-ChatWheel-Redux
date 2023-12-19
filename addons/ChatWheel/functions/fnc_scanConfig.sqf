@@ -15,6 +15,7 @@
 
 params [];
 private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"];
+TRACE_1("fnc_scanConfig", nil);
 
 _messageConfig = configProperties [configFile >> QGVAR(messages)];
 _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];

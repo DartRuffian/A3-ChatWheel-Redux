@@ -20,6 +20,7 @@ params [
 ];
 if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
 private ["_nearbyUnits"];
+TRACE_2("fnc_getNearbyPlayers", _positionAGL, _radius);
 
 _nearbyUnits = _positionAGL nearEntities ["CAManBase", _radius];
 _nearbyUnits = _nearbyUnits select {_x call FUNC(isPlayer);};

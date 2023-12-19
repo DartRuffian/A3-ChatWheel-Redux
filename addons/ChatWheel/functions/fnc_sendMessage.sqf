@@ -15,6 +15,7 @@
 
 params [["_rawMessage", "", [""]]];
 private ["_author"];
+TRACE_1("fnc_sendMessage", _rawMessage);
 
 if (_rawMessage isEqualTo "") exitWith {};
 

@@ -15,6 +15,7 @@
 
 params [];
 private ["_display", "_messagesCtrl"];
+TRACE_1("fnc_openChatWheel", nil);
 
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 if (!isNull _display) exitWith {

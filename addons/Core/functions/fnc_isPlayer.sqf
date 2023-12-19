@@ -20,6 +20,7 @@ params [
 ];
 
 if (isNull _unit) exitWith {false};
+TRACE_2("fnc_isPlayer", _unit, _includeRemoteControlled);
 
 isPlayer _unit or {
     _includeRemoteControlled && {
