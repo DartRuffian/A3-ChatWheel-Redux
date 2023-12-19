@@ -7,7 +7,11 @@
     "",
     0,
     {
-        // [CWR_messagesHashMap, "Custom 1", _this] call CBA_fnc_hashSet;
+        if (!(_this isEqualTo "")) then {
+            ["UserCustom1", "Custom 1", _this, -1, true] call FUNC(addMessage);
+        } else {
+            "UserCustom1" call FUNC(removeMessage);
+        };
     }
 ] call CBA_fnc_addSetting;
 
@@ -19,7 +23,11 @@
     "",
     0,
     {
-        // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
+        if (!(_this isEqualTo "")) then {
+            ["UserCustom2", "Custom 2", _this, -1, true] call FUNC(addMessage);
+        } else {
+            "UserCustom2" call FUNC(removeMessage);
+        };
     }
 ] call CBA_fnc_addSetting;
 
@@ -31,7 +39,11 @@
     "",
     0,
     {
-        // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
+        if (!(_this isEqualTo "")) then {
+            ["UserCustom3", "Custom 3", _this, -1, true] call FUNC(addMessage);
+        } else {
+            "UserCustom3" call FUNC(removeMessage);
+        };
     }
 ] call CBA_fnc_addSetting;
 
@@ -43,7 +55,11 @@
     "",
     0,
     {
-        // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
+        if (!(_this isEqualTo "")) then {
+            ["UserCustom4", "Custom 4", _this, -1, true] call FUNC(addMessage);
+        } else {
+            "UserCustom4" call FUNC(removeMessage);
+        };
     }
 ] call CBA_fnc_addSetting;
 
