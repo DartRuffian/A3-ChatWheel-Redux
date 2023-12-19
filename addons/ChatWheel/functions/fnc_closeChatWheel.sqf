@@ -21,5 +21,5 @@ if (isNull _display) exitWith {
 	WARNING("Attempted to close Chat Wheel when not open.")
 };
 
-_display closeDisplay IDC_CANCEL;
+QGVAR(layer_chatWheel) cutFadeOut 0.5;
 [QGVAR(menuToggled), [false]] call CBA_fnc_localEvent;
