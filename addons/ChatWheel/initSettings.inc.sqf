@@ -4,7 +4,7 @@
     "EDITBOX",
     ["Custom Message 1", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     [QUOTE(MOD_NAME), "Custom Messages"],
-    "Default",
+    "",
     0,
     {
         // [CWR_messagesHashMap, "Custom 1", _this] call CBA_fnc_hashSet;
@@ -16,7 +16,7 @@
     "EDITBOX",
     ["Custom Message 2", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     [QUOTE(MOD_NAME), "Custom Messages"],
-    "Default",
+    "",
     0,
     {
         // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
@@ -28,7 +28,7 @@
     "EDITBOX",
     ["Custom Message 3", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     [QUOTE(MOD_NAME), "Custom Messages"],
-    "Default",
+    "",
     0,
     {
         // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
@@ -40,7 +40,7 @@
     "EDITBOX",
     ["Custom Message 4", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
     [QUOTE(MOD_NAME), "Custom Messages"],
-    "Default",
+    "",
     0,
     {
         // [CWR_messagesHashMap, "Custom 2", _this] call CBA_fnc_hashSet;
