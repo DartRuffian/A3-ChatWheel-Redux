@@ -44,19 +44,19 @@ class GVAR(Messages)
         class Infantry
         {
             displayName = "Infantry";
-            message = "[vl-ContactInfantry]Contact! Infantry [direction], bearing [bearing]! [distance]!";
+            message = "[vl-ContactInfantry]Contact! Infantry [Direction], Bearing [Bearing]! [Distance]!";
             order = 0;
         };
         class Vehicle
         {
             displayName = "Vehicle";
-            message = "[vl-ContactVehicle]Contact! Vehicle [direction], bearing [bearing]! [distance]!";
+            message = "[vl-ContactVehicle]Contact! Vehicle [Direction], Bearing [Bearing]! [Distance]!";
             order = 1;
         };
         class Fortification
         {
             displayName = "Fortification";
-            message = "[vl-ContactFort]Contact! Fortification [direction], bearing [bearing]! [distance]!";
+            message = "[vl-ContactFort]Contact! Fortification [Direction], Bearing [Bearing]! [Distance]!";
             order = 2;
         };
     };
@@ -64,7 +64,7 @@ class GVAR(Messages)
     class NeedAmmo
     {
         displayName = "Need Ammo";
-        message = "[vl-NeedAmmo]I need ammo for my [weapon]!";
+        message = "[vl-NeedAmmo]I need ammo for my [Weapon]!";
         order = 6;
     };
 
