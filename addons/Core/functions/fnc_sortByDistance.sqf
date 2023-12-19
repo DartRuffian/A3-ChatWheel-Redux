@@ -15,7 +15,6 @@
  * [player, [unit1]] call CWR_Core_fnc_sortByDistance;
  */
 
-TRACE_1(_fnc_scriptName, _this);
 params [
     ["_positionAGL", [0,0,0], [[]], 3],
     ["_objects", [objNull], []],
