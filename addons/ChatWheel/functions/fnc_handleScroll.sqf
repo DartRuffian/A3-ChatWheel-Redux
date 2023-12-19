@@ -16,6 +16,8 @@
 params [["_scroll", false, [false]]];
 private ["_display", "_messagesCtrl", "_selectedIndex"];
 
+if (visibleMap) exitWith {};
+
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
