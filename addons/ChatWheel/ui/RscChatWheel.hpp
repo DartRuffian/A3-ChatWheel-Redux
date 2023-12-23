@@ -2,8 +2,8 @@ class CLASS(RscChatWheel)
 {
     idd = IDD_CHATWHEEL_MAIN;
     duration = 1e+6;
-    onLoad = "uiNamespace setVariable ['CWR_RscChatWheel', _this select 0]; call CWR_ChatWheel_fnc_populateChatWheel";
-    onUnload = "uiNamespace setVariable ['CWR_RscChatWheel', nil];";
+    onLoad = QUOTE(SETUVAR(QCLASS(RscChatWheel),_this select 0); call FUNC(populateChatWheel););
+    onUnload = QUOTE(SETUVAR(QCLASS(RscChatWheel),nil));
 
     class Controls
     {
