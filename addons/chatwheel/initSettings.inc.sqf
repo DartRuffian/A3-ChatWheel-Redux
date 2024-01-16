@@ -70,20 +70,17 @@
     ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
     [QUOTE(MOD_NAME), "Automatic Messages"],
     true,
-    0,
-    {}
+    FALSE
 ] call CBA_fnc_addSetting;
 
-if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
-{
+if (ADDON_LOADED(ace_medical)) then {
     [
         QGVAR(autoMessages_unconEnabled),
         "CHECKBOX",
         ["Unconscious Messages", "When a player goes unconscious, the closest player will make a call out. The max radius is still bound by CWR_Voice_VoiceRadius. Only works with ACE Medical."],
         [QUOTE(MOD_NAME), "Automatic Messages"],
         true,
-        1,
-        {}
+        TRUE
     ] call CBA_fnc_addSetting;
 };
 
@@ -94,9 +91,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
     ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade or using a chat wheel option."],
     [QUOTE(MOD_NAME), "Voice Lines"],
     true,
-    0,
-    {},
-    false
+    FALSE
 ] call CBA_fnc_addSetting;
 
 [
@@ -105,9 +100,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
     ["Custom VoiceLines Cooldown", "The minimum amount of time between custom voicelines."],
     [QUOTE(MOD_NAME), "Voice Lines"],
     [0, 15, 3, 0],
-    1,
-    {},
-    false
+    TRUE
 ] call CBA_fnc_addSetting;
 
 [
@@ -116,9 +109,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
     ["Voice Lines Radius", "The radius of voice lines and automated messages."],
     [QUOTE(MOD_NAME), "Voice Lines"],
     [10, 50, 30, 0],
-    1,
-    {},
-    false
+    TRUE
 ] call CBA_fnc_addSetting;
 
 [

@@ -25,6 +25,8 @@
 #define CLASS(var1) DOUBLES(PREFIX,var1)
 #define QCLASS(var1) QUOTE(CLASS(var1))
 
+#define ADDON_LOADED(var) isClass (configFile >> "CfgPatches" >> QUOTE(var1))
+
 #define GETVAR_SYS(var1,var2) getVariable [ARR_2(QUOTE(var1),var2)]
 #define SETVAR_SYS(var1,var2) setVariable [ARR_2(QUOTE(var1),var2)]
 #define SETPVAR_SYS(var1,var2) setVariable [ARR_3(QUOTE(var1),var2,true)]
