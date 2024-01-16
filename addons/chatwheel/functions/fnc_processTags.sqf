@@ -17,7 +17,7 @@ params [
     ["_message", "", [""]]
 ];
 private ["_tagsList"];
-TRACE_1("fnc_processTags", _message);
+TRACE_1("fnc_processTags",_message);
 
 _tagsList = GETUVAR(GVAR(tags),createHashmap);
 _message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in [brackets]

@@ -15,7 +15,7 @@
 
 params [];
 private ["_display", "_messagesCtrl", "_opened"];
-TRACE_1("fnc_toggleChatWheel", nil);
+TRACE_1("fnc_toggleChatWheel",nil);
 
 _display = GETUVAR(CLASS(RscChatWheel),displayNull);
 _opened = false;

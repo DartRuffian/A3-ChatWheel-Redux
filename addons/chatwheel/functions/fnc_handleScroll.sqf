@@ -15,7 +15,7 @@
 
 params [["_scroll", false, [false]]];
 private ["_display", "_messagesCtrl", "_selectedIndex"];
-TRACE_1("fnc_handleScroll", _scroll);
+TRACE_1("fnc_handleScroll",_scroll);
 
 if (visibleMap) exitWith {};
 

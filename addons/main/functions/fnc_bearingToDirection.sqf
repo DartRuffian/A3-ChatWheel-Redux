@@ -16,7 +16,7 @@
 
 params [["_bearing", 0, [0]]];
 private ["_direction"];
-TRACE_1("fnc_bearingToDirection", _bearing);
+TRACE_1("fnc_bearingToDirection",_bearing);
 
 _bearing = [_bearing, 0, 360] call BIS_fnc_clamp;
 

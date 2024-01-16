@@ -19,10 +19,11 @@ params [
     ["_file", "", [""]],
     ["_positionASL", [0,0,0], [[]], 3]
 ];
+TRACE_2("fnc_playLocalSound",_file,_positionASL);
+
 if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {
-    WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);
+    WARNING_2("Array of non-numbers passed to %1. (%2)",_fnc_scriptName,_positionASL);
 };
-TRACE_2("fnc_playLocalSound", _file, _positionASL);
 
 if (GVAR(voice_enabled)) then {
     playSound3D [

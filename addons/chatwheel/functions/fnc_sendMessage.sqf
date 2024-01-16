@@ -15,7 +15,7 @@
 
 params [["_rawMessage", "", [""]]];
 private ["_author"];
-TRACE_1("fnc_sendMessage", _rawMessage);
+TRACE_1("fnc_sendMessage",_rawMessage);
 
 if (_rawMessage isEqualTo "") exitWith {};
 
@@ -24,4 +24,4 @@ _message = _rawMessage call FUNC(processTags);
 _author = player;
 [_author, _message] remoteExecCall ["sideChat", side _author];
 [QGVAR(messageSent), [_author, _message, _rawMessage]] call CBA_fnc_localEvent;
-INFO_2("%1 is sending message: %2", _author, _message);
+INFO_2("%1 is sending message: %2",_author,_message);

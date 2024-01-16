@@ -14,7 +14,7 @@
 */
 
 params [];
-TRACE_1("fnc_populateChatWheel", nil);
+TRACE_1("fnc_populateChatWheel",nil);
 
 [
     {

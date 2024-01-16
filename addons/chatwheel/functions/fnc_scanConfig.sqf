@@ -15,7 +15,7 @@
 
 params [["_reloadFromConfig", false, [false]]];
 private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"];
-TRACE_1("fnc_scanConfig", _reloadFromConfig);
+TRACE_1("fnc_scanConfig",_reloadFromConfig);
 
 _messageConfig = configProperties [configFile >> QGVAR(messages)];
 _messageList = GETUVAR(GVAR(messages),createHashmap);

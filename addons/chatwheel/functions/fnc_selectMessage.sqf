@@ -15,13 +15,13 @@
 
 params [];
 private ["_display", "_messagesCtrl", "_selectedIndex", "_messageList", "_className"];
-TRACE_1("fnc_selectMessage", nil);
+TRACE_1("fnc_selectMessage",nil);
 
 _display = GETUVAR(CLASS(RscChatWheel),displayNull);
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 if (isNull _display or isNull _messagesCtrl) exitWith {
-    WARNING("Attempted to send message while display was not open")
+    WARNING("Attempted to send message while display was not open");
 };
 
 _selectedIndex = lbCurSel _messagesCtrl;

@@ -17,7 +17,7 @@ params [
     ["_key", "", [""]]
 ];
 private ["_messageList"];
-TRACE_1("fnc_removeMessage", _key);
+TRACE_1("fnc_removeMessage",_key);
 
 _messageList = GETUVAR(GVAR(messages),createHashmap);
 
