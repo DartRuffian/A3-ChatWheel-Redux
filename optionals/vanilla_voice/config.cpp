@@ -11,8 +11,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(Core),
-            QCLASS(ChatWheel)
+            QCLASS(main),
+            QCLASS(chatwheel)
         };
         units[] = {};
         weapons[] = {};

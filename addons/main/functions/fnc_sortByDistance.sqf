@@ -12,7 +12,7 @@
  * The sorted objects
  *
  * Example:
- * [player, [unit1]] call CWR_Core_fnc_sortByDistance;
+ * [player, [unit1]] call CWR_main_fnc_sortByDistance;
  */
 
 params [

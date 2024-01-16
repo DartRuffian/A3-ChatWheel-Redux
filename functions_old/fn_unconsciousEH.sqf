@@ -25,13 +25,13 @@ if !(GVAR(autoMessages_unconEnabled)) exitWith {};
         if !(isPlayer _unit) exitWith {};
         if !(_state) exitWith {};
 
-        private _nearbyPlayers = [getPosATL _unit, GVAR(voice_radius)] call EFUNC(Core,getNearbyPlayers);
+        private _nearbyPlayers = [getPosATL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
         // format ["_nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
         _nearbyPlayers = _nearbyPlayers select {[_x] call ace_common_fnc_isAwake;};
         if (count _nearbyPlayers == 0) exitWith {}; // No nearby conscious players
 
-        _nearbyPlayers = [_unit, _nearbyPlayers] call EFUNC(Core,sortByDistance);
+        _nearbyPlayers = [_unit, _nearbyPlayers] call EFUNC(main,sortByDistance);
         // format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
         private _closestPlayer = _nearbyPlayers#1;

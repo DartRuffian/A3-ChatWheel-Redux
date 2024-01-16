@@ -11,7 +11,7 @@
  * The direction the player
  *
  * Example:
- * 90 call CWR_Core_fnc_getDirFromBearing; // Returns "East"
+ * 90 call CWR_main_fnc_getDirFromBearing; // Returns "East"
  */
 
 params [["_bearing", 0, [0]]];

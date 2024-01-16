@@ -4,7 +4,7 @@ prefix = "CWR"
 mainprefix = "DA"
 
 [version]
-path = "addons/Core/script_version.hpp"
+path = "addons/main/script_version.hpp"
 git_hash = 0
 
 [files]

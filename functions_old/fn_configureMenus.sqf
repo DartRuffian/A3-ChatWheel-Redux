@@ -52,7 +52,7 @@ CWR_OpenDistanceMenu =
     sleep 0.05;
 
     private _distanceList = ["Close", "Mid", "Far"];
-    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call EFUNC(Core,stringReplace); };
+    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call EFUNC(main,stringReplace); };
     // distanceMessageList must be global because no other values can be passed to the expression parameter of BIS_fnc_CreateMenu
 
     [
@@ -73,7 +73,7 @@ CWR_OpenStatusMenu =
     sleep 0.05;
 
     private _statusList = ["Green", "Yellow", "Orange", "Red", "Black"];
-    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call EFUNC(Core,stringReplace); };
+    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call EFUNC(main,stringReplace); };
 
     [
         "How are you?",
@@ -93,7 +93,7 @@ CWR_OpenLauncherMenu =
     sleep 0.05;
 
     CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply
-    { [_message, "[launcher]", _x] call EFUNC(Core,stringReplace); };
+    { [_message, "[launcher]", _x] call EFUNC(main,stringReplace); };
 
     [
         "Launcher",

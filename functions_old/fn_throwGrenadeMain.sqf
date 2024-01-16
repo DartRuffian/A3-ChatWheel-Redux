@@ -28,7 +28,7 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
     _grenadeType = "Smoke";
 };
 
-private _nearbyPlayers = [getPosATL _sender, GVAR(voice_radius)] call EFUNC(Core,getNearbyPlayers);
+private _nearbyPlayers = [getPosATL _sender, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
 
 // Tags are processed here to avoid mismatched data and multiple voice lines playing
 // If processed in the remoteExec, bearing would be *that* player's bearing and the voice

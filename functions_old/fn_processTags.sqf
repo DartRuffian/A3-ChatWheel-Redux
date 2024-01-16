@@ -17,23 +17,23 @@ _message = switch (true) do
     case ("[bearing]" in _message):
     {
         private _bearing = round direction player;
-        _message = [_message, "[bearing]", str _bearing] call EFUNC(Core,stringReplace);
+        _message = [_message, "[bearing]", str _bearing] call EFUNC(main,stringReplace);
         _message call FUNC(processTags);
     };
 
     case ("[direction]" in _message):
     {
         private _bearing = round direction player;
-        private _facing = _bearing call EFUNC(Core,getDirFromBearing);
+        private _facing = _bearing call EFUNC(main,getDirFromBearing);
 
-        _message = [_message, "[direction]", _facing] call EFUNC(Core,stringReplace);
+        _message = [_message, "[direction]", _facing] call EFUNC(main,stringReplace);
         _message call FUNC(processTags);
     };
 
     case ("[weapon]" in _message):
     {
         private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
-        _message = [_message, "[weapon]", _currentWeapon] call EFUNC(Core,stringReplace);
+        _message = [_message, "[weapon]", _currentWeapon] call EFUNC(main,stringReplace);
         _message call FUNC(processTags);
     };
 
@@ -50,7 +50,7 @@ _message = switch (true) do
         private _tag = _message call FUNC(findAllVoicelineTags) select 0 select 0 select 0; // Returns nested array
         private _configName = _tag call FUNC(getConfigNameFromTag);
 
-        _message = [_message, _tag, ""] call EFUNC(Core,stringReplace);
+        _message = [_message, _tag, ""] call EFUNC(main,stringReplace);
 
         private _config = (configFile >> "CWR_VoiceLines" >> _configName);
         if (isClass _config) then
@@ -58,7 +58,7 @@ _message = switch (true) do
             if ((time - (player getVariable [QGVAR(playerLastUsedVoice), -GVAR(voice_cooldown)])) > GVAR(voice_cooldown) ) then
             {
                 private _voiceLine = selectRandom getArray (_config >> "voiceLines");
-                private _nearbyPlayers = [getPosATL player, GVAR(voice_radius)] call EFUNC(Core,getNearbyPlayers);
+                private _nearbyPlayers = [getPosATL player, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
 
                 {
                     [_voiceLine, getPosASL player] remoteExecCall [QUOTE(FUNC(playLocalSound)), _x];
