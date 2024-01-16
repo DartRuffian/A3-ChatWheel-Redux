@@ -30,6 +30,9 @@ if (_str isEqualTo "") exitWith {WARNING_1("Empty string passed to %1",_fnc_scri
 if !(_find isEqualType []) then {
     _find = [_find];
 };
+if !(_replace isEqualType "") then {
+    _replace = str _replace;
+};
 
 {
     _return = "";

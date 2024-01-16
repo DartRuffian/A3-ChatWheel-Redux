@@ -13,15 +13,23 @@
  * ["A message, optionally with [tags]"] call CWR_ChatWheel_fnc_sendMessage;
  */
 
-params [["_rawMessage", "", [""]]];
-private ["_author"];
-TRACE_1("fnc_sendMessage",_rawMessage);
+params [
+    ["_rawMessage", "", [""]],
+    ["_channel", "side", [""]],
+    ["_author", player, [objNull]]
+];
+private ["_target"];
+TRACE_3("fnc_sendMessage",_rawMessage,_channel,_author);
 
 if (_rawMessage isEqualTo "") exitWith {};
 
 _message = _rawMessage call FUNC(processTags);
 
-_author = player;
-[_author, _message] remoteExecCall ["sideChat", side _author];
+_target = switch (_channel) do {
+    case "group": {["groupChat", group _author]};
+    default {["sideChat", side _author]};
+};
+
+[_author, _message] remoteExecCall _target;
 [QGVAR(messageSent), [_author, _message, _rawMessage]] call CBA_fnc_localEvent;
 INFO_2("%1 is sending message: %2",_author,_message);
