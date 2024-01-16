@@ -1,2 +1,0 @@
-PREP(scanConfig);
-PREP(playLocalSound);
