@@ -6,4 +6,8 @@
     } else {
         player addEventHandler ["Fired", LINKFUNC(fired)];
     };
+
+    if (ADDON_LOADED(ace_medical)) then {
+        ["ace_unconscious", LINKFUNC(unconscious)] call CBA_fnc_addEventHandler;
+    };
 }] call CBA_fnc_addEventHandler;

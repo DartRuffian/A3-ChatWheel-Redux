@@ -11,3 +11,4 @@ PREP(scanConfig);
 PREP(selectMessage);
 PREP(sendMessage);
 PREP(toggleChatWheel);
+PREP(unconscious);
