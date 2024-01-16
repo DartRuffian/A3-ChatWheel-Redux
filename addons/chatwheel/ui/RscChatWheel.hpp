@@ -10,10 +10,10 @@ class CLASS(RscChatWheel)
         class Messages: RscListBox
         {
             idc = IDC_CHATWHEEL_MESSAGES;
-            x = __EVAL(GUI_GRID_CENTER_X);
-            y = __EVAL(GUI_GRID_CENTER_Y);
-            w = __EVAL(5 * GUI_GRID_CENTER_W);
-            h = __EVAL(10 * GUI_GRID_CENTER_H);
+            x = QUOTE(profileNamespace getVariable [ARR_2(QQUOTE(DOUBLES(IGUI,GVAR(grid_chatwheel_x))),GUI_GRID_CENTER_X)]);
+            y = QUOTE(profileNamespace getVariable [ARR_2(QQUOTE(DOUBLES(IGUI,GVAR(grid_chatwheel_y))),GUI_GRID_CENTER_Y)]);
+            w = QUOTE(profileNamespace getVariable [ARR_2(QQUOTE(DOUBLES(IGUI,GVAR(grid_chatwheel_w))),5 * GUI_GRID_CENTER_W)]);
+            h = QUOTE(profileNamespace getVariable [ARR_2(QQUOTE(DOUBLES(IGUI,GVAR(grid_chatwheel_h))),10 * GUI_GRID_CENTER_H)]);
 
             colorText[] = IGUI_TEXT_COLOR;
             colorBackground[] = IGUI_BCG_COLOR;

@@ -18,6 +18,7 @@ class CfgPatches
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgUIGrids.hpp"
 #include "RscTitles.hpp"
 #include "CWR_ChatWheel_Messages.hpp"
 #include "CWR_ChatWheel_Tags.hpp"

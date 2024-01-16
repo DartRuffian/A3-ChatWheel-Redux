@@ -3,6 +3,8 @@
 #endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
+#define QQUOTE(var1) QUOTE(QUOTE(var1))
+
 // Functions
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
@@ -58,3 +60,9 @@ scopeCurator = 0
 // Booleans
 #define TRUE 1
 #define FALSE 0
+
+#define IGUI_SAVEX 0
+#define IGUI_SAVEY 1
+#define IGUI_SAVEW 2
+#define IGUI_SAVEH 3
+#define IGUI_SAVEALL IGUI_SAVEX, IGUI_SAVEY, IGUI_SAVEW, IGUI_SAVEH
