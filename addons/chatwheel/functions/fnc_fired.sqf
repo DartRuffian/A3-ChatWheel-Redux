@@ -1,16 +1,22 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- *
+ * Event handler for automated messages for throwing grenades. Works for vanilla and ace_player
  *
  * Arguments:
- * 0: True to scroll up one item, false to scroll down one item (optional, default: false) <BOOL>
+ * 0: The unit throwing the grenade <OBJECT>
+ * 1: Unused
+ * 2: Unused
+ * 3: Unused
+ * 4: Unused
+ * 5: The thrown grenade magazine <STRING>
  *
  * Return Value:
- * The selected index after scrolling <NUMBER>
+ * None
  *
- * Example:
- * true call CWR_ChatWheel_fnc_handleScroll
+ * Examples:
+ * player addEventHandler ["Fired", LINKFUNC(fired)];
+ * ["ace_firedPlayer", LINKFUNC(fired)] call CBA_fnc_addEventHandler;
  */
 
 params [
@@ -35,3 +41,5 @@ if (!GVAR(autoMessages_enabled) or {isNull _unit or _grenadeType == "" or !(_mag
 _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
 
 [_message, "group"] call FUNC(sendMessage);
+
+nil;
