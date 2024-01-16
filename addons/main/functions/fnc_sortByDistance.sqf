@@ -22,7 +22,7 @@ params [
 ];
 private ["_sortByDistance"];
 if !(_positionAGL isEqualTypeParams [0,0,0] or {_objects isEqualTypeParams [objNull]}) exitWith {
-    WARNING_2("Bad parameters passed to %1. (%2, %3)",_fnc_scriptName,_positionAGL,_objects);
+    WARNING_3("Bad parameters passed to %1. (%2, %3)",_fnc_scriptName,_positionAGL,_objects);
 };
 TRACE_3("fnc_sortByDistance",_positionAGL,_objects,_order);
 
