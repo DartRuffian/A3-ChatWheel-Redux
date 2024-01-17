@@ -11,7 +11,6 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(main),
             QCLASS(chatwheel)
         };
         units[] = {};
