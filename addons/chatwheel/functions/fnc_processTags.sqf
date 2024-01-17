@@ -17,7 +17,7 @@ params [
     ["_author", objNull, [objNull]],
     ["_message", "", [""]]
 ];
-private ["_tagsList", "_voiceLine"];
+private ["_tagsList", "_voiceLine", "_voiceLineClass"];
 TRACE_2("fnc_processTags",_author,_message);
 
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
@@ -35,12 +35,12 @@ _message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in
     };
 } forEach _tagsList;
 
+_voiceLine = (_message call FUNC(findVoiceTags)) select 0;
 if (_author call FUNC(canUseVoiceLine)) then {
-    _voiceLine = (_message call FUNC(findVoiceTags)) select 0;
     _voiceLineClass = _voiceLine select [4, count _voiceLine - 5];
 
     [_author, _voiceLineClass] call FUNC(useVoiceLine);
-    _message = [_message, _voiceLine, ""] call EFUNC(main,stringReplace);
 };
+_message = [_message, _voiceLine, ""] call EFUNC(main,stringReplace);
 
 _message;
