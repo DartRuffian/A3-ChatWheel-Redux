@@ -15,13 +15,13 @@
  */
 
 params ["_unit", "_state"];
-private ["_nearbyPlayers"];
+private ["_positionAGL", "_nearbyPlayers"];
 TRACE_2("fnc_unconscious",_unit,_state);
 
 if (!GVAR(autoMessages_unconEnabled) or {isNull _unit or !_state}) exitWith {};
 
-_nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers) select {_x call ace_common_fnc_isAwake};
-
-_nearbyPlayers = [_unit, _nearbyPlayers] call EFUNC(main,sortByDistance);
+_positionAGL = ASLToAGL getPosASL _unit;
+_nearbyPlayers = [_positionAGL, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers) select {_x call ace_common_fnc_isAwake};
+_nearbyPlayers = [_positionAGL, _nearbyPlayers] call EFUNC(main,sortByDistance);
 
 [format ["%1 is down!", name _unit], "side", _nearbyPlayers#0] call FUNC(sendMessage);
