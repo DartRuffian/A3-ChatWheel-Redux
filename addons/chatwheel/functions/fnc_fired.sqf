@@ -32,6 +32,6 @@ if (!GVAR(autoMessages_enabled) or {isNull _unit or toLowerANSI _weapon != "thro
 
 _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
 
-[_message, "group"] call FUNC(sendMessage);
+[_message, _unit, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
 
 nil;

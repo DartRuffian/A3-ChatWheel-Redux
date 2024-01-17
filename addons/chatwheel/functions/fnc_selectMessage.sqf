@@ -30,4 +30,4 @@ _className = _messagesCtrl lbData _selectedIndex;
 _messageList = GETUVAR(GVAR(messages),createHashmap);
 (_messageList get _className) params ["_displayName", "_message", "_order"];
 
-_message call FUNC(sendMessage);
+[_message, player, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
