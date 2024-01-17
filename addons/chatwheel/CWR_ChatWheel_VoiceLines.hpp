@@ -72,4 +72,8 @@ class GVAR(VoiceLines)
     {
         voiceLines[] = {};
     };
+    class Unconscious
+    {
+        voiceLines[] = {};
+    };
 };

@@ -29,4 +29,17 @@ class CLASS(ChatWheel_VoiceLines)
             {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combatcontact\010_vehicles\veh_infantry_p_2.ogg", 1, 1}
         };
     };
+    class Unconscious
+    {
+        voiceLines[] =
+        {
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\heishite.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_1.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_2.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_3.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_1.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_2.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_3.ogg", 1, 1}
+        };
+    };
 };
