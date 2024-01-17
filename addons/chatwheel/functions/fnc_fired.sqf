@@ -5,7 +5,7 @@
  *
  * Arguments:
  * 0: The unit throwing the grenade <OBJECT>
- * 1: Unused
+ * 1: Weapon class name <STRING>
  * 2: Unused
  * 3: Unused
  * 4: Unused
@@ -19,24 +19,16 @@
  * ["ace_firedPlayer", LINKFUNC(fired)] call CBA_fnc_addEventHandler;
  */
 
-params [
-    ["_unit", objNull, [objNull]],
-    "",
-    "",
-    "",
-    "",
-    ["_magazine", "", [""]]
-];
+params ["_unit", "_weapon", "", "", "", "_magazine"];
 private ["_grenadeType", "_message"];
-TRACE_2("fnc_fired",_unit,_magzine);
+TRACE_3("fnc_fired",_unit,_weapon,_magzine);
 
 _grenadeType = switch (true) do {
-    case (_magazine isKindOf "Chemlight_green"): {""};
     case (_magazine isKindOf "SmokeShell"): {"Smoke"};
     default {"Grenade"};
 };
 
-if (!GVAR(autoMessages_enabled) or {isNull _unit or _grenadeType == "" or !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"])}) exitWith {};
+if (!GVAR(autoMessages_enabled) or {isNull _unit or toLowerANSI _weapon != "throw"}) exitWith {};
 
 _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
 
