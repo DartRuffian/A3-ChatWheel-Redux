@@ -10,7 +10,7 @@
  * The processed string <STRING>
  *
  * Example:
- * "A message, optionally with [tags]" call CWR_ChatWheel_fnc_processTags;
+ * "A message, optionally with [tags]" call FUNC(processTags);
  */
 
 params [
@@ -18,7 +18,7 @@ params [
     ["_message", "", [""]]
 ];
 private ["_tagsList", "_voiceLine"];
-TRACE_1("fnc_processTags",_message);
+TRACE_2("fnc_processTags",_author,_message);
 
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
 _message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in [brackets]

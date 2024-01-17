@@ -32,7 +32,7 @@ TRACE_4("fnc_sendMessage",_rawMessage,_author,_channel,_targetData);
 
 if (_rawMessage isEqualTo "") exitWith {};
 
-_message = _rawMessage call FUNC(processTags);
+_message = [_author, _rawMessage] call FUNC(processTags);
 
 _target = switch (_channel) do {
     case "group": {["groupChat", group _author]};
