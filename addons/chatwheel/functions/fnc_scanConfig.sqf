@@ -18,54 +18,47 @@ private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"]
 TRACE_1("fnc_scanConfig",_reloadFromConfig);
 
 _messageConfig = configProperties [configFile >> QGVAR(messages)];
-_messageList = GETUVAR(GVAR(messages),createHashmap);
+_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
 if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
     _messageList = createHashmap;
     {
-        _messageList insert [[
-            configName _x,
-            [
-                getText (_x >> "displayName"),
-                getText (_x >> "message"),
-                getNumber (_x >> "order")
-            ]
-        ]];
+        _messageList insert [[configName _x, [
+            getText (_x >> "displayName"),
+            getText (_x >> "message"),
+            getNumber (_x >> "order")
+        ]]];
     } forEach _messageConfig;
 
-    SETUVAR(GVAR(messages),_messageList);
+    uiNamespace setVariable [QGVAR(messages), _messageList];
 };
 
 _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
-_voiceLineList = GETUVAR(GVAR(voiceLines),createHashmap);
+_voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashmap];
 
 if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
     _voiceLineList = createHashmap;
     {
-        _voiceLineList insert [[
-            configName _x,
+        _voiceLineList insert [[configName _x,
             [_x, "voiceLines", []] call BIS_fnc_returnConfigEntry
         ]];
     } forEach _voiceLineConfig;
 
-    SETUVAR(GVAR(voiceLines),_voiceLinesList);
+    uiNamespace setVariable [QGVAR(voiceLines), _voiceLinesList];
 };
 
 _tagsConfig = configProperties [configFile >> QGVAR(tags)];
-_tagsList = GETUVAR(GVAR(tags),createHashmap);
+_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
 
 if (count _tagsList isEqualTo 0 or _reloadFromConfig) then {
     _tagsList = createHashmap;
     {
-        _tagsList insert [[
-            configName _x,
-            [
-                getText (_x >> "description"),
-                compile (getText (_x >> "statement")),
-                getText (_x >> "example")
-            ]
-        ]];
+        _tagsList insert [[configName _x, [
+            getText (_x >> "description"),
+            compile (getText (_x >> "statement")),
+            getText (_x >> "example")
+        ]]];
     } forEach _tagsConfig;
 
-    SETUVAR(GVAR(tags),_tagsList);
+    uiNamespace setVariable [QGVAR(tags), _tagsList];
 };

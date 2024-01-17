@@ -18,13 +18,13 @@ TRACE_1("fnc_populateChatWheel",nil);
 
 [
     {
-        (!isNull (GETUVAR(CLASS(RscChatWheel),displayNull)))
+        (!isNull (uiNamespace getVariable [QCLASS(RscChatWheel), displayNull]))
     },
     {
         private ["_display", "_messagesCtrl", "_messageList", "_index"];
-        _display = GETUVAR(CLASS(RscChatWheel),displayNull);
+        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
         _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
-        _messageList = GETUVAR(GVAR(messages),createHashmap);
+        _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
         {
             _y params ["_displayName", "_message", "_order"];

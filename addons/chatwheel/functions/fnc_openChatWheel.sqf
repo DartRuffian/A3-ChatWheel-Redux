@@ -17,20 +17,20 @@ params [];
 private ["_display", "_messagesCtrl"];
 TRACE_1("fnc_openChatWheel",nil);
 
-_display = GETUVAR(CLASS(RscChatWheel),displayNull);
+_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 if (!isNull _display) exitWith {
     WARNING("Attempted to open Chat Wheel when already open.");
 };
 
 (QGVAR(layer_chatWheel) call BIS_fnc_rscLayer) cutRsc [QCLASS(RscChatWheel), "PLAIN", -1, false];
-_display = GETUVAR(CLASS(RscChatWheel),displayNull);
+_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 // Small delay needed before an element can be selected
 [
     {
         private ["_display", "_messagesCtrl"];
-        _display = GETUVAR(CLASS(RscChatWheel),displayNull);
+        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
         _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
         _messagesCtrl lbSetCurSel 0;

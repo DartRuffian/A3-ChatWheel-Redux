@@ -29,7 +29,7 @@ TRACE_5("fnc_addMessage",_key,_displayName,_message,_order,_overwrite);
 
 if (_key isEqualTo "" or {_displayName isEqualTo "" or _message isEqualTo ""}) exitWith {false};
 
-_messageList = GETUVAR(GVAR(messages),createHashmap);
+_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 
 if (_key in _messageList and {!_overwrite}) exitWith {false};
 
@@ -37,13 +37,10 @@ if (_order isEqualTo -1) then {
     _order = count _messageList + 100;
 };
 
-_messageList insert [[
-    _key,
-    [
-        _displayName,
-        _message,
-        _order
-    ]
-]];
+_messageList insert [[_key, [
+    _displayName,
+    _message,
+    _order
+]]];
 
 true;

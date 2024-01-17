@@ -19,20 +19,19 @@ params [
 private ["_tagsList"];
 TRACE_1("fnc_processTags",_message);
 
-_tagsList = GETUVAR(GVAR(tags),createHashmap);
+_tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
 _message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in [brackets]
 
 {
     private ["_tag"];
     _tag = format ["[%1]", toLowerANSI _x];
-    _y params ["", "_statement", ""];
+    _y params ["", "_statement"];
 
     if (_statement isEqualTo {}) then {
         // Contains further options
     } else {
         _message = [_message, _tag, call _statement] call EFUNC(main,stringReplace);
     };
-
 } forEach _tagsList;
 
 _message;

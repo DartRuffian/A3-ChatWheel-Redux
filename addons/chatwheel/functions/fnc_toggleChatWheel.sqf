@@ -17,7 +17,7 @@ params [];
 private ["_display", "_messagesCtrl", "_opened"];
 TRACE_1("fnc_toggleChatWheel",nil);
 
-_display = GETUVAR(CLASS(RscChatWheel),displayNull);
+_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _opened = false;
 
 if (isNull _display) then {
