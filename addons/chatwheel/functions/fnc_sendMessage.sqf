@@ -28,7 +28,7 @@ params [
     ["_targetData", nil, []]
 ];
 private ["_target"];
-TRACE_3("fnc_sendMessage",_rawMessage,_author,_channel,_targetData);
+TRACE_4("fnc_sendMessage",_rawMessage,_author,_channel,_targetData);
 
 if (_rawMessage isEqualTo "") exitWith {};
 
