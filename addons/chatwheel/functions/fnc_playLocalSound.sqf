@@ -6,13 +6,13 @@
  *
  * Arguments:
  * 0: File path to the sound to play <STRING>
- * 1: Position to play the sound at in format PositionASL <ARRAY>
+ * 1: Unit to play the sound on <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * ["file.wss", getPosASL player] call CWR_ChatWheel_fnc_playLocalSound;
+ * ["file.wss", player] call FUNC(playLocalSound);
  */
 
 params [
@@ -21,20 +21,6 @@ params [
 ];
 TRACE_2("fnc_playLocalSound",_file,_positionASL);
 
-if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {
-    WARNING_2("Array of non-numbers passed to %1. (%2)",_fnc_scriptName,_positionASL);
-};
-
 if (GVAR(voice_enabled)) then {
-    playSound3D [
-        _file,
-        objNull,
-        false,
-        _positionASL,
-        GVAR(voice_volume),
-        1,
-        0,
-        0,
-        true
-    ];
+    playSound3D [_file, objNull, false, _positionASL, GVAR(voice_volume), 1, 0, 0, true];
 };

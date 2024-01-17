@@ -1,5 +1,7 @@
 PREP(addMessage);
+PREP(canUseVoiceLine);
 PREP(closeChatWheel);
+PREP(findVoiceTags);
 PREP(fired);
 PREP(handleScroll);
 PREP(openChatWheel);
@@ -12,3 +14,4 @@ PREP(selectMessage);
 PREP(sendMessage);
 PREP(toggleChatWheel);
 PREP(unconscious);
+PREP(useVoiceLine);

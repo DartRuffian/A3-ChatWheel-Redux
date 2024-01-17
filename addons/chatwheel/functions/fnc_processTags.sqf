@@ -14,13 +14,14 @@
  */
 
 params [
+    ["_author", objNull, [objNull]],
     ["_message", "", [""]]
 ];
-private ["_tagsList"];
+private ["_tagsList", "_voiceLine"];
 TRACE_1("fnc_processTags",_message);
 
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
-_message = _message regexReplace ['\[.*?\]', "\L$&"]; // lowercase everything in [brackets]
+_message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in [brackets]
 
 {
     private ["_tag"];

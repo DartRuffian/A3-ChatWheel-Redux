@@ -30,7 +30,7 @@ workshop = [
 ]
 presets = []
 dlc = []
-optionals = ["VanillaVoice"]
+optionals = ["vanilla_voice"]
 parameters = [
     "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\CE%2fSPC-0925%20%22Dart%22\\missions\\CWR_Test.VR"
 ]
@@ -43,5 +43,5 @@ workshop = [
 ]
 presets = []
 dlc = []
-optionals = ["VanillaVoice"]
+optionals = ["vanilla_voice"]
 parameters = []
