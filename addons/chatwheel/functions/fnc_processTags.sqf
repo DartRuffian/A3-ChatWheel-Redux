@@ -35,4 +35,12 @@ _message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in
     };
 } forEach _tagsList;
 
+if (_author call FUNC(canUseVoiceLine)) then {
+    _voiceLine = (_message call FUNC(findVoiceTags)) select 0;
+    _voiceLineClass = _voiceLine select [4, count _voiceLine];
+
+    [_author, _voiceLineClass] call FUNC(useVoiceLine);
+    _message = [_message, _voiceLine, ""] call EFUNC(main,stringReplace);
+};
+
 _message;
