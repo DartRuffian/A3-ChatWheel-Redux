@@ -24,6 +24,7 @@
 
 #define CLASS(var1) DOUBLES(PREFIX,var1)
 #define QCLASS(var1) QUOTE(CLASS(var1))
+#define QQCLASS(var1) QUOTE(QCLASS(var1))
 
 #define ADDON_LOADED(var1) isClass (configFile >> "CfgPatches" >> QUOTE(var1))
 
