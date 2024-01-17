@@ -8,10 +8,7 @@
         call FUNC(toggleChatWheel);
     },     // KeyDown
     {},    // KeyUp
-    [],    // Default Key
-    false, // Hold Key
-    0,     // Hold Key Delay
-    false  // Overwrite
+    []     // Default Key
 ] call CBA_fnc_addKeybind;
 
 [
@@ -27,10 +24,7 @@
         };
     },     // KeyDown
     {},    // KeyUp
-    [DIK_SPACE, false, false, false],  // Default Key
-    false, // Hold Key
-    0,     // Hold Key Delay
-    false  // Overwrite
+    [DIK_SPACE, false, false, false] // Default Key
 ] call CBA_fnc_addKeybind;
 
 [
@@ -41,10 +35,7 @@
         false call FUNC(handleScroll);
     },     // KeyDown
     {},    // KeyUp
-    [DIK_MOUSEUP, false, false, false],    // Default Key
-    false, // Hold Key
-    0,     // Hold Key Delay
-    false  // Overwrite
+    [DIK_MOUSEUP, false, false, false] // Default Key
 ] call CBA_fnc_addKeybind;
 
 [
@@ -55,8 +46,5 @@
         true call FUNC(handleScroll);
     },     // KeyDown
     {},    // KeyUp
-    [DIK_MOUSEDOWN, false, false, false],  // Default Key
-    false, // Hold Key
-    0,     // Hold Key Delay
-    false  // Overwrite
+    [DIK_MOUSEDOWN, false, false, false] // Default Key
 ] call CBA_fnc_addKeybind;
