@@ -42,4 +42,22 @@ class CLASS(ChatWheel_VoiceLines)
             {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_3.ogg", 1, 1}
         };
     };
+
+    class ThrowGrenade
+    {
+        voiceLines[] =
+        {
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_1.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_2.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_3.ogg", 1, 1}
+        };
+    };
+    class ThrowSmoke
+    {
+        voiceLines[] =
+        {
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_1.ogg", 1, 1},
+            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_2.ogg", 1, 1}
+        };
+    };
 };
