@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call CWR_ChatWheel_fnc_openChatWheel;
+ * call FUNC(openChatWheel);
  */
 
 params [];

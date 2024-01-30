@@ -10,7 +10,7 @@
  * True if the menu was opened, false if closed
  *
  * Example:
- * call CWR_ChatWheel_fnc_toggleChatWheel;
+ * call FUNC(toggleChatWheel);
  */
 
 params [];

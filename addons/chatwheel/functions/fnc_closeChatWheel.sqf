@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Opens the Chat Wheel
+ * Closes the Chat Wheel
  *
  * Arguments:
  * None
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call CWR_ChatWheel_fnc_openChatWheel;
+ * call FUNC(closeChatWheel);
  */
 
 params [];

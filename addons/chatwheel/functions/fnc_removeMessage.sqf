@@ -10,7 +10,7 @@
  * Whether the message was removed successfully <BOOL>
  *
  * Example:
- * "Custom1" call CWR_ChatWheel_fnc_removeMessage;
+ * "Custom1" call FUNC(removeMessage);
  */
 
 params [

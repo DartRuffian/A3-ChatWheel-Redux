@@ -14,7 +14,7 @@
  * Whether the message was added successfully <BOOL>
  *
  * Example:
- * ["Custom1", "Custom 1", "This is my custom message", 10] call CWR_ChatWheel_fnc_addMessage;
+ * ["Custom1", "Custom 1", "This is my custom message", 10] call FUNC(addMessage);
  */
 
 params [

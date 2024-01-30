@@ -10,7 +10,7 @@
  * The selected index after scrolling <NUMBER>
  *
  * Example:
- * true call CWR_ChatWheel_fnc_handleScroll
+ * true call FUNC(handleScroll)
  */
 
 params [["_scroll", false, [false]]];

@@ -18,7 +18,7 @@
  * None
  *
  * Example:
- * ["A message, optionally with [tags]"] call CWR_ChatWheel_fnc_sendMessage;
+ * ["A message, optionally with [tags]"] call FUNC(sendMessage);
  */
 
 params [

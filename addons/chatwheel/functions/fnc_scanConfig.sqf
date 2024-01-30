@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Loads all messages from CWR_ChatWheel_Messages during PreStart and stores them in the UI namespace for use in-game.
+ * Loads messages, tags, and voice line classes to uiNamespace.
  *
  * Arguments:
  * None
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call CWR_ChatWheel_fnc_loadMessagesFromConfig;
+ * call FUNC(scanConfig);
  */
 
 params [["_reloadFromConfig", false, [false]]];
