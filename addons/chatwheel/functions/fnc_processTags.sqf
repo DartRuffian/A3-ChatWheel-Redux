@@ -28,9 +28,7 @@ _message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in
     _tag = format ["[%1]", toLowerANSI _x];
     _y params ["", "_statement"];
 
-    if (_statement isEqualTo {}) then {
-        // Contains further options
-    } else {
+    if (_statement isNotEqualTo {}) then {
         _message = [_message, _tag, call _statement] call EFUNC(main,stringReplace);
     };
 } forEach _tagsList;
