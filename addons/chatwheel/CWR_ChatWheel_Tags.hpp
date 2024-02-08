@@ -3,21 +3,21 @@ class GVAR(Tags)
     class Bearing
     {
         description = "Your current bearing.";
-        statement = QUOTE(round direction player);
+        statement = QUOTE(round direction _this);
         example = "'I'm facing [tag]' → 'I'm facing 0'";
     };
 
     class Direction
     {
         description = "Your current direction.";
-        statement = QUOTE(round direction player call EFUNC(main,bearingToDirection));
+        statement = QUOTE(round direction _this call EFUNC(main,bearingToDirection));
         example = "'I'm facing [tag]' → 'I'm facing North'";
     };
 
     class Weapon
     {
         description = "Your current held weapon.";
-        statement = QUOTE(getText (configFile >> 'CfgWeapons' >> currentWeapon player >> 'displayName'));
+        statement = QUOTE(getText (configFile >> 'CfgWeapons' >> currentWeapon _this >> 'displayName'));
         example = "'I'm holding a [tag]' → 'I'm holding a MX 6.5mm'";
     };
 

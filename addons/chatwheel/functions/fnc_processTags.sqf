@@ -29,7 +29,7 @@ _message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in
     _y params ["", "_statement"];
 
     if (_statement isNotEqualTo {}) then {
-        _message = [_message, _tag, call _statement] call EFUNC(main,stringReplace);
+        _message = [_message, _tag, _author call _statement] call EFUNC(main,stringReplace);
     };
 } forEach _tagsList;
 
