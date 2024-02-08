@@ -28,7 +28,7 @@ _grenadeType = switch (true) do {
     default {"Grenade"};
 };
 
-if (!GVAR(autoMessages_enabled) or {isNull _unit or toLowerANSI _weapon != "throw"}) exitWith {};
+if (!GVAR(autoMessages_enabled) or {isNull _unit or _weapon != "throw"}) exitWith {};
 
 _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
 
