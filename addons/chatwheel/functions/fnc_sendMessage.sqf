@@ -45,5 +45,5 @@ _target = switch (_channel) do {
 };
 
 [_author, _message] remoteExecCall _target;
-[QGVAR(messageSent), [_author, _message, _rawMessage]] call CBA_fnc_localEvent;
+[QGVAR(onMessage), [_author, _message, _rawMessage]] call CBA_fnc_localEvent;
 INFO_2("%1 is sending message: %2",_author,_message);
