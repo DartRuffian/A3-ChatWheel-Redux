@@ -63,5 +63,158 @@
         <Key ID="STR_CWR_chatwheel_message_Launcher">
             <English>[launcher]</English>
         </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Bearing">
+            <English>Your current bearing.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Bearing">
+            <English>'I'm facing [tag]' → 'I'm facing 0'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Direction">
+            <English>Your current direction.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Direction">
+            <English>'I'm facing [tag]' → 'I'm facing North'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Weapon">
+            <English>The name of your currently held weapon.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Weapon">
+            <English>'I'm holding a [tag]' → 'I'm holding a MX 6.5mm'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Contact">
+            <English>Opens a new menu to select from 'Infantry', 'Vehicle', or 'Fortification'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Contact">
+            <English>'Contact, [tag]!' → 'Contact, infantry!'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Infantry">
+            <English>Infantry</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Infantry">
+            <English>[vl-ContactInfantry]infantry</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Vehicle">
+            <English>Vehicle</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Vehicle">
+            <English>[vl-ContactVehicle]vehicle</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Fortification">
+            <English>Fortification</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Fortification">
+            <English>[vl-ContactFortification]fortification</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Distance">
+            <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Distance">
+            <English>'There's infantry [tag]' → 'There's infantry close'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Close">
+            <English>Close</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Close">
+            <English>close</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Medium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Medium">
+            <English>medium</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Far">
+            <English>Far</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Far">
+            <English>far</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Status">
+            <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Status">
+            <English>'There's infantry [tag]' → 'There's infantry close'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_CallCheck">
+            <English>Call Check</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_CallCheck">
+            <English>[vl-ACECheck]ACE check</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Green">
+            <English>Green</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Green">
+            <English>green</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Yellow">
+            <English>Yellow</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Yellow">
+            <English>yellow</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Red">
+            <English>Red</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Red">
+            <English>red</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Black">
+            <English>Black</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Black">
+            <English>black</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_tag_Launcher">
+            <English>Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Launcher">
+            <English>'[tag]?' → 'Permission to fire?'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_AskPermission">
+            <English>Permission to Fire?</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_AskPermission">
+            <English>[vl-AskFirePermission]Permission to fire</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_ClearBackblast">
+            <English>Clear Backblast</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_ClearBackblast">
+            <English>[vl-ClearBackblast]Clear backblast</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_BackblastClear">
+            <English>Backblast Clear</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_BackblastClear">
+            <English>[vl-BackblastClear]Backblast clear</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_FireRocket">
+            <English>Rocket Rocket Rocket!</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_FireRocket">
+            <English>[vl-RocketFire]Rocket rocket rocket</English>
+        </Key>
     </Package>
 </Project>
