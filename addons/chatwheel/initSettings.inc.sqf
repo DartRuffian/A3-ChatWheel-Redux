@@ -75,7 +75,7 @@
 
 if (ADDON_LOADED(ace_medical)) then {
     [
-        QGVAR(autoMessages_unconEnabled), // TODO: rename to enabledUnconscious
+        QGVAR(autoMessages_enabledUnconscious),
         "CHECKBOX",
         [LLSTRING(setting_autoMessages_enabledUnconscious), LLSTRING(settingDescription_autoMessages_enabledUnconscious)],
         [QUOTE(MOD_NAME), LLSTRING(settingCategory_autoMessages)],

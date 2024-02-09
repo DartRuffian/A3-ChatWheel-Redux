@@ -18,7 +18,7 @@ params ["_unit", "_state"];
 private ["_positionAGL", "_nearbyPlayers"];
 TRACE_2("fnc_unconscious",_unit,_state);
 
-if (!GVAR(autoMessages_unconEnabled) or {isNull _unit or !_state}) exitWith {};
+if (!GVAR(autoMessages_enabledUnconscious) or {isNull _unit or !_state}) exitWith {};
 
 _positionAGL = ASLToAGL getPosASL _unit;
 _nearbyPlayers = [_positionAGL, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers) select {_x call ace_common_fnc_isAwake};
