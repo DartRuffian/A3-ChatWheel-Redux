@@ -26,6 +26,75 @@
             <English>Scrolls down one option in the Chat Wheel.</English>
         </Key>
 
+        <Key ID="STR_CWR_chatwheel_settingCategory_customMessages">
+            <English>Custom Message 1</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_one">
+            <English>Custom Message 1</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_two">
+            <English>Custom Message 2</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_three">
+            <English>Custom Message 3</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_four">
+            <English>Custom Message 4</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_customMessages">
+            <English>Custom message that can be used in the Chat Wheel. Custom messages support [tags].</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_autoMessages">
+            <English>Automatic Messages</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabled">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabled">
+            <English>Global setting for all automatic messages when certain actions are done.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabledUnconscious">
+            <English>Unconscious Messages</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabledUnconscious">
+            <English>When a player goes unconscious, the closest conscious player will make a call out. Only works with ACE Medical.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabledGrenades">
+            <English>Throwing Grenades</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabledGrenades">
+            <English>When a player throws a grenade, they will make a call out with the type of grenade (Grenade, smoke, etc.); the direction they are facing; and their bearing.</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_voice">
+            <English>Voice Lines</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_enabled">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_enabled">
+            <English>If enabled, messages will play the voice lines that can be added to them.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_cooldown">
+            <English>Cooldown</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_cooldown">
+            <English>The minimum amount of time before another voice line can be played by a given player.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_radius">
+            <English>Radius</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_radius">
+            <English>The radius in meters that voice lines can be heard from.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_volume">
+            <English>Volume</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_volume">
+            <English>Volume multiplier for voice lines.</English>
+        </Key>
+
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
             <English>Call Medic</English>
         </Key>
