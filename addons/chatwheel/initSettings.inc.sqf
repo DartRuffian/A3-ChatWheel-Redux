@@ -2,8 +2,8 @@
 [
     QGVAR(customMessages_one),
     "EDITBOX",
-    ["Custom Message 1", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    [QUOTE(MOD_NAME), "Custom Messages"],
+    [LLSTRING(setting_customMessages_one), LLSTRING(settingDescription_customMessages)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "",
     0,
     {
@@ -18,8 +18,8 @@
 [
     QGVAR(customMessage_two),
     "EDITBOX",
-    ["Custom Message 2", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    [QUOTE(MOD_NAME), "Custom Messages"],
+    [LLSTRING(setting_customMessages_two), LLSTRING(settingDescription_customMessages)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "",
     0,
     {
@@ -34,8 +34,8 @@
 [
     QGVAR(customMessage_three),
     "EDITBOX",
-    ["Custom Message 3", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    [QUOTE(MOD_NAME), "Custom Messages"],
+    [LLSTRING(setting_customMessages_three), LLSTRING(settingDescription_customMessages)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "",
     0,
     {
@@ -50,8 +50,8 @@
 [
     QGVAR(customMessage_four),
     "EDITBOX",
-    ["Custom Message 4", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    [QUOTE(MOD_NAME), "Custom Messages"],
+    [LLSTRING(setting_customMessages_four), LLSTRING(settingDescription_customMessages)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "",
     0,
     {
@@ -67,29 +67,31 @@
 [
     QGVAR(autoMessages_enabled),
     "CHECKBOX",
-    ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
-    [QUOTE(MOD_NAME), "Automatic Messages"],
+    [LLSTRING(setting_autoMessages_enabled), LLSTRING(settingDescription_autoMessages_enabled)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_autoMessages)],
     true,
     FALSE
 ] call CBA_fnc_addSetting;
 
 if (ADDON_LOADED(ace_medical)) then {
     [
-        QGVAR(autoMessages_unconEnabled),
+        QGVAR(autoMessages_unconEnabled), // TODO: rename to enabledUnconscious
         "CHECKBOX",
-        ["Unconscious Messages", "When a player goes unconscious, the closest player will make a call out. The max radius is still bound by CWR_Voice_VoiceRadius. Only works with ACE Medical."],
-        [QUOTE(MOD_NAME), "Automatic Messages"],
+        [LLSTRING(setting_autoMessages_enabledUnconscious), LLSTRING(settingDescription_autoMessages_enabledUnconscious)],
+        [QUOTE(MOD_NAME), LLSTRING(settingCategory_autoMessages)],
         true,
         TRUE
     ] call CBA_fnc_addSetting;
 };
 
+// TODO: add autoMessages_enabledGrenades for grenade callouts
+
 // Voice Lines
 [
     QGVAR(voice_enabled),
     "CHECKBOX",
-    ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade or using a chat wheel option."],
-    [QUOTE(MOD_NAME), "Voice Lines"],
+    [LLSTRING(setting_voice_enabled), LLSTRING(settingDescription_voice_enabled)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_voice)],
     true,
     FALSE
 ] call CBA_fnc_addSetting;
@@ -97,8 +99,8 @@ if (ADDON_LOADED(ace_medical)) then {
 [
     QGVAR(voice_cooldown),
     "SLIDER",
-    ["Custom VoiceLines Cooldown", "The minimum amount of time between custom voicelines."],
-    [QUOTE(MOD_NAME), "Voice Lines"],
+    [LLSTRING(setting_voice_cooldown), LLSTRING(settingDescription_voice_cooldown)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_voice)],
     [0, 15, 3, 0],
     TRUE
 ] call CBA_fnc_addSetting;
@@ -106,8 +108,8 @@ if (ADDON_LOADED(ace_medical)) then {
 [
     QGVAR(voice_radius),
     "SLIDER",
-    ["Voice Lines Radius", "The radius of voice lines and automated messages."],
-    [QUOTE(MOD_NAME), "Voice Lines"],
+    [LLSTRING(setting_voice_radius), LLSTRING(settingDescription_voice_radius)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_voice)],
     [10, 50, 30, 0],
     TRUE
 ] call CBA_fnc_addSetting;
@@ -115,7 +117,7 @@ if (ADDON_LOADED(ace_medical)) then {
 [
     QGVAR(voice_volume),
     "SLIDER",
-    ["Voice Lines Volume", "Volume for custom voice lines."],
-    [QUOTE(MOD_NAME), "Voice Lines"],
+    [LLSTRING(setting_voice_volume), LLSTRING(settingDescription_voice_volume)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_voice)],
     [0, 5, 1, 1]
 ] call CBA_fnc_addSetting;

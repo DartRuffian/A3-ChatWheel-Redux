@@ -2,64 +2,64 @@ class CWR_ChatWheel_Messages
 {
     class NeedMedic
     {
-        displayName = "Call Medic";
-        message = "[vl-NeedMedic]I need a medic!";
+        displayName = CSTRING(messageTitle_NeedMedic);
+        message = CSTRING(message_NeedMedic);
         order = 0;
     };
 
     class NeedHelp
     {
-        displayName = "Call Help";
-        message = "[vl-NeedHelp]I need help!";
+        displayName = CSTRING(messageTitle_NeedHelp);
+        message = CSTRING(message_NeedHelp);
         order = 1;
     };
 
     class Apologize
     {
-        displayName = "Apologize";
-        message = "[vl-Sorry]Sorry!";
+        displayName = CSTRING(messageTitle_Apologize);
+        message = CSTRING(message_Apologize);
         order = 2;
     };
 
     class ThankYou
     {
-        displayName = "Thank You";
-        message = "[vl-Thanks]Thank you!";
+        displayName = CSTRING(messageTitle_ThankYou);
+        message = CSTRING(message_ThankYou);
         order = 3;
     };
 
     class Follow
     {
-        displayName = "Follow Me";
-        message = "[vl-FollowMe]Follow me!";
+        displayName = CSTRING(messageTitle_Follow);
+        message = CSTRING(message_Follow);
         order = 4;
     };
 
     class Contact
     {
-        displayName = "Contact";
-        message = "[contact]";
+        displayName = CSTRING(messageTitle_Contact);
+        message = CSTRING(message_Contact);
         order = 5;
     };
 
     class NeedAmmo
     {
-        displayName = "Need Ammo";
-        message = "[vl-NeedAmmo]I need ammo for my [weapon]!";
+        displayName = CSTRING(messageTitle_NeedAmmo);
+        message = CSTRING(message_NeedAmmo);
         order = 6;
     };
 
     class ACECheck
     {
-        displayName = "ACE Check";
-        message = "[status]";
+        displayName = CSTRING(messageTitle_ACECheck);
+        message = CSTRING(message_ACECheck);
         order = 7;
     };
 
     class Launcher
     {
-        displayName = "Launcher";
-        message = "[launcher]";
+        displayName = CSTRING(messageTitle_Launcher);
+        message = CSTRING(message_Launcher);
         order = 8;
     };
 };

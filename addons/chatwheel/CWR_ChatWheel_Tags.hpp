@@ -2,50 +2,50 @@ class CWR_ChatWheel_Tags
 {
     class Bearing
     {
-        description = "Your current bearing.";
+        description = CSTRING(tag_Bearing);
         statement = QUOTE(round direction _this);
-        example = "'I'm facing [tag]' → 'I'm facing 0'";
+        example = CSTRING(tagExample_Bearing);
     };
 
     class Direction
     {
-        description = "Your current direction.";
+        description = CSTRING(tag_Direction);
         statement = QUOTE(round direction _this call EFUNC(main,bearingToDirection));
-        example = "'I'm facing [tag]' → 'I'm facing North'";
+        example = CSTRING(tagExample_Direction);
     };
 
     class Weapon
     {
-        description = "Your current held weapon.";
+        description = CSTRING(tag_Weapon);
         statement = QUOTE(getText (configFile >> 'CfgWeapons' >> currentWeapon _this >> 'displayName'));
-        example = "'I'm holding a [tag]' → 'I'm holding a MX 6.5mm'";
+        example = CSTRING(tagExample_Weapon);
     };
 
     class Contact
     {
-        description = "Opens a new menu to select from 'Infantry', 'Vehicle', or 'Fortification'.";
+        description = CSTRING(tag_Contact);
         statement = "";
-        example = "'Contact, [tag]!' → 'Contact, infantry!'";
+        example = CSTRING(tagExample_Contact);
 
         class Options
         {
             // Contact! Infantry [direction], Bearing [bearing]! [distance]!
             class Infantry
             {
-                displayName = "Infantry";
-                statement = QUOTE('[vl-ContactInfantry]infantry');
+                displayName = CSTRING(tagTitle_Contact_Infantry);
+                statement = QUOTE(QLLSTRING(tag_Contact_Infantry));
                 order = 0;
             };
             class Vehicle
             {
-                displayName = "Vehicle";
-                statement = QUOTE('[vl-ContactVehicle]vehicle');
+                displayName = CSTRING(tagTitle_Contact_Vehicle);
+                statement = QUOTE(QLLSTRING(tag_Contact_Vehicle));
                 order = 1;
             };
             class Fortification
             {
-                displayName = "Fortification";
-                statement = QUOTE('[vl-ContactFortification]fortification');
+                displayName = CSTRING(tagTitle_Contact_Fortification);
+                statement = QUOTE(QLLSTRING(tag_Contact_Fortification));
                 order = 2;
             };
         };
@@ -53,28 +53,28 @@ class CWR_ChatWheel_Tags
 
     class Distance
     {
-        description = "Opens a new menu to select from 'Close', 'Medium', or 'Far'.";
+        description = CSTRING(tag_Distance);
         statement = "";
-        example = "'There's infantry [tag]' → 'There's infantry close'";
+        example = CSTRING(tagExample_Distance);
 
         class Options
         {
             class Close
             {
-                displayName = "Close";
-                statement = QUOTE('close');
+                displayName = CSTRING(tagTitle_Distance_Close);
+                statement = QUOTE(QLLSTRING(tag_Distance_Close));
                 order = 0;
             };
             class Medium
             {
-                displayName = "Medium";
-                statement = QUOTE('medium');
+                displayName = CSTRING(tagTitle_Distance_Medium);
+                statement = QUOTE(QLLSTRING(tag_Distance_Medium));
                 order = 1;
             };
             class Far
             {
-                displayName = "Far";
-                statement = QUOTE('far');
+                displayName = CSTRING(tagTitle_Distance_Far);
+                statement = QUOTE(QLLSTRING(tag_Distance_Far));
                 order = 2;
             };
         };
@@ -82,40 +82,40 @@ class CWR_ChatWheel_Tags
 
     class Status
     {
-        description = "Opens a new menu to select from 'Call Check', 'Green', 'Yellow', 'Red', or 'Black'.";
+        description = CSTRING(tag_Status);
         statement = "";
-        example = "'Status [tag]' → 'Status green'";
+        example = CSTRING(tagExample_Status);
 
         class Options
         {
             class CallCheck
             {
-                displayName = "Call Check";
-                statement = QUOTE('[vl-ACECheck]ACE check');
+                displayName = CSTRING(tagTitle_Status_CallCheck);
+                statement = QUOTE(QLLSTRING(tag_Status_CallCheck));
                 order = 0;
             };
-            class StatusGreen
+            class Green
             {
-                displayName = "Green";
-                statement = QUOTE('[vl-StatusGreen]green');
+                displayName = CSTRING(tagTitle_Status_Green);
+                statement = QUOTE(QLLSTRING(tag_Status_Green));
                 order = 1;
             };
-            class StatusYellow
+            class Yellow
             {
-                displayName = "Yellow";
-                statement = QUOTE('[vl-StatusYellow]yellow');
+                displayName = CSTRING(tagTitle_Status_Yellow);
+                statement = QUOTE(QLLSTRING(tag_Status_Yellow));
                 order = 2;
             };
-            class StatusRed
+            class Red
             {
-                displayName = "Red";
-                statement = QUOTE('[vl-StatusRed]red');
+                displayName = CSTRING(tagTitle_Status_Red);
+                statement = QUOTE(QLLSTRING(tag_Status_Red));
                 order = 3;
             };
-            class StatusBlack
+            class Black
             {
-                displayName = "Black";
-                statement = QUOTE('[vl-StatusBlack]black');
+                displayName = CSTRING(tagTitle_Status_Black);
+                statement = QUOTE(QLLSTRING(tag_Status_Black));
                 order = 4;
             };
         };
@@ -123,34 +123,34 @@ class CWR_ChatWheel_Tags
 
     class Launcher
     {
-        description = "Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.";
+        description = CSTRING(tag_Launcher);
         statement = "";
-        example = "'[tag]?' → 'Permission to fire?'";
+        example = CSTRING(tagExample_Launcher);
 
         class Options
         {
             class AskPermission
             {
-                displayName = "Permission to Fire?";
-                statement = QUOTE('[vl-AskFirePermission]Permission to fire');
+                displayName = CSTRING(tagTitle_Launcher_AskPermission);
+                statement = QUOTE(QLLSTRING(tag_Launcher_AskPermission));
                 order = 0;
             };
             class ClearBackblast
             {
-                displayName = "Clear Backblast";
-                statement = QUOTE('[vl-ClearBackblast]Clear backblast');
+                displayName = CSTRING(tagTitle_Launcher_ClearBackblast);
+                statement = QUOTE(QLLSTRING(tag_Launcher_ClearBackblast));
                 order = 1;
             };
             class BackblastClear
             {
-                displayName = "Backblast Clear";
-                statement = QUOTE('[vl-BackblastClear]Backblast clear');
+                displayName = CSTRING(tagTitle_Launcher_BackblastClear);
+                statement = QUOTE(QLLSTRING(tag_Launcher_BackblastClear));
                 order = 2;
             };
             class FireRocket
             {
-                displayName = "Rocket Rocket Rocket!";
-                statement = QUOTE('[vl-RocketFire]Rocket rocket rocket');
+                displayName = CSTRING(tagTitle_Launcher_FireRocket);
+                statement = QUOTE(QLLSTRING(tag_Launcher_FireRocket));
                 order = 3;
             };
         };
