@@ -38,4 +38,13 @@ if (count _lbData isEqualTo 0) then {
     } forEach _lbData;
 
     _messagesCtrl lbSortBy ["VALUE"];
+
+    // Select first element by default
+    [{
+        private ["_display", "_messagesCtrl"];
+        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+        _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
+
+        _messagesCtrl lbSetCurSel 0;
+    }, nil, 0.01] call CBA_fnc_waitAndExecute;
 }, [_lbData]] call CBA_fnc_waitUntilAndExecute;

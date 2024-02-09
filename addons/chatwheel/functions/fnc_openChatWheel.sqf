@@ -26,16 +26,4 @@ if (!isNull _display) exitWith {
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
-// Small delay needed before an element can be selected
-[
-    {
-        private ["_display", "_messagesCtrl"];
-        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
-        _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
-
-        _messagesCtrl lbSetCurSel 0;
-    },
-    nil,
-    0.01
-] call CBA_fnc_waitAndExecute;
 [QGVAR(menuToggled), [true]] call CBA_fnc_localEvent;
