@@ -23,6 +23,8 @@ params ["_unit", "_weapon", "", "", "", "_magazine"];
 private ["_grenadeType", "_message"];
 TRACE_3("fnc_fired",_unit,_weapon,_magzine);
 
+if !(GVAR(autoMessages_enabledGrenades)) exitWith {};
+
 _grenadeType = switch (true) do {
     case (_magazine isKindOf "SmokeShell"): {"Smoke"};
     default {"Grenade"};

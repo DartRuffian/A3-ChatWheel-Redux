@@ -84,7 +84,14 @@ if (ADDON_LOADED(ace_medical)) then {
     ] call CBA_fnc_addSetting;
 };
 
-// TODO: add autoMessages_enabledGrenades for grenade callouts
+[
+    QGVAR(autoMessages_enabledGrenades),
+    "CHECKBOX",
+    [LLSTRING(setting_autoMessages_enabledGrenades), LLSTRING(settingDescription_autoMessages_enabledGrenades)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_autoMessages)],
+    true,
+    TRUE
+] call CBA_fnc_addSetting;
 
 // Voice Lines
 [
