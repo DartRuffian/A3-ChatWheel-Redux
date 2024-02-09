@@ -46,19 +46,19 @@
         </Key>
 
         <Key ID="STR_CWR_chatwheel_settingCategory_customMessages">
-            <English>Custom Message 1</English>
+            <English>Custom 1</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_setting_customMessages_one">
-            <English>Custom Message 1</English>
+            <English>Custom 1</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_setting_customMessages_two">
-            <English>Custom Message 2</English>
+            <English>Custom 2</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_setting_customMessages_three">
-            <English>Custom Message 3</English>
+            <English>Custom 3</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_setting_customMessages_four">
-            <English>Custom Message 4</English>
+            <English>Custom 4</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_settingDescription_customMessages">
             <English>Custom message that can be used in the Chat Wheel. Custom messages support [tags].</English>
