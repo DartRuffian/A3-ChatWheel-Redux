@@ -1,4 +1,4 @@
-class GVAR(VoiceLines)
+class CWR_ChatWheel_VoiceLines
 {
     class NeedMedic
     {

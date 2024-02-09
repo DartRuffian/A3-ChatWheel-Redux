@@ -1,4 +1,4 @@
-class GVAR(Messages)
+class CWR_ChatWheel_Messages
 {
     class NeedMedic
     {

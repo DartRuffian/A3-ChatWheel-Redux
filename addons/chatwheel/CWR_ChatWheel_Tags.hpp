@@ -1,4 +1,4 @@
-class GVAR(Tags)
+class CWR_ChatWheel_Tags
 {
     class Bearing
     {
