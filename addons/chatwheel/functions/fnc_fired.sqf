@@ -23,14 +23,12 @@ params ["_unit", "_weapon", "", "", "", "_magazine"];
 private ["_grenadeType", "_message"];
 TRACE_3("fnc_fired",_unit,_weapon,_magzine);
 
-if !(GVAR(autoMessages_enabledGrenades)) exitWith {};
-
 _grenadeType = switch (true) do {
     case (_magazine isKindOf "SmokeShell"): {"Smoke"};
     default {"Grenade"};
 };
 
-if (!GVAR(autoMessages_enabled) or {isNull _unit or _weapon != "throw"}) exitWith {};
+if (!GVAR(autoMessages_enabled) or {!GVAR(autoMessages_enabledGrenades) or isNull _unit or _weapon != "throw"}) exitWith {};
 
 _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
 
