@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CWR">
     <Package name="chatwheel">
-        <Key ID="STR_CWR_chatwheel_key_openMenu">
+        <Key ID="STR_CWR_chatwheel_hud_ChatWheel">
+            <English>Chat Wheel</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hudDescription_ChatWheel">
+            <English>Message display for the Chat Wheel.</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_IGUI_ChatWheel_Description">
             <English>Open Chat Wheel</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_keyDescription_openMenu">
@@ -25,6 +33,7 @@
         <Key ID="STR_CWR_chatwheel_keyDescription_scrollDown">
             <English>Scrolls down one option in the Chat Wheel.</English>
         </Key>
+
 
         <Key ID="STR_CWR_chatwheel_settingCategory_customMessages">
             <English>Custom Message 1</English>
@@ -94,6 +103,7 @@
         <Key ID="STR_CWR_chatwheel_settingDescription_voice_volume">
             <English>Volume multiplier for voice lines.</English>
         </Key>
+
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
             <English>Call Medic</English>

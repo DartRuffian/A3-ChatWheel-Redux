@@ -6,8 +6,8 @@ class CfgUIGrids
         {
             class GVAR(Grid_ChatWheel)
             {
-                displayName = "Chat Wheel";
-                description = "Message display for the Chat Wheel.";
+                displayName = CSTRING(hud_ChatWheel);
+                description = CSTRING(hudDescription_ChatWheel);
                 preview = QPATHTOF(data\GUI\Cfg\UIGrids\grid_ChatWheel_ca.paa); // TODO: Move preview text by ~3 pixels (OCD)
                 saveToProfile[] = {IGUI_SAVEALL};
             };
