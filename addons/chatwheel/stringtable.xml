@@ -11,7 +11,7 @@
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedHelp">
             <English>Call Help</English>
         </Key>
-        <Key ID="STR_CWR_chatwheel_message_NeedMedic">
+        <Key ID="STR_CWR_chatwheel_message_NeedHelp">
             <English>[vl-NeedHelp]I need help!</English>
         </Key>
 
