@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CWR">
+    <Package name="chatwheel">
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
+            <English>Call Medic</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedMedic">
+            <English>[vl-NeedMedic]I need a medic!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedHelp">
+            <English>Call Help</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedMedic">
+            <English>[vl-NeedHelp]I need help!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Apologize">
+            <English>Apologize</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Apologize">
+            <English>[vl-Sorry]Sorry!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_ThankYou">
+            <English>Thank You</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_ThankYou">
+            <English>[vl-Thanks]Thank you!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Follow">
+            <English>Follow Me</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Follow">
+            <English>[vl-FollowMe]Follow me!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Contact">
+            <English>Contact</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Contact">
+            <English>[contact]</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedAmmo">
+            <English>Need Ammo</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedAmmo">
+            <English>[vl-NeedAmmo]I need ammo for my [weapon]!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_ACECheck">
+            <English>ACE Check</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_ACECheck">
+            <English>[status]</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Launcher">
+            <English>Launcher</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Launcher">
+            <English>[launcher]</English>
+        </Key>
+    </Package>
+</Project>
