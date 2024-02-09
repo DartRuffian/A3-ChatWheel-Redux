@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CWR">
     <Package name="chatwheel">
+        <Key ID="STR_CWR_chatwheel_key_openMenu">
+            <English>Open Chat Wheel</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_openMenu">
+            <English>Opens or closes the chat menu.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_selectMessage">
+            <English>Select Message</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_selectMessage">
+            <English>Selects a message from the Chat Wheel.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_scrollUp">
+            <English>Scroll Up</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_scrollUp">
+            <English>Scrolls up one option in the Chat Wheel.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_scrollDown">
+            <English>Scroll Down</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_scrollDown">
+            <English>Scrolls down one option in the Chat Wheel.</English>
+        </Key>
+
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
             <English>Call Medic</English>
         </Key>

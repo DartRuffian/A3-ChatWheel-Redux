@@ -3,7 +3,7 @@
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_openMenu),
-    ["Open/Close Menu", "Opens or closes the chat menu"],
+    [LLSTRING(key_openMenu), LLSTRING(keyDescription_openMenu)],
     {
         if (call FUNC(toggleChatWheel)) then {
             [] call FUNC(populateChatWheel);
@@ -16,7 +16,7 @@
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_selectMessage),
-    ["Select Message", "Selects a message from the Chat Wheel to send"],
+    [LLSTRING(key_selectMessage), LLSTRING(keyDescription_selectMessage)],
     {
         private ["_display"];
         _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
@@ -32,7 +32,7 @@
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_scrollUp),
-    ["Scroll Up", "Scrolls up one option in the Chat Wheel"],
+    [LLSTRING(key_scrollUp), LLSTRING(keyDescription_scrollUp)],
     {
         false call FUNC(handleScroll);
     },     // KeyDown
@@ -43,7 +43,7 @@
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_scrollDown),
-    ["Scroll Down", "Scrolls up one option in the Chat Wheel"],
+    [LLSTRING(key_scrollDown), LLSTRING(keyDescription_scrollDown)],
     {
         true call FUNC(handleScroll);
     },     // KeyDown
