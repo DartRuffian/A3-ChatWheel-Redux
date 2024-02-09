@@ -1,7 +1,7 @@
 [
-    QGVAR(invertScroll),
+    QGVAR(useInvertedScrolling),
     "CHECKBOX",
-    [LLSTRING(setting_invertedScrolling), LLSTRING(settingDescription_invertedScrolling)],
+    [LLSTRING(setting_useInvertedScrolling), LLSTRING(settingDescription_useInvertedScrolling)],
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_controls)],
     false
 ] call CBA_fnc_addSetting;
