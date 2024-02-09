@@ -23,8 +23,11 @@ params [
     ["_volume", 1, [0]],
     ["_pitch", 1, [0]]
 ];
-TRACE_2("fnc_playLocalSound",_file,_positionASL);
+TRACE_4("fnc_playLocalSound",_file,_positionASL,_volume,_pitch);
 
-if (GVAR(voice_enabled)) then {
+// Addon check for when this function is remoteExecCall'd
+if (ADDON_LOADED(ADDON) and {GVAR(voice_enabled)}) then {
     playSound3D [_file, objNull, false, _positionASL, GVAR(voice_volume) * _volume, _pitch, 0, 0, true];
 };
+
+nil;

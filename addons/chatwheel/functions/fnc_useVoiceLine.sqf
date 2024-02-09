@@ -28,7 +28,9 @@ if (count _voiceLines isEqualTo 0) exitWith {};
 
 _nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
 
-{[_file, getPosASL _unit, _volume, _pitch] call FUNC(playLocalSound);} forEach _nearbyPlayers; // TODO: Update to remoteExecCall to each player
+{
+    [_file, getPosASL _unit, _volume, _pitch] remoteExecCall [QFUNC(playLocalSound), _x];
+} forEach _nearbyPlayers;
 
 _unit setVariable [QGVAR(lastUsedVoice), CBA_missionTime];
 
