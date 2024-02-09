@@ -6,7 +6,6 @@
     false
 ] call CBA_fnc_addSetting;
 
-// Custom Messages
 [
     QGVAR(customMessages_one),
     "EDITBOX",
@@ -71,7 +70,6 @@
     }
 ] call CBA_fnc_addSetting;
 
-// Automatic Messages
 [
     QGVAR(autoMessages_enabled),
     "CHECKBOX",
@@ -101,7 +99,6 @@ if (ADDON_LOADED(ace_medical)) then {
     TRUE
 ] call CBA_fnc_addSetting;
 
-// Voice Lines
 [
     QGVAR(voice_enabled),
     "CHECKBOX",
