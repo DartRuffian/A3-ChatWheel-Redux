@@ -5,7 +5,9 @@
     QGVAR(key_openMenu),
     ["Open/Close Menu", "Opens or closes the chat menu"],
     {
-        call FUNC(toggleChatWheel);
+        if (call FUNC(toggleChatWheel)) then {
+            [] call FUNC(populateChatWheel);
+        };
     },     // KeyDown
     {},    // KeyUp
     []     // Default Key

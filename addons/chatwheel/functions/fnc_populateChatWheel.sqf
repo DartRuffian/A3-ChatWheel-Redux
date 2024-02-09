@@ -1,10 +1,10 @@
 #include "..\script_component.hpp"
 /*
 * Author: DartRuffian
-* Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control.
+* Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control. If the data to populate the list with is empty, the saved message list will be used instead.
 *
 * Arguments:
-* None
+* 0: Message data to populate the Chat Wheel (optional, default: message list) <HASHMAP>
 *
 * Return Value:
 * None
@@ -13,26 +13,29 @@
 * call FUNC(populateChatWheel);
 */
 
-params []; // TODO: Update to take parameter for chat wheel content
-TRACE_1("fnc_populateChatWheel",nil);
+params [
+    ["_lbData", createHashMap, [createHashMap]]
+];
+TRACE_1("fnc_populateChatWheel",_lbData);
 
-[
+if (count _lbData isEqualTo 0) then {
+    _lbData = uiNamespace getVariable [QGVAR(messages), createHashmap];
+};
+
+[{
+    (!isNull (uiNamespace getVariable [QCLASS(RscChatWheel), displayNull]))
+}, {
+    params ["_lbData"];
+    private ["_display", "_messagesCtrl", "_index"];
+    _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+    _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
+
     {
-        (!isNull (uiNamespace getVariable [QCLASS(RscChatWheel), displayNull]))
-    },
-    {
-        private ["_display", "_messagesCtrl", "_messageList", "_index"];
-        _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
-        _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
-        _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+        _y params ["_displayName", "_message", "_order"];
+        _index = _messagesCtrl lbAdd _displayName;
+        _messagesCtrl lbSetValue [_index, _order];
+        _messagesCtrl lbSetData [_index, _x];
+    } forEach _lbData;
 
-        {
-            _y params ["_displayName", "_message", "_order"];
-            _index = _messagesCtrl lbAdd _displayName;
-            _messagesCtrl lbSetValue [_index, _order];
-            _messagesCtrl lbSetData [_index, _x];
-        } forEach _messageList;
-
-        _messagesCtrl lbSortBy ["VALUE"];
-    }
-] call CBA_fnc_waitUntilAndExecute;
+    _messagesCtrl lbSortBy ["VALUE"];
+}, [_lbData]] call CBA_fnc_waitUntilAndExecute;
