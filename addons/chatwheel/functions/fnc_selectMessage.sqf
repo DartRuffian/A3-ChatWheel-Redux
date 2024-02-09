@@ -31,3 +31,5 @@ _messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
 (_messageList get _className) params ["_displayName", "_message", "_order"];
 
 [_message, player, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
+
+nil;

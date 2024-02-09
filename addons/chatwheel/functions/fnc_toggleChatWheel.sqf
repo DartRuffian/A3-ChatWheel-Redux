@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Opens or closes the Chat Wheel
+ * Opens or closes the Chat Wheel, depending on the current state.
  *
  * Arguments:
  * None

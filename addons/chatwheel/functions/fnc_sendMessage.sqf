@@ -1,24 +1,24 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Takes a processed message and sends it.
+ * Takes a message and author, processes the tags in the message, and sends it to the given channel.
  *
  * Arguments:
  * 0: The message to send, optionally with [tags] <STRING>
  * 1: The author of the message (optional, default: player) <OBJECT>
  * 2: The channel / target to send the message in (optional, default: "side") <STRING>
  *    - Can be one of:
- *      1: "side" - Sends message in side channel on author's side
- *      2: "group" - Sends message in group channel in author's group
+ *      1: "side" - Sends message in side channel on author's side.
+ *      2: "group" - Sends message in group channel in author's group.
  *      3: "side-local" - Sends message in side chat, but only displays to player's within a given distance. Fourth parameter is range in meters.
- * 3: Target data, varies depending on channel (optional, default: nil)<ANY>
- *
+ * 3: Target data, varies depending on channel (optional, default: nil) <ANY>
  *
  * Return Value:
  * None
  *
- * Example:
+ * Examples:
  * ["A message, optionally with [tags]"] call FUNC(sendMessage);
+ * ["A local message", player, "side-local", 10] call FUNC(sendMessage);
  */
 
 params [

@@ -6,9 +6,10 @@
  * Arguments:
  * 0: Unique identifier for the message <STRING>
  * 1: Text displayed in the Chat Wheel <STRING>
- * 2: The message sent when this option is displayed <STRING>
+ * 2: The message sent when this option is selected <STRING>
  * 3: Order used to sort messages in the Chat Wheel (optional, default: -1) <NUMBER>
  *    -1 will result in an order that is the number of current elements + 100.
+ * 4: Overwrite existing message if it exists (optional, default: false) <BOOL>
  *
  * Return Value:
  * Whether the message was added successfully <BOOL>

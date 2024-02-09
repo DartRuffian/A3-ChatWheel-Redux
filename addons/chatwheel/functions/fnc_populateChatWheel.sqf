@@ -13,7 +13,7 @@
 * call FUNC(populateChatWheel);
 */
 
-params [];
+params []; // TODO: Update to take parameter for chat wheel content
 TRACE_1("fnc_populateChatWheel",nil);
 
 [

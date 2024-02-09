@@ -1,10 +1,12 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Processes a message for tags.
+ * Processes a message for "simple" tags. A simple tag does not require user input and is text replaced with a code output.
+ * E.g. [weapon] is replaced with the displayName of the author's current held weapon.
  *
  * Arguments:
- * 0: The message to process <STRING>
+ * 0: The author of the message <OBJECT>
+ * 1: The message to process <STRING>
  *
  * Return Value:
  * The processed string <STRING>

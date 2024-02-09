@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Opens the Chat Wheel
+ * Opens the Chat Wheel.
  *
  * Arguments:
  * None

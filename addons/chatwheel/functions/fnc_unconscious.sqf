@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Event handler for automated messages for throwing grenades. Works for vanilla and ace_player
+ * Sends a message for a unit falling unconscious, only works for ACE Medical.
  *
  * Arguments:
  * 0: The unit falling unconscious or waking up <OBJECT>

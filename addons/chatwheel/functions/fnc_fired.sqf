@@ -1,15 +1,15 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Event handler for automated messages for throwing grenades. Works for vanilla and ace_player
+ * Sends a message for a unit throwing a grenade. Some parameters are unused and are carried over from the vanilla Fired and ace_firedPlayer event handlers. These can be safely ignored by passing an empty string for their value.
  *
  * Arguments:
  * 0: The unit throwing the grenade <OBJECT>
  * 1: Weapon class name <STRING>
- * 2: Unused
- * 3: Unused
- * 4: Unused
- * 5: The thrown grenade magazine <STRING>
+ * 2: Muzzle class name (unused) <STRING>
+ * 3: Mode class name (unused) <STRING>
+ * 4: Ammo class name (unused) <STRING>
+ * 5: Magazine class name <STRING>
  *
  * Return Value:
  * None

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Loads messages, tags, and voice line classes to uiNamespace.
+ * Loads messages, tags, and voice line classes to HashMaps in uiNamespace.
  *
  * Arguments:
  * None

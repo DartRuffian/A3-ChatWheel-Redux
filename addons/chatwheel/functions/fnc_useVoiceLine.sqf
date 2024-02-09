@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Has a unit say a voice line
+ * Plays a voice line from a given unit.
  *
  * Arguments:
  * 0: The unit to speak <OBJECT>
@@ -28,7 +28,8 @@ if (count _voiceLines isEqualTo 0) exitWith {};
 
 _nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
 
-{[_file, getPosASL _unit, _volume, _pitch] call FUNC(playLocalSound);} forEach _nearbyPlayers;
+{[_file, getPosASL _unit, _volume, _pitch] call FUNC(playLocalSound);} forEach _nearbyPlayers; // TODO: Update to remoteExecCall to each player
 
 _unit setVariable [QGVAR(lastUsedVoice), CBA_missionTime];
+
 nil;
