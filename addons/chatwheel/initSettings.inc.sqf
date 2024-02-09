@@ -7,7 +7,7 @@
     "",
     0,
     {
-        if (!(_this isEqualTo "")) then {
+        if (_this != "") then {
             ["UserCustom1", "Custom 1", _this, -1, true] call FUNC(addMessage);
         } else {
             "UserCustom1" call FUNC(removeMessage);
