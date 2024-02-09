@@ -24,13 +24,14 @@ private ["_grenadeType", "_message"];
 TRACE_3("fnc_fired",_unit,_weapon,_magzine);
 
 _grenadeType = switch (true) do {
-    case (_magazine isKindOf "SmokeShell"): {"Smoke"};
-    default {"Grenade"};
+    case (_magazine isKindOf "SmokeShell"): {["Smoke", LLSTRING(grenadeType_Smoke)]};
+    default {["Grenade", LLSTRING(grenadeType_Grenade)]};
 };
+_grenadeType params ["_voiceLineClass", "_localized"];
 
 if (!GVAR(autoMessages_enabled) or {!GVAR(autoMessages_enabledGrenades) or isNull _unit or _weapon != "throw"}) exitWith {};
 
-_message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType];
+_message = format [LLSTRING(message_GrenadeThrown), _voiceLineClass, _localized];
 
 [_message, _unit, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
 

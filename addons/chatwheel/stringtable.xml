@@ -178,6 +178,24 @@
             <English>[launcher]</English>
         </Key>
 
+        <!-- %1 gets replaced with player name -->
+        <Key ID="STR_CWR_chatwheel_message_Unconscious">
+            <English>[vl-Unconscious]%1 is down!</English>
+        </Key>
+
+        <!-- %1 gets replaced with type of grenade, i.e. "Grenade", "Smoke", and is always english
+             %2 is replaced localized grenade type -->
+        <Key ID="STR_CWR_chatwheel_message_GrenadeThrown">
+            <English>[vl-Throw%1]%2 out, [bearing]!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_grenadeType_Grenade">
+            <English>Grenade</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Smoke">
+            <English>Smoke</English>
+        </Key>
+
         <Key ID="STR_CWR_chatwheel_tag_Bearing">
             <English>Your current bearing.</English>
         </Key>
