@@ -34,7 +34,7 @@
     QGVAR(key_scrollUp),
     [LLSTRING(key_scrollUp), LLSTRING(keyDescription_scrollUp)],
     {
-        false call FUNC(handleScroll);
+        GVAR(invertScroll) call FUNC(handleScroll);
     },     // KeyDown
     {},    // KeyUp
     [DIK_MOUSEUP, false, false, false] // Default Key
@@ -45,7 +45,7 @@
     QGVAR(key_scrollDown),
     [LLSTRING(key_scrollDown), LLSTRING(keyDescription_scrollDown)],
     {
-        true call FUNC(handleScroll);
+        !GVAR(invertScroll) call FUNC(handleScroll);
     },     // KeyDown
     {},    // KeyUp
     [DIK_MOUSEDOWN, false, false, false] // Default Key

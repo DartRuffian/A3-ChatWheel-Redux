@@ -1,3 +1,11 @@
+[
+    QGVAR(invertScroll),
+    "CHECKBOX",
+    [LLSTRING(setting_invertedScrolling), LLSTRING(settingDescription_invertedScrolling)],
+    [QUOTE(MOD_NAME), LLSTRING(settingCategory_controls)],
+    false
+] call CBA_fnc_addSetting;
+
 // Custom Messages
 [
     QGVAR(customMessages_one),

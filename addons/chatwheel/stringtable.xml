@@ -35,6 +35,16 @@
         </Key>
 
 
+        <Key ID="STR_CWR_chatwheel_settingCategory_controls">
+            <English>Controls</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_invertedScrolling">
+            <English>Inverted Scrolling</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_invertedScrolling">
+            <English>Whether to invert the scrolling behavior for the Chat Wheel.</English>
+        </Key>
+
         <Key ID="STR_CWR_chatwheel_settingCategory_customMessages">
             <English>Custom Message 1</English>
         </Key>
