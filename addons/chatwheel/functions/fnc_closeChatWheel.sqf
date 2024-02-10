@@ -19,7 +19,7 @@ TRACE_1("fnc_closeChatWheel",nil);
 
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 if (isNull _display) exitWith {
-	WARNING("Attempted to close Chat Wheel when not open.");
+    WARNING("Attempted to close Chat Wheel when not open.");
 };
 
 QGVAR(layer_chatWheel) cutFadeOut 0.5;
