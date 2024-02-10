@@ -1,4 +1,4 @@
-class CLASS(ChatWheel_VoiceLines)
+class CWR_ChatWheel_VoiceLines
 {
     class NeedMedic
     {

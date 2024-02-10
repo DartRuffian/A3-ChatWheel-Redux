@@ -1,6 +1,4 @@
 #include "script_component.hpp"
-#include "CWR_ChatWheel_VoiceLines.hpp"
-
 
 class CfgPatches
 {
@@ -18,3 +16,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CWR_ChatWheel_VoiceLines.hpp"
