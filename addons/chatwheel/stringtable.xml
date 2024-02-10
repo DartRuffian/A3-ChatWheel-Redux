@@ -117,41 +117,52 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
             <English>Call Medic</English>
+            <Spanish>Necesito medico</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedMedic">
             <English>[vl-NeedMedic]I need a medic!</English>
+            <Spanish>[vl-NeedMedic]¡Necesito medico!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedHelp">
             <English>Call Help</English>
+            <English>Necesito ayuda</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedHelp">
             <English>[vl-NeedHelp]I need help!</English>
+            <Spanish>[vl-NeedHelp]¡Necesito ayuda!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Apologize">
             <English>Apologize</English>
+            <Spanish>Lo siento</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Apologize">
             <English>[vl-Sorry]Sorry!</English>
+            <Spanish>[vl-Sorry]¡Lo siento!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_ThankYou">
             <English>Thank You</English>
+            <Spanish>Gracias</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_ThankYou">
             <English>[vl-Thanks]Thank you!</English>
+            <Spanish>[vl-Thanks]¡Gracias!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Follow">
             <English>Follow Me</English>
+            <Spanish>Siganme</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Follow">
             <English>[vl-FollowMe]Follow me!</English>
+            <Spanish>[vl-FollowMe]¡Siganme!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Contact">
             <English>Contact</English>
+            <Spanish>Contacto</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Contact">
             <English>[contact]</English>
@@ -159,9 +170,11 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedAmmo">
             <English>Need Ammo</English>
+            <Spanish>Necesito municion</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedAmmo">
             <English>[vl-NeedAmmo]I need ammo for my [weapon]!</English>
+            <Spanish>[vl-NeedAmmo]¡Necesito municion para mi [weapon]!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_ACECheck">
@@ -173,6 +186,7 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Launcher">
             <English>Launcher</English>
+            <Spanish>Lanza cohetes</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Launcher">
             <English>[launcher]</English>
@@ -181,19 +195,23 @@
         <!-- %1 gets replaced with player name -->
         <Key ID="STR_CWR_chatwheel_message_Unconscious">
             <English>[vl-Unconscious]%1 is down!</English>
+            <English>[vl-Unconscious]¡%1 esta caido!</English>
         </Key>
 
         <!-- %1 gets replaced with type of grenade, i.e. "Grenade", "Smoke", and is always english
-             %2 is replaced localized grenade type -->
+             %2 is replaced with localized grenade type -->
         <Key ID="STR_CWR_chatwheel_message_GrenadeThrown">
             <English>[vl-Throw%1]%2 out, [bearing]!</English>
+            <Spanish>[vl-Throw%1]¡Tirando %2, [bearing]!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_grenadeType_Grenade">
             <English>Grenade</English>
+            <Spanish>Granada</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_grenadeType_Smoke">
             <English>Smoke</English>
+            <Spanish>humo</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Bearing">
@@ -205,9 +223,11 @@
 
         <Key ID="STR_CWR_chatwheel_tag_Direction">
             <English>Your current direction.</English>
+            <Spanish>Tu direccion actual.</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Direction">
             <English>'I'm facing [tag]' → 'I'm facing North'</English>
+            <Spanish>'Estoy mirando hacia [tag]' → 'Estoy mirando hacia el norte'</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Weapon">
@@ -226,21 +246,27 @@
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Infantry">
             <English>Infantry</English>
+            <Spanish>Infanteria</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Contact_Infantry">
             <English>[vl-ContactInfantry]infantry</English>
+            <Spanish>[vl-ContactInfantry]infanteria</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Vehicle">
             <English>Vehicle</English>
+            <Spanish>Vehiculo</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Contact_Vehicle">
             <English>[vl-ContactVehicle]vehicle</English>
+            <Spanish>[vl-ContactVehicle]vehiculo</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Fortification">
             <English>Fortification</English>
+            <Spanish>Fortificacion</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Contact_Fortification">
             <English>[vl-ContactFortification]fortification</English>
+            <English>[vl-ContactFortification]fortificacion</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Distance">
@@ -252,23 +278,29 @@
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Close">
             <English>Close</English>
+            <English>Cerca</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Distance_Close">
             <English>close</English>
+            <English>cerca</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Medium">
             <English>Medium</English>
+            <Spanish>Medio</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Distance_Medium">
             <English>medium</English>
+            <Spanish>medio</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Far">
             <English>Far</English>
+            <Spanish>Lejos</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Distance_Far">
             <English>far</English>
+            <Spanish>lejos</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Status">
@@ -287,30 +319,38 @@
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Status_Green">
             <English>Green</English>
+            <Spanish>Verde</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Status_Green">
             <English>green</English>
+            <Spanish>verde</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Status_Yellow">
             <English>Yellow</English>
+            <Spanish>Amarillo</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Status_Yellow">
             <English>yellow</English>
+            <Spanish>amarillo</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Status_Red">
             <English>Red</English>
+            <Spanish>Rojo</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Status_Red">
             <English>red</English>
+            <Spanish>rojo</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Status_Black">
             <English>Black</English>
+            <Spanish>Negro</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Status_Black">
             <English>black</English>
+            <Spanish>negro</Spanish>
         </Key>
 
 
@@ -323,30 +363,38 @@
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_AskPermission">
             <English>Permission to Fire?</English>
+            <Spanish>¿Permiso para disparar?</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Launcher_AskPermission">
             <English>[vl-AskFirePermission]Permission to fire</English>
+            <English>[vl-AskFirePermission]Permiso para disparar</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_ClearBackblast">
             <English>Clear Backblast</English>
+            <Spanish>Libre atras</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Launcher_ClearBackblast">
             <English>[vl-ClearBackblast]Clear backblast</English>
+            <Spanish>[vl-ClearBackblast]Libre atras</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_BackblastClear">
             <English>Backblast Clear</English>
+            <Spanish>Atras libre</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Launcher_BackblastClear">
             <English>[vl-BackblastClear]Backblast clear</English>
+            <Spanish>[vl-BackblastClear]Atras libre</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_FireRocket">
             <English>Rocket Rocket Rocket!</English>
+            <Spanish>Fuego fuego fuego!</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_tag_Launcher_FireRocket">
             <English>[vl-RocketFire]Rocket rocket rocket</English>
+            <Spanish>[vl-RocketFire]Fuego fuego fuego!</Spanish>
         </Key>
     </Package>
 </Project>
