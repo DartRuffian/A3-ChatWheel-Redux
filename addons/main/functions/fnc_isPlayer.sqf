@@ -11,7 +11,7 @@
  * Whether the unit is player controlled
  *
  * Example:
- * player call CWR_main_fnc_isPlayer;
+ * player call FUNC(isPlayer);
  */
 
 params [

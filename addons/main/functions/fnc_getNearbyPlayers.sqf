@@ -11,7 +11,7 @@
  * Array of players
  *
  * Example:
- * [getPosAGL player, 30] call CWR_main_fnc_getNearbyPlayers;
+ * [getPosAGL player, 30] call FUNC(getNearbyPlayers);
  */
 
 params [
