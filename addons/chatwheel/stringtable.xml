@@ -117,29 +117,29 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
             <English>Call Medic</English>
-            <Spanish>Necesito Medico</Spanish>
+            <Spanish>Necesito medico</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedMedic">
             <English>[vl-NeedMedic]I need a medic!</English>
-            <Spanish>[vl-NeedMedic]¡Necesito Medico!</Spanish>
+            <Spanish>[vl-NeedMedic]¡Necesito medico!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedHelp">
             <English>Call Help</English>
-            <English>Necesito Ayuda</English>
+            <English>Necesito ayuda</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedHelp">
             <English>[vl-NeedHelp]I need help!</English>
-            <Spanish>[vl-NeedHelp]¡Necesito Ayuda!</Spanish>
+            <Spanish>[vl-NeedHelp]¡Necesito ayuda!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Apologize">
             <English>Apologize</English>
-            <Spanish>Lo Siento</Spanish>
+            <Spanish>Lo siento</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Apologize">
             <English>[vl-Sorry]Sorry!</English>
-            <Spanish>[vl-Sorry]¡Lo Siento!</Spanish>
+            <Spanish>[vl-Sorry]¡Lo siento!</Spanish>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_messageTitle_ThankYou">
@@ -170,7 +170,7 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_NeedAmmo">
             <English>Need Ammo</English>
-            <Spanish>Necesito Municion</Spanish>
+            <Spanish>Necesito municion</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_NeedAmmo">
             <English>[vl-NeedAmmo]I need ammo for my [weapon]!</English>
@@ -186,7 +186,7 @@
 
         <Key ID="STR_CWR_chatwheel_messageTitle_Launcher">
             <English>Launcher</English>
-            <Spanish>Lanza Cohetes</Spanish>
+            <Spanish>Lanza cohetes</Spanish>
         </Key>
         <Key ID="STR_CWR_chatwheel_message_Launcher">
             <English>[launcher]</English>
