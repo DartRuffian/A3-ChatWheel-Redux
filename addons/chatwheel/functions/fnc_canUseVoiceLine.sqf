@@ -4,13 +4,15 @@
  * Determines if a unit can use a voice line.
  *
  * Arguments:
- * 0: The unit to check <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * Whether the unit can use a voice line <BOOL>
+ * True if unit can say a voice line, otherwise false <BOOL>
  *
  * Example:
  * player call FUNC(canUseVoiceLine);
+ *
+ * Public: Yes
  */
 
 params [

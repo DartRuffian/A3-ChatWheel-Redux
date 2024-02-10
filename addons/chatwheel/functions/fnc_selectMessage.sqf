@@ -11,6 +11,8 @@
  *
  * Example:
  * call FUNC(selectMessage);
+ *
+ * Public: No
  */
 
 params [];

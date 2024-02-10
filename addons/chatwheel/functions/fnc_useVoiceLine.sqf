@@ -4,7 +4,7 @@
  * Plays a voice line from a given unit.
  *
  * Arguments:
- * 0: The unit to speak <OBJECT>
+ * 0: Unit <OBJECT>
  * 1: Class name from CWR_ChatWheel_VoiceLines <STRING>
  *
  * Return Value:
@@ -12,6 +12,8 @@
  *
  * Example:
  * [player, "NeedMedic"] call FUNC(useVoiceLine);
+ *
+ * Public: Yes
  */
 
 params [

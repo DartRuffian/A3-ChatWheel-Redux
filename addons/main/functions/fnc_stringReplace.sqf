@@ -5,16 +5,18 @@
  * Replaces all occurences of substrings in a given string with a given value.
  *
  * Arguments:
- * 0: The original string <STRING>
- * 1: The substring(s) <ARRAY or STRING>
- * 2: The string to replace the substring(s) with <STRING>
+ * 0: The string to edit. <STRING>
+ * 1: The substring(s). <ARRAY|STRING>
+ * 2: The string to replace the substring(s) with. <STRING>
  *
  * Return Value:
- * The edited string
+ * The edited string <STRING>
  *
  * Example:
  * ["xxx is awesome, I love xxx!", "xxx", "Arma"] call FUNC(stringReplace);
  * ["xxx is awesome, I love yyy!", ["xxx", "yyy"], "Arma"] call FUNC(stringReplace);
+ *
+ * Public: Yes
  */
 
 params [

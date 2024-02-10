@@ -17,6 +17,8 @@
  * Examples:
  * player addEventHandler ["Fired", LINKFUNC(fired)];
  * ["ace_firedPlayer", LINKFUNC(fired)] call CBA_fnc_addEventHandler;
+ *
+ * Public: No
  */
 
 params ["_unit", "_weapon", "", "", "", "_magazine"];

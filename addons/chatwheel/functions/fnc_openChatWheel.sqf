@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Opens the Chat Wheel.
+ * Opens the Chat Wheel menu, but does not populate it with any data.
  *
  * Arguments:
  * None
@@ -11,6 +11,8 @@
  *
  * Example:
  * call FUNC(openChatWheel);
+ *
+ * Public: Yes
  */
 
 params [];

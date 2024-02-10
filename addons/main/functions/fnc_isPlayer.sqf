@@ -8,10 +8,12 @@
  * 1: Include remote controlled units (optional, default: true) <BOOL>
  *
  * Return Value:
- * Whether the unit is player controlled
+ * True if unit is player or remote controlled if set, false otherwise
  *
  * Example:
  * player call FUNC(isPlayer);
+ *
+ * Public: Yes
  */
 
 params [

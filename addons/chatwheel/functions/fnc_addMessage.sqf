@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Adds a message to the Chat Wheel options.
+ * Adds a message to the Chat Wheel menu.
  *
  * Arguments:
  * 0: Unique identifier for the message <STRING>
@@ -9,13 +9,15 @@
  * 2: The message sent when this option is selected <STRING>
  * 3: The order to sort the message by (optional, default: -1 will put message at the end of the list). <NUMBER>
  *    -1 will result in an order that is the number of current elements + 100.
- * 4: Overwrite existing message if it exists (optional, default: false) <BOOL>
+ * 4: Overwrite existing message if present (optional, default: false) <BOOL>
  *
  * Return Value:
  * True on success, false otherwise <BOOL>
  *
  * Example:
  * ["Custom1", "Custom 1", "This is my custom message", 10] call FUNC(addMessage);
+ *
+ * Public: Yes
  */
 
 params [

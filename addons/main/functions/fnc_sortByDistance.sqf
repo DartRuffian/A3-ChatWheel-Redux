@@ -1,18 +1,20 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Sorts an array of objects or array in format PositionAGL or Position2D.
+ * Sorts an array of objects based on distance from a given position.
  *
  * Arguments:
- * 0: Position in format PositionAGL to order objects from <ARRAY>
- * 1: Array of objects to sort <ARRAY>
- * 2: Sorting order, true for ascending, false for descending <BOOL>
+ * 0: Position in format PositionAGL. <ARRAY>
+ * 1: Objects to sort. <ARRAY>
+ * 2: Sorting order, true for ascending, false for descending. <BOOL>
  *
  * Return Value:
- * The sorted objects
+ * The sorted objects <ARRAY>
  *
  * Example:
- * [player, [unit1]] call FUNC(sortByDistance);
+ * [ASLtoAGL getPosASL player, [unit1]] call FUNC(sortByDistance);
+ *
+ * Public: Yes
  */
 
 params [

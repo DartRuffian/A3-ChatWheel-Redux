@@ -7,10 +7,12 @@
  * 0: Bearing <NUMBER>
  *
  * Return Value:
- * The direction the player
+ * The direction for the bearing <STRING>
  *
  * Example:
  * 90 call FUNC(getDirFromBearing); // Returns "East"
+ *
+ * Public: Yes
  */
 
 params [["_bearing", 0, [0]]];

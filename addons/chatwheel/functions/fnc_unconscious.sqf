@@ -12,6 +12,8 @@
  *
  * Examples:
  * ["ace_unconscious", LINKFUNC(unconscious)] call CBA_fnc_addEventHandler;
+ *
+ * Public: No
  */
 
 params ["_unit", "_state"];

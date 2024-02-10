@@ -11,6 +11,8 @@
  *
  * Example:
  * call FUNC(scanConfig);
+ *
+ * Public: No
  */
 
 params [["_reloadFromConfig", false, [false]]];

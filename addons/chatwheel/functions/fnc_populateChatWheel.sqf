@@ -1,17 +1,19 @@
 #include "..\script_component.hpp"
 /*
-* Author: DartRuffian
-* Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control. If the data to populate the list with is empty, the saved message list will be used instead.
-*
-* Arguments:
-* 0: Message data to populate the Chat Wheel (optional, default: message list) <HASHMAP>
-*
-* Return Value:
-* None
-*
-* Example:
-* call FUNC(populateChatWheel);
-*/
+ * Author: DartRuffian
+ * Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control. If the data to populate the list with is empty, the saved message list will be used instead.
+ *
+ * Arguments:
+ * 0: Message data to populate the Chat Wheel (optional, default: message list) <HASHMAP>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call FUNC(populateChatWheel);
+ *
+ * Public: Yes
+ */
 
 params [
     ["_lbData", createHashMap, [createHashMap]]

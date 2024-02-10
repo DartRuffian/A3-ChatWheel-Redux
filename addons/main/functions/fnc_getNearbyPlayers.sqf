@@ -4,14 +4,16 @@
  * Returns an array of players near a given position.
  *
  * Arguments:
- * 0: Position in format PositionAGL or Position2D <ARRAY>
+ * 0: Position in format PositionAGL <ARRAY>
  * 1: Radius in meters <NUMBER>
  *
  * Return Value:
- * Array of players
+ * Array of player units <ARRAY>
  *
  * Example:
  * [getPosAGL player, 30] call FUNC(getNearbyPlayers);
+ *
+ * Public: Yes
  */
 
 params [

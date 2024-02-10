@@ -19,6 +19,8 @@
  * Examples:
  * ["A message, optionally with [tags]"] call FUNC(sendMessage);
  * ["A local message", player, "side-local", 10] call FUNC(sendMessage);
+ *
+ * Public: Yes
  */
 
 params [

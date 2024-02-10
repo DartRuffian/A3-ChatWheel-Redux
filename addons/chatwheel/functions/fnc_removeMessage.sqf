@@ -1,16 +1,18 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Removes a message from the Chat Wheel options.
+ * Removes a message from the Chat Wheel menu.
  *
  * Arguments:
  * 0: Unique identifier of the message <STRING>
  *
  * Return Value:
- * Whether the message was removed successfully <BOOL>
+ * True on success, false otherwise <BOOL>
  *
  * Example:
  * "Custom1" call FUNC(removeMessage);
+ *
+ * Public: Yes
  */
 
 params [

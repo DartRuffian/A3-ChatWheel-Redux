@@ -1,16 +1,18 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Opens or closes the Chat Wheel, depending on the current state.
+ * Opens or closes the Chat Wheel, based on its current state.
  *
  * Arguments:
  * None
  *
  * Return Value:
- * True if the menu was opened, false if closed
+ * True if opened, false otherwise <BOOL>
  *
  * Example:
  * call FUNC(toggleChatWheel);
+ *
+ * Public: Yes
  */
 
 params [];

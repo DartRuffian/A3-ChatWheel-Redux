@@ -11,6 +11,8 @@
  *
  * Example:
  * true call FUNC(handleScroll)
+ *
+ * Public: No
  */
 
 params [["_scroll", false, [false]]];

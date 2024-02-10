@@ -5,16 +5,18 @@
  * Plays a sound local to the current system.
  *
  * Arguments:
- * 0: File path to the sound to play <STRING>
- * 1: Unit to play the sound on <OBJECT>
- * 2: Base volume for sound <NUMBER>
- * 3: Base pitch for sound <NUMBER>
+ * 0: File path to sound <STRING>
+ * 1: Sound position in format PositionASL <ARRAY>
+ * 2: Base volume (optional, default: 1) <NUMBER>
+ * 3: Base pitch (optional, default: 1) <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
  * ["file.wss", player] call FUNC(playLocalSound);
+ *
+ * Public: No
  */
 
 params [

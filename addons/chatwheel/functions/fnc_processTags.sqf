@@ -5,14 +5,16 @@
  * E.g. [weapon] is replaced with the displayName of the author's current held weapon.
  *
  * Arguments:
- * 0: The author of the message <OBJECT>
+ * 0: Unit <OBJECT>
  * 1: The message to process <STRING>
  *
  * Return Value:
- * The processed string <STRING>
+ * The processed message <STRING>
  *
  * Example:
- * "A message, optionally with [tags]" call FUNC(processTags);
+ * [player, "A message, optionally with [tags]"] call FUNC(processTags);
+ *
+ * Public: Yes
  */
 
 params [

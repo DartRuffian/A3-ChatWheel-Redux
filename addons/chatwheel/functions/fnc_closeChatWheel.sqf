@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Closes the Chat Wheel.
+ * Closes the Chat Wheel menu.
  *
  * Arguments:
  * None
@@ -11,6 +11,8 @@
  *
  * Example:
  * call FUNC(closeChatWheel);
+ *
+ * Public: Yes
  */
 
 params [];
