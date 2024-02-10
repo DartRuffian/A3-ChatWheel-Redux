@@ -6,3 +6,4 @@
 #define DISABLE_COMPILE_CACHE
 
 #include "\DA\CWR\addons\main\script_macros.hpp"
+#include "defines.hpp"
