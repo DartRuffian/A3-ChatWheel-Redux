@@ -25,7 +25,7 @@ private ["_tagsList", "_voiceLine", "_voiceLineClass"];
 TRACE_2("fnc_processTags",_author,_message);
 
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashmap];
-_message = _message regexReplace ["\[.*?\]", "\L$&"]; // lowercase everything in [brackets]
+_message = _message regexReplace [REGEX_LOWERCASE_TAGS]; // lowercase everything in [brackets]
 
 {
     private ["_tag"];
