@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CWR">
     <Package name="chatwheel">
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_Name">
+            <English>Chat Wheel - User Guide</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_KeybindsAndOptions_DisplayNameShort">
+            <English>Keybinds and Options</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_KeybindsAndOptions_Description">
+            <English>Thank you for using Chat Wheel Redux! To use this mod, check out the controls in Options →     Controls →     Configure Addons →     Chat Wheel Redux. Options can be edited in Options →     Addon Options →     Chat Wheel Redux.</English>
+        </Key>
+
         <Key ID="STR_CWR_chatwheel_hud_ChatWheel">
             <English>Chat Wheel</English>
         </Key>
@@ -200,28 +210,28 @@
             <English>Your current bearing.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Bearing">
-            <English>'I'm facing [tag]' → 'I'm facing 0'</English>
+            <English>'I'm facing [tag]' →     'I'm facing 0'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Direction">
             <English>Your current direction.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Direction">
-            <English>'I'm facing [tag]' → 'I'm facing North'</English>
+            <English>'I'm facing [tag]' →     'I'm facing North'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Weapon">
             <English>The name of your currently held weapon.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Weapon">
-            <English>'I'm holding a [tag]' → 'I'm holding a MX 6.5mm'</English>
+            <English>'I'm holding a [tag]' →     'I'm holding a MX 6.5mm'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Contact">
             <English>Opens a new menu to select from 'Infantry', 'Vehicle', or 'Fortification'.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Contact">
-            <English>'Contact, [tag]!' → 'Contact, infantry!'</English>
+            <English>'Contact, [tag]!' →     'Contact, infantry!'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Infantry">
@@ -247,7 +257,7 @@
             <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Distance">
-            <English>'There's infantry [tag]' → 'There's infantry close'</English>
+            <English>'There's infantry [tag]' →     'There's infantry close'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Close">
@@ -275,7 +285,7 @@
             <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Status">
-            <English>'There's infantry [tag]' → 'There's infantry close'</English>
+            <English>'There's infantry [tag]' →     'There's infantry close'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Status_CallCheck">
@@ -318,7 +328,7 @@
             <English>Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_tagExample_Launcher">
-            <English>'[tag]?' → 'Permission to fire?'</English>
+            <English>'[tag]?' →     'Permission to fire?'</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_AskPermission">
