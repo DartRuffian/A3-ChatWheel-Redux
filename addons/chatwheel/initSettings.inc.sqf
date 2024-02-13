@@ -131,5 +131,5 @@ if (ADDON_LOADED(ace_medical)) then {
     "SLIDER",
     [LLSTRING(setting_voice_volume), LLSTRING(settingDescription_voice_volume)],
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_voice)],
-    [0, 5, 1, 1]
+    [0, 1, 1, 0, true]
 ] call CBA_fnc_addSetting;
