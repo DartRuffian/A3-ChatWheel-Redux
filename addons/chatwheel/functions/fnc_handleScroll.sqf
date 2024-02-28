@@ -32,6 +32,6 @@ if (_scroll) then {
     _selectedIndex = _selectedIndex - 1;
 };
 
-_selectedIndex = [_selectedIndex, 0, lbSize _messagesCtrl] call BIS_fnc_clamp;
+_selectedIndex = CLAMP(_selectedIndex,0,lbSize _messagesCtrl);
 _messagesCtrl lbSetCurSel _selectedIndex;
 lbCurSel _messagesCtrl;
