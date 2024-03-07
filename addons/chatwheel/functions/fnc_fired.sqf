@@ -31,7 +31,11 @@ _grenadeType = switch (true) do {
 };
 _grenadeType params ["_voiceLineClass", "_localized"];
 
-if (!GVAR(autoMessages_enabled) or {!GVAR(autoMessages_enabledGrenades) or isNull _unit or _weapon != "throw"}) exitWith {};
+if (!GVAR(autoMessages_enabled) or
+    {!GVAR(autoMessages_enabledGrenades)} or
+    {isNull _unit} or
+    {_weapon != "throw"}
+) exitWith {};
 
 _message = format [LLSTRING(message_GrenadeThrown), _voiceLineClass, _localized];
 

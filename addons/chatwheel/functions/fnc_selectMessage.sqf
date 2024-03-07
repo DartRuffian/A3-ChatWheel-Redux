@@ -22,7 +22,7 @@ TRACE_1("fnc_selectMessage",nil);
 _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
-if (isNull _display or isNull _messagesCtrl) exitWith {
+if (isNull _display or {isNull _messagesCtrl}) exitWith {
     WARNING("Attempted to send message while display was not open");
 };
 
