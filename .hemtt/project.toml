@@ -4,7 +4,7 @@ prefix = "CWR"
 mainprefix = "DA"
 
 [version]
-path = "addons/Core/script_version.hpp"
+path = "addons/main/script_version.hpp"
 git_hash = 0
 
 [files]
@@ -13,11 +13,9 @@ include = [
     # "logo_cwr_ca.paa",
     # "logo_cwr_over_ca.paa",
     "LICENSE",
-    "README.md"
+    "README.md",
 ]
-exclude = [
-    "*.psd"
-]
+exclude = ["*.psd"]
 
 [properties]
 author = "DartRuffian"
@@ -25,21 +23,23 @@ url = "https://github.com/Dart-Armory/ChatWheel-Redux"
 
 [hemtt.launch.default]
 workshop = [
-    "450814997", # CBA
-    "2369477168" # ADT
+    "450814997",  # CBA
+    "2369477168", # ADT
 ]
 presets = []
 dlc = []
-optionals = []
-parameters = []
+optionals = ["vanilla_voice"]
+parameters = [
+    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\CE%2fSPC-0925%20%22Dart%22\\missions\\CWR_Test.VR",
+]
 
 [hemtt.launch.ace]
 workshop = [
-    "450814997", # CBA
-    "463939057", # ACE
-    "2369477168" # ADT
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "2369477168", # ADT
 ]
 presets = []
 dlc = []
-optionals = []
+optionals = ["vanilla_voice"]
 parameters = []

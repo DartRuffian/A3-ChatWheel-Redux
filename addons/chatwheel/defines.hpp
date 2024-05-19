@@ -1,0 +1,4 @@
+#define IDD_CHATWHEEL_MAIN 500
+#define IDC_CHATWHEEL_MESSAGES 501
+
+#define REGEX_LOWERCASE_TAGS "\[.*?\]", "\L$&"

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CWR">
+    <Package name="chatwheel">
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_Name">
+            <English>Chat Wheel - User Guide</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_KeybindsAndOptions_DisplayNameShort">
+            <English>Keybinds and Options</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hint_UserGuide_KeybindsAndOptions_Description">
+            <English>Thank you for using Chat Wheel Redux! To use this mod, check out the controls in Options →     Controls →     Configure Addons →     Chat Wheel Redux. Options can be edited in Options →     Addon Options →     Chat Wheel Redux.</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_hud_ChatWheel">
+            <English>Chat Wheel</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_hudDescription_ChatWheel">
+            <English>Message display for the Chat Wheel.</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_key_openMenu">
+            <English>Open Chat Wheel</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_openMenu">
+            <English>Opens or closes the chat menu.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_selectMessage">
+            <English>Select Message</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_selectMessage">
+            <English>Selects a message from the Chat Wheel.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_scrollUp">
+            <English>Scroll Up</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_scrollUp">
+            <English>Scrolls up one option in the Chat Wheel.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_key_scrollDown">
+            <English>Scroll Down</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_keyDescription_scrollDown">
+            <English>Scrolls down one option in the Chat Wheel.</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_controls">
+            <English>Controls</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_useInvertedScrolling">
+            <English>Inverted Scrolling</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_useInvertedScrolling">
+            <English>Whether to invert the scrolling behavior for the Chat Wheel.</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_customMessages">
+            <English>Custom Messages</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_one">
+            <English>Custom 1</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_two">
+            <English>Custom 2</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_three">
+            <English>Custom 3</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_customMessages_four">
+            <English>Custom 4</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_customMessages">
+            <English>Custom message that can be used in the Chat Wheel. Custom messages support [tags].</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_autoMessages">
+            <English>Automatic Messages</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabled">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabled">
+            <English>Global setting for all automatic messages when certain actions are done.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabledUnconscious">
+            <English>Unconscious Messages</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabledUnconscious">
+            <English>When a player goes unconscious, the closest conscious player will make a call out. Only works with ACE Medical.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_autoMessages_enabledGrenades">
+            <English>Throwing Grenades</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_autoMessages_enabledGrenades">
+            <English>When a player throws a grenade, they will make a call out with the type of grenade (Grenade, smoke, etc.) and their bearing.</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_settingCategory_voice">
+            <English>Voice Lines</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_enabled">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_enabled">
+            <English>If enabled, messages will play the voice lines that can be added to them.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_cooldown">
+            <English>Cooldown</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_cooldown">
+            <English>The minimum amount of time before another voice line can be played by a given player.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_radius">
+            <English>Radius</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_radius">
+            <English>The radius in meters that voice lines can be heard from.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_setting_voice_volume">
+            <English>Volume</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_settingDescription_voice_volume">
+            <English>Volume multiplier for voice lines.</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedMedic">
+            <English>Call Medic</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedMedic">
+            <English>[vl-NeedMedic]I need a medic!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedHelp">
+            <English>Call Help</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedHelp">
+            <English>[vl-NeedHelp]I need help!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Apologize">
+            <English>Apologize</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Apologize">
+            <English>[vl-Sorry]Sorry!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_ThankYou">
+            <English>Thank You</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_ThankYou">
+            <English>[vl-Thanks]Thank you!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Follow">
+            <English>Follow Me</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Follow">
+            <English>[vl-FollowMe]Follow me!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Contact">
+            <English>Contact</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Contact">
+            <English>[contact]</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_NeedAmmo">
+            <English>Need Ammo</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_NeedAmmo">
+            <English>[vl-NeedAmmo]I need ammo for my [weapon]!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_ACECheck">
+            <English>ACE Check</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_ACECheck">
+            <English>[status]</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_messageTitle_Launcher">
+            <English>Launcher</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_message_Launcher">
+            <English>[launcher]</English>
+        </Key>
+
+        <!-- %1 gets replaced with player name -->
+        <Key ID="STR_CWR_chatwheel_message_Unconscious">
+            <English>[vl-Unconscious]%1 is down!</English>
+        </Key>
+
+        <!-- %1 gets replaced with type of grenade, i.e. "Grenade", "Smoke", and is always english
+             %2 is replaced localized grenade type -->
+        <Key ID="STR_CWR_chatwheel_message_GrenadeThrown">
+            <English>[vl-Throw%1]%2 out, [bearing]!</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_grenadeType_Grenade">
+            <English>Grenade</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Smoke">
+            <English>Smoke</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Bearing">
+            <English>Your current bearing.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Bearing">
+            <English>'I'm facing [tag]' →     'I'm facing 0'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Direction">
+            <English>Your current direction.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Direction">
+            <English>'I'm facing [tag]' →     'I'm facing North'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Weapon">
+            <English>The name of your currently held weapon.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Weapon">
+            <English>'I'm holding a [tag]' →     'I'm holding a MX 6.5mm'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Contact">
+            <English>Opens a new menu to select from 'Infantry', 'Vehicle', or 'Fortification'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Contact">
+            <English>'Contact, [tag]!' →     'Contact, infantry!'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Infantry">
+            <English>Infantry</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Infantry">
+            <English>[vl-ContactInfantry]infantry</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Vehicle">
+            <English>Vehicle</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Vehicle">
+            <English>[vl-ContactVehicle]vehicle</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagTitle_Contact_Fortification">
+            <English>Fortification</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Contact_Fortification">
+            <English>[vl-ContactFortification]fortification</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Distance">
+            <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Distance">
+            <English>'There's infantry [tag]' →     'There's infantry close'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Close">
+            <English>Close</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Close">
+            <English>close</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Medium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Medium">
+            <English>medium</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Distance_Far">
+            <English>Far</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Distance_Far">
+            <English>far</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tag_Status">
+            <English>Opens a new menu to select from 'Close', 'Medium', or 'Far'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Status">
+            <English>'There's infantry [tag]' →     'There's infantry close'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_CallCheck">
+            <English>Call Check</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_CallCheck">
+            <English>[vl-ACECheck]ACE check</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Green">
+            <English>Green</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Green">
+            <English>green</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Yellow">
+            <English>Yellow</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Yellow">
+            <English>yellow</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Red">
+            <English>Red</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Red">
+            <English>red</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Status_Black">
+            <English>Black</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Status_Black">
+            <English>black</English>
+        </Key>
+
+
+        <Key ID="STR_CWR_chatwheel_tag_Launcher">
+            <English>Opens a new menu to select from 'Permission to fire', 'Clear backblast', 'Backblast clear', or 'Rocket rocket rocket'.</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tagExample_Launcher">
+            <English>'[tag]?' →     'Permission to fire?'</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_AskPermission">
+            <English>Permission to Fire?</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_AskPermission">
+            <English>[vl-AskFirePermission]Permission to fire</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_ClearBackblast">
+            <English>Clear Backblast</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_ClearBackblast">
+            <English>[vl-ClearBackblast]Clear backblast</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_BackblastClear">
+            <English>Backblast Clear</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_BackblastClear">
+            <English>[vl-BackblastClear]Backblast clear</English>
+        </Key>
+
+        <Key ID="STR_CWR_chatwheel_tagTitle_Launcher_FireRocket">
+            <English>Rocket Rocket Rocket!</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_tag_Launcher_FireRocket">
+            <English>[vl-RocketFire]Rocket rocket rocket</English>
+        </Key>
+    </Package>
+</Project>

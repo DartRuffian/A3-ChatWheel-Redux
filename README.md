@@ -6,7 +6,7 @@
   </ul>
 </div>
 
-[![Developers](https://img.shields.io/github/contributors/DartRuffian/A3-ChatWheel-Redux?logo=github&label=Dev%20Team%20Size&labelColor=444D56)](https://github.com/DartRuffian/A3-ChatWheel-Redux/graphs/contributors)
+[![Developers](https://img.shields.io/github/contributors/DartRuffian/A3-ChatWheel-Redux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/DartRuffian/A3-ChatWheel-Redux/graphs/contributors)
 [![Last Updated](https://img.shields.io/steam/update-date/3005504621?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621)
 
 </div>
