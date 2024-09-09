@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call FUNC(selectMessage);
+ * [] call cwr_chatwheel_fnc_selectMessage;
  *
  * Public: No
  */

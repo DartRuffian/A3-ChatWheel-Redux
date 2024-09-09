@@ -15,7 +15,7 @@
  * True on success, false otherwise <BOOL>
  *
  * Example:
- * ["Custom1", "Custom 1", "This is my custom message", 10] call FUNC(addMessage);
+ * ["Custom1", "Custom 1", "This is my custom message", 10] call cwr_chatwheel_fnc_addMessage;
  *
  * Public: Yes
  */

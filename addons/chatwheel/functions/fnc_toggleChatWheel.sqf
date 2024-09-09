@@ -10,7 +10,7 @@
  * True if opened, false otherwise <BOOL>
  *
  * Example:
- * call FUNC(toggleChatWheel);
+ * [] call cwr_chatwheel_fnc_toggleChatWheel;
  *
  * Public: Yes
  */

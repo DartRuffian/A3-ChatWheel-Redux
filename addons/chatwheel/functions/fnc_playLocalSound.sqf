@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ["file.wss", player] call FUNC(playLocalSound);
+ * ["file.wss", player] call cwr_chatwheel_fnc_playLocalSound;
  *
  * Public: No
  */

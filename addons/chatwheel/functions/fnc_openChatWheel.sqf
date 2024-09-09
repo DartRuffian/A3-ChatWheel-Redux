@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call FUNC(openChatWheel);
+ * [] call cwr_chatwheel_fnc_openChatWheel;
  *
  * Public: Yes
  */

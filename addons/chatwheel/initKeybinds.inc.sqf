@@ -15,8 +15,8 @@
     {
         private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
         if (!isNull _display) then {
-            call FUNC(selectMessage);
-            call FUNC(closeChatWheel);
+            [] call FUNC(selectMessage);
+            [] call FUNC(closeChatWheel);
         };
     }, {}, [DIK_SPACE, false, false, false]
 ] call CBA_fnc_addKeybind;

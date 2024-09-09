@@ -15,8 +15,8 @@
  * None
  *
  * Examples:
- * player addEventHandler ["Fired", LINKFUNC(fired)];
- * ["ace_firedPlayer", LINKFUNC(fired)] call CBA_fnc_addEventHandler;
+ * player addEventHandler ["Fired", cwr_chatwheel_fnc_fired];
+ * ["ace_firedPlayer", cwr_chatwheel_fnc_fired] call CBA_fnc_addEventHandler;
  *
  * Public: No
  */

@@ -17,8 +17,8 @@
  * None
  *
  * Examples:
- * ["A message, optionally with [tags]"] call FUNC(sendMessage);
- * ["A local message", player, "side-local", 10] call FUNC(sendMessage);
+ * ["A message, optionally with [tags]"] call cwr_chatwheel_fnc_sendMessage;
+ * ["A local message", player, "side-local", 10] call cwr_chatwheel_fnc_sendMessage;
  *
  * Public: Yes
  */

@@ -10,7 +10,7 @@
  * True on success, false otherwise <BOOL>
  *
  * Example:
- * "Custom1" call FUNC(removeMessage);
+ * "Custom1" call cwr_chatwheel_fnc_removeMessage;
  *
  * Public: Yes
  */

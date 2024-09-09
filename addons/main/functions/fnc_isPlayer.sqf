@@ -11,7 +11,7 @@
  * True if unit is player or remote controlled if set, false otherwise
  *
  * Example:
- * player call FUNC(isPlayer);
+ * player call cwr_main_fnc_isPlayer;
  *
  * Public: Yes
  */

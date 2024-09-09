@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call FUNC(scanConfig);
+ * [] call cwr_chatwheel_fnc_scanConfig;
  *
  * Public: No
  */

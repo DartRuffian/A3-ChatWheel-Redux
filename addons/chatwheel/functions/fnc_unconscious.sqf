@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * ["ace_unconscious", LINKFUNC(unconscious)] call CBA_fnc_addEventHandler;
+ * ["ace_unconscious", cwr_chatwheel_fnc_unconscious] call CBA_fnc_addEventHandler;
  *
  * Public: No
  */

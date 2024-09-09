@@ -12,7 +12,7 @@
  * The processed message <STRING>
  *
  * Example:
- * [player, "A message, optionally with [tags]"] call FUNC(processTags);
+ * [player, "A message, optionally with [tags]"] call cwr_chatwheel_fnc_processTags;
  *
  * Public: Yes
  */

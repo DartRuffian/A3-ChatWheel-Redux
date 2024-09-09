@@ -10,7 +10,7 @@
  * Array of all voice line tags <ARRAY>
  *
  * Example:
- * "[vl-voiceLine]A message[vl-voiceLine2]" call FUNC(findVoiceTags);
+ * "[vl-voiceLine]A message[vl-voiceLine2]" call cwr_chatwheel_fnc_findVoiceTags;
  *
  * Public: Yes
  */

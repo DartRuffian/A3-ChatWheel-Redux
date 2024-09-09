@@ -10,7 +10,7 @@
  * True if unit can say a voice line, otherwise false <BOOL>
  *
  * Example:
- * player call FUNC(canUseVoiceLine);
+ * player call cwr_chatwheel_fnc_canUseVoiceLine;
  *
  * Public: Yes
  */

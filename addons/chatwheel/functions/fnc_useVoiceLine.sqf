@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, "NeedMedic"] call FUNC(useVoiceLine);
+ * [player, "NeedMedic"] call cwr_chatwheel_fnc_useVoiceLine;
  *
  * Public: Yes
  */
