@@ -21,7 +21,7 @@ params [
 TRACE_1("fnc_populateChatWheel",_lbData);
 
 if (count _lbData isEqualTo 0) then {
-    _lbData = uiNamespace getVariable [QGVAR(messages), createHashmap];
+    _lbData = uiNamespace getVariable [QGVAR(messages), createHashMap];
 };
 
 [{

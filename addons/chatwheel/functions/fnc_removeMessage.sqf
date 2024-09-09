@@ -21,7 +21,7 @@ params [
 private ["_messageList", "_deleted"];
 TRACE_1("fnc_removeMessage",_key);
 
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+_messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 _deleted = _messageList deleteAt _key;
 
 !isNil "_deleted";

@@ -29,7 +29,7 @@ if (isNull _display or {isNull _messagesCtrl}) exitWith {
 _selectedIndex = lbCurSel _messagesCtrl;
 _className = _messagesCtrl lbData _selectedIndex;
 
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+_messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 (_messageList get _className) params ["_displayName", "_message", "_order"];
 
 [_message, player, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);

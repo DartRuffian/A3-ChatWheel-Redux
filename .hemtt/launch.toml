@@ -1,0 +1,20 @@
+[default]
+workshop = [
+    "450814997",  # CBA
+    "2369477168", # ADT
+]
+presets = []
+dlc = []
+parameters = [
+    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\CE%2fSPC-0925%20%22Dart%22\\missions\\CWR_Test.VR",
+]
+
+[ace]
+extends = "default"
+workshop = [
+    "463939057",  # ACE
+]
+
+[vanilla_voice]
+extends = "default"
+optionals = ["vanilla_voice"]

@@ -35,7 +35,7 @@ if (_key isEqualTo "" or
     {_message isEqualTo ""}
 ) exitWith {false};
 
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashmap];
+_messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 
 if (_key in _messageList and {!_overwrite}) exitWith {false};
 
