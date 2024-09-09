@@ -24,7 +24,6 @@ params [
     ["_find", [""], []],
     ["_replace", "", []]
 ];
-private ["_return", "_len", "_pos"];
 TRACE_3("fnc_stringReplace",_str,_find,_replace);
 
 if (_str isEqualTo "") exitWith {WARNING_1("Empty string passed to %1",_fnc_scriptName);};
@@ -37,9 +36,9 @@ if !(_replace isEqualType "") then {
 };
 
 {
-    _return = "";
-    _len = count _x;
-    _pos = _str find _x;
+    private _return = "";
+    private _len = count _x;
+    private _pos = _str find _x;
 
     while {(_pos != -1) && (count _str > 0)} do {
         _return = _return + (_str select [0, _pos]) + _replace;

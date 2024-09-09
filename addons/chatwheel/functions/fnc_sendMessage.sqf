@@ -29,18 +29,16 @@ params [
     ["_channel", "side", [""]],
     ["_targetData", nil, []]
 ];
-private ["_target"];
 TRACE_4("fnc_sendMessage",_rawMessage,_author,_channel,_targetData);
 
 if (_rawMessage isEqualTo "") exitWith {};
 
 _message = [_author, _rawMessage] call FUNC(processTags);
 
-_target = switch (_channel) do {
+private _target = switch (_channel) do {
     case "group": {["groupChat", group _author]};
     case "side-local": {
-        private ["_nearbyPlayers"];
-        _nearbyPlayers = [ASLToAGL getPosASL _author, _targetData] call EFUNC(main,getNearbyPlayers);
+        private _nearbyPlayers = [ASLToAGL getPosASL _author, _targetData] call EFUNC(main,getNearbyPlayers);
         ["sideChat", _nearbyPlayers];
     };
     default {["sideChat", side _author]};

@@ -16,12 +16,10 @@
  */
 
 params [["_bearing", 0, [0]]];
-private ["_direction"];
 TRACE_1("fnc_bearingToDirection",_bearing);
 
 _bearing = CLAMP(_bearing,0,360);
-
-_direction = switch (true) do {
+private _direction = switch (true) do {
     case ((_bearing <= 22.5) or (_bearing >= 337.5)): {localize "STR_q_North"};
     case (_bearing <= 67.5): {localize "STR_q_North_East"};
     case (_bearing <= 112.5): {localize "STR_q_East"};

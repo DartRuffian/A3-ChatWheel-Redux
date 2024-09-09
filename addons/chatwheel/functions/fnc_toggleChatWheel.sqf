@@ -15,18 +15,16 @@
  * Public: Yes
  */
 
-params [];
-private ["_display", "_messagesCtrl", "_opened"];
 TRACE_1("fnc_toggleChatWheel",nil);
 
-_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
-_opened = false;
+private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+private _opened = false;
 
 if (isNull _display) then {
-    call FUNC(openChatWheel);
+    [] call FUNC(openChatWheel);
     _opened = true;
 } else {
-    call FUNC(closeChatWheel);
+    [] call FUNC(closeChatWheel);
 };
 
 _opened;

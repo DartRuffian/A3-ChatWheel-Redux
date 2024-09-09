@@ -18,9 +18,8 @@
 params [
     ["_message", "", [""]]
 ];
-private ["_tags"];
 TRACE_1("fnc_findVoiceTags",_message);
 
-_tags = _message regexFind ["\[vl-[A-z0-9]+\]/g"];
+private _tags = _message regexFind ["\[vl-[A-z0-9]+\]/g"];
 _tags = _tags apply { _x#0#0 };
 _tags;

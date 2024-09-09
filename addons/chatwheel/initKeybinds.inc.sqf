@@ -13,8 +13,7 @@
     _category, QGVAR(key_selectMessage),
     [LLSTRING(key_selectMessage), LLSTRING(keyDescription_selectMessage)],
     {
-        private ["_display"];
-        _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+        private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
         if (!isNull _display) then {
             call FUNC(selectMessage);
             call FUNC(closeChatWheel);

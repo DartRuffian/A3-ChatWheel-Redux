@@ -16,10 +16,9 @@
  */
 
 params [];
-private ["_messagesCtrl"];
 TRACE_1("fnc_closeChatWheel",nil);
 
-_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
 if (isNull _display) exitWith {
     WARNING("Attempted to close Chat Wheel when not open.");
 };

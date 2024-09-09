@@ -28,13 +28,12 @@ if (count _lbData isEqualTo 0) then {
     (!isNull (uiNamespace getVariable ["CWR_RscChatWheel", displayNull]))
 }, {
     params ["_lbData"];
-    private ["_display", "_messagesCtrl", "_index"];
-    _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
-    _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
+    private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+    private _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
     {
         _y params ["_displayName", "_message", "_order"];
-        _index = _messagesCtrl lbAdd _displayName;
+        private _index = _messagesCtrl lbAdd _displayName;
         _messagesCtrl lbSetValue [_index, _order];
         _messagesCtrl lbSetData [_index, _x];
     } forEach _lbData;

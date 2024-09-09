@@ -10,21 +10,19 @@
  * The selected index after scrolling <NUMBER>
  *
  * Example:
- * true call FUNC(handleScroll)
+ * true call cwr_chatwheel_fnc_handleScroll
  *
  * Public: No
  */
 
 params [["_scroll", false, [false]]];
-private ["_display", "_messagesCtrl", "_selectedIndex"];
 TRACE_1("fnc_handleScroll",_scroll);
 
 if (visibleMap) exitWith {};
 
-_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
-_messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
-
-_selectedIndex = lbCurSel _messagesCtrl;
+private _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
+private _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
+private _selectedIndex = lbCurSel _messagesCtrl;
 
 if (_scroll) then {
     _selectedIndex = _selectedIndex + 1;

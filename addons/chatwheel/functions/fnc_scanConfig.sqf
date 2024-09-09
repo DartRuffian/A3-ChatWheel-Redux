@@ -15,12 +15,13 @@
  * Public: No
  */
 
-params [["_reloadFromConfig", false, [false]]];
-private ["_messageConfig", "_messageList", "_voiceLineConfig", "_voiceLineList"];
+params [
+    ["_reloadFromConfig", false, [false]]
+];
 TRACE_1("fnc_scanConfig",_reloadFromConfig);
 
-_messageConfig = configProperties [configFile >> QGVAR(messages)];
-_messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
+private _messageConfig = configProperties [configFile >> QGVAR(messages)];
+private _messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 
 if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
     _messageList = createHashMap;
@@ -35,8 +36,8 @@ if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
     uiNamespace setVariable [QGVAR(messages), _messageList];
 };
 
-_voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
-_voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashMap];
+private _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
+private _voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashMap];
 
 if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
     _voiceLineList = createHashMap;
