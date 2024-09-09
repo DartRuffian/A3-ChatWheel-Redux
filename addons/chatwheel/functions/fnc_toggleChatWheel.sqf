@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Opens or closes the Chat Wheel, based on its current state.
  *
  * Arguments:
@@ -19,7 +19,7 @@ params [];
 private ["_display", "_messagesCtrl", "_opened"];
 TRACE_1("fnc_toggleChatWheel",nil);
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
 _opened = false;
 
 if (isNull _display) then {

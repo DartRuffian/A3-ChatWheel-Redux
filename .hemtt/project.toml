@@ -1,5 +1,5 @@
 name = "Chat Wheel Redux"
-author = "DartRuffian"
+author = "Dart"
 prefix = "CWR"
 mainprefix = "DA"
 
@@ -18,5 +18,5 @@ include = [
 exclude = ["*.psd"]
 
 [properties]
-author = "DartRuffian"
+author = "Dart"
 url = "https://github.com/Dart-Armory/ChatWheel-Redux"

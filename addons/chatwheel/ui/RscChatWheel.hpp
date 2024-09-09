@@ -1,8 +1,8 @@
-class CLASS(RscChatWheel) {
+class CWR_RscChatWheel {
     idd = IDD_CHATWHEEL_MAIN;
     duration = 1e+6;
-    onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQCLASS(RscChatWheel),_this select 0)];);
-    onUnload = QUOTE(uiNamespace setVariable [ARR_2(QQCLASS(RscChatWheel),nil)]);
+    onLoad = QUOTE(uiNamespace setVariable [ARR_2('CWR_RscChatWheel',_this select 0)];);
+    onUnload = QUOTE(uiNamespace setVariable [ARR_2('CWR_RscChatWheel',nil)]);
 
     class Controls {
         class Messages: RscListBox {

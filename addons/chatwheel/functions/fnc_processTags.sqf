@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Processes a message for "simple" tags. A simple tag does not require user input and is text replaced with a code output.
  * E.g. [weapon] is replaced with the displayName of the author's current held weapon.
  *

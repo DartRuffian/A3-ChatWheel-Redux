@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Colin J.D. Stewart (PixeL_GaMMa)
- * Edited By DartRuffian
+ * Edited By Dart
  * Replaces all occurences of substrings in a given string with a given value.
  *
  * Arguments:

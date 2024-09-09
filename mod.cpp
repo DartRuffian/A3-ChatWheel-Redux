@@ -8,5 +8,5 @@ description = "CWR - Version 0.0.0";
 tooltip = "CWR";
 tooltipOwned = "CWR Owned";
 overview = "Description";
-author = "DartRuffian";
+author = "Dart";
 // overviewPicture = "logo_cwr_ca.paa";

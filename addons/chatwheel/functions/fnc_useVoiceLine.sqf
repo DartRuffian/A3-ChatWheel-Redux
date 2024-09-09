@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Plays a voice line from a given unit.
  *
  * Arguments:

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Returns an array of players near a given position.
  *
  * Arguments:

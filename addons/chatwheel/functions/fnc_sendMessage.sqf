@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Takes a message and author, processes the tags in the message, and sends it to the given channel.
  *
  * Arguments:

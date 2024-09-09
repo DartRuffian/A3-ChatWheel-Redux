@@ -2,11 +2,12 @@
 
 class CfgPatches {
     class ADDON {
-        author = "DartRuffian";
+        author = "Dart";
+        authors[] = {"Dart"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(main)
+            "cwr_main"
         };
         units[] = {};
         weapons[] = {};

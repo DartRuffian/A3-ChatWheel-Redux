@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control. If the data to populate the list with is empty, the saved message list will be used instead.
  *
  * Arguments:
@@ -25,11 +25,11 @@ if (count _lbData isEqualTo 0) then {
 };
 
 [{
-    (!isNull (uiNamespace getVariable [QCLASS(RscChatWheel), displayNull]))
+    (!isNull (uiNamespace getVariable ["CWR_RscChatWheel", displayNull]))
 }, {
     params ["_lbData"];
     private ["_display", "_messagesCtrl", "_index"];
-    _display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+    _display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
     _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
     {

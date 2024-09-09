@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Selects a message from the Chat Wheel to then be processed and sent.
  *
  * Arguments:
@@ -19,7 +19,7 @@ params [];
 private ["_display", "_messagesCtrl", "_selectedIndex", "_messageList", "_className"];
 TRACE_1("fnc_selectMessage",nil);
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 if (isNull _display or {isNull _messagesCtrl}) exitWith {

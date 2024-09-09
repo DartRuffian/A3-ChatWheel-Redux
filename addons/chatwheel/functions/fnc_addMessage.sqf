@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Adds a message to the Chat Wheel menu.
  *
  * Arguments:

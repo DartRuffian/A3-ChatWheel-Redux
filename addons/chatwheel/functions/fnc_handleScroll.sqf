@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Logic for handling mouse wheel scrolling to select different options in the Chat Wheel.
  *
  * Arguments:
@@ -21,7 +21,7 @@ TRACE_1("fnc_handleScroll",_scroll);
 
 if (visibleMap) exitWith {};
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
 _messagesCtrl = _display displayCtrl IDC_CHATWHEEL_MESSAGES;
 
 _selectedIndex = lbCurSel _messagesCtrl;

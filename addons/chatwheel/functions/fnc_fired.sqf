@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Sends a message for a unit throwing a grenade. Some parameters are unused and are carried over from the vanilla Fired and ace_firedPlayer event handlers. These can be safely ignored by passing an empty string for their value.
  *
  * Arguments:

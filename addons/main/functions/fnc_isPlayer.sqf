@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Checks if a given unit is a player, includes remote controlled units by default.
  *
  * Arguments:

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DartRuffian
+ * Author: Dart
  * Closes the Chat Wheel menu.
  *
  * Arguments:
@@ -19,7 +19,7 @@ params [];
 private ["_messagesCtrl"];
 TRACE_1("fnc_closeChatWheel",nil);
 
-_display = uiNamespace getVariable [QCLASS(RscChatWheel), displayNull];
+_display = uiNamespace getVariable ["CWR_RscChatWheel", displayNull];
 if (isNull _display) exitWith {
     WARNING("Attempted to close Chat Wheel when not open.");
 };
