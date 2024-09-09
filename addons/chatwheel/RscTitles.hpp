@@ -1,6 +1,5 @@
 #include "ui\BaseControls.hpp"
 
-class RscTitles
-{
+class RscTitles {
     #include "ui\RscChatWheel.hpp"
 };

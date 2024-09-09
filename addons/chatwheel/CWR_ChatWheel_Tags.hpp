@@ -1,49 +1,40 @@
-class CWR_ChatWheel_Tags
-{
-    class Bearing
-    {
+class CWR_ChatWheel_Tags {
+    class Bearing {
         description = CSTRING(tag_Bearing);
         statement = QUOTE(round direction _this);
         example = CSTRING(tagExample_Bearing);
     };
 
-    class Direction
-    {
+    class Direction {
         description = CSTRING(tag_Direction);
         statement = QUOTE(round direction _this call EFUNC(main,bearingToDirection));
         example = CSTRING(tagExample_Direction);
     };
 
-    class Weapon
-    {
+    class Weapon {
         description = CSTRING(tag_Weapon);
         statement = QUOTE(getText (configFile >> 'CfgWeapons' >> currentWeapon _this >> 'displayName'));
         example = CSTRING(tagExample_Weapon);
     };
 
-    class Contact
-    {
+    class Contact {
         description = CSTRING(tag_Contact);
         statement = "";
         example = CSTRING(tagExample_Contact);
 
-        class Options
-        {
+        class Options {
             // Contact! Infantry [direction], Bearing [bearing]! [distance]!
-            class Infantry
-            {
+            class Infantry {
                 displayName = CSTRING(tagTitle_Contact_Infantry);
                 statement = QUOTE(QLLSTRING(tag_Contact_Infantry));
                 order = 0;
             };
-            class Vehicle
-            {
+            class Vehicle {
                 displayName = CSTRING(tagTitle_Contact_Vehicle);
                 statement = QUOTE(QLLSTRING(tag_Contact_Vehicle));
                 order = 1;
             };
-            class Fortification
-            {
+            class Fortification {
                 displayName = CSTRING(tagTitle_Contact_Fortification);
                 statement = QUOTE(QLLSTRING(tag_Contact_Fortification));
                 order = 2;
@@ -51,28 +42,23 @@ class CWR_ChatWheel_Tags
         };
     };
 
-    class Distance
-    {
+    class Distance {
         description = CSTRING(tag_Distance);
         statement = "";
         example = CSTRING(tagExample_Distance);
 
-        class Options
-        {
-            class Close
-            {
+        class Options {
+            class Close {
                 displayName = CSTRING(tagTitle_Distance_Close);
                 statement = QUOTE(QLLSTRING(tag_Distance_Close));
                 order = 0;
             };
-            class Medium
-            {
+            class Medium {
                 displayName = CSTRING(tagTitle_Distance_Medium);
                 statement = QUOTE(QLLSTRING(tag_Distance_Medium));
                 order = 1;
             };
-            class Far
-            {
+            class Far {
                 displayName = CSTRING(tagTitle_Distance_Far);
                 statement = QUOTE(QLLSTRING(tag_Distance_Far));
                 order = 2;
@@ -80,40 +66,33 @@ class CWR_ChatWheel_Tags
         };
     };
 
-    class Status
-    {
+    class Status {
         description = CSTRING(tag_Status);
         statement = "";
         example = CSTRING(tagExample_Status);
 
-        class Options
-        {
-            class CallCheck
-            {
+        class Options {
+            class CallCheck {
                 displayName = CSTRING(tagTitle_Status_CallCheck);
                 statement = QUOTE(QLLSTRING(tag_Status_CallCheck));
                 order = 0;
             };
-            class Green
-            {
+            class Green {
                 displayName = CSTRING(tagTitle_Status_Green);
                 statement = QUOTE(QLLSTRING(tag_Status_Green));
                 order = 1;
             };
-            class Yellow
-            {
+            class Yellow {
                 displayName = CSTRING(tagTitle_Status_Yellow);
                 statement = QUOTE(QLLSTRING(tag_Status_Yellow));
                 order = 2;
             };
-            class Red
-            {
+            class Red {
                 displayName = CSTRING(tagTitle_Status_Red);
                 statement = QUOTE(QLLSTRING(tag_Status_Red));
                 order = 3;
             };
-            class Black
-            {
+            class Black {
                 displayName = CSTRING(tagTitle_Status_Black);
                 statement = QUOTE(QLLSTRING(tag_Status_Black));
                 order = 4;
@@ -121,34 +100,28 @@ class CWR_ChatWheel_Tags
         };
     };
 
-    class Launcher
-    {
+    class Launcher {
         description = CSTRING(tag_Launcher);
         statement = "";
         example = CSTRING(tagExample_Launcher);
 
-        class Options
-        {
-            class AskPermission
-            {
+        class Options {
+            class AskPermission {
                 displayName = CSTRING(tagTitle_Launcher_AskPermission);
                 statement = QUOTE(QLLSTRING(tag_Launcher_AskPermission));
                 order = 0;
             };
-            class ClearBackblast
-            {
+            class ClearBackblast {
                 displayName = CSTRING(tagTitle_Launcher_ClearBackblast);
                 statement = QUOTE(QLLSTRING(tag_Launcher_ClearBackblast));
                 order = 1;
             };
-            class BackblastClear
-            {
+            class BackblastClear {
                 displayName = CSTRING(tagTitle_Launcher_BackblastClear);
                 statement = QUOTE(QLLSTRING(tag_Launcher_BackblastClear));
                 order = 2;
             };
-            class FireRocket
-            {
+            class FireRocket {
                 displayName = CSTRING(tagTitle_Launcher_FireRocket);
                 statement = QUOTE(QLLSTRING(tag_Launcher_FireRocket));
                 order = 3;

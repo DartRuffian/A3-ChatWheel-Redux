@@ -1,79 +1,59 @@
-class CWR_ChatWheel_VoiceLines
-{
-    class NeedMedic
-    {
+class CWR_ChatWheel_VoiceLines {
+    class NeedMedic {
         voiceLines[] = {};
     };
-    class NeedHelp
-    {
+    class NeedHelp {
         voiceLines[] = {};
     };
-    class Sorry
-    {
+    class Sorry {
         voiceLines[] = {};
     };
-    class Thanks
-    {
+    class Thanks {
         voiceLines[] = {};
     };
-    class FollowMe
-    {
+    class FollowMe {
         voiceLines[] = {};
     };
-    class ContactInfantry
-    {
+    class ContactInfantry {
         voiceLines[] = {};
     };
-    class ContactVehicle
-    {
+    class ContactVehicle {
         voiceLines[] = {};
     };
-    class ContactFortification
-    {
+    class ContactFortification {
         voiceLines[] = {};
     };
-    class NeedAmmo
-    {
+    class NeedAmmo {
         voiceLines[] = {};
     };
-    class ACECheck
-    {
+    class ACECheck {
         voiceLines[] = {};
     };
-    class StatusGreen
-    {
+    class StatusGreen {
         voiceLines[] = {};
     };
-    class StatusYellow
-    {
+    class StatusYellow {
         voiceLines[] = {};
     };
-    class StatusRed
-    {
+    class StatusRed {
         voiceLines[] = {};
     };
-    class StatusBlack
-    {
+    class StatusBlack {
         voiceLines[] = {};
     };
-    class AskFirePermission
-    {
+    class AskFirePermission {
         voiceLines[] = {};
     };
-    class ClearBackblast
-    {
+    class ClearBackblast {
         voiceLines[] = {};
     };
-    class BackblastClear
-    {
+    class BackblastClear {
         voiceLines[] = {};
     };
-    class RocketFire
-    {
+    class RocketFire {
         voiceLines[] = {};
     };
-    class Unconscious
-    {
+    class Unconscious {
         voiceLines[] = {};
     };
 };
