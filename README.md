@@ -6,7 +6,7 @@
   </ul>
 </div>
 
-[![Developers](https://img.shields.io/github/contributors/DartRuffian/A3-ChatWheel-Redux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/DartRuffian/A3-ChatWheel-Redux/graphs/contributors)
+[![Developers](https://img.shields.io/github/contributors/Dart-Armory/ChatWheel-Redux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/Dart-Armory/ChatWheel-Redux/graphs/contributors)
 [![Last Updated](https://img.shields.io/steam/update-date/3005504621?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621)
 
 </div>
@@ -21,9 +21,9 @@
 Chat Wheel Redux is mostly feature complete; however, some of the planned features are: messages when taking damage; when a player is knocked unconcious (ACE); or killed. These will be able to be toggled on or off, similar to the automated messages for throwing grenades functions. They may each recieve their own settings in the future for more customization options.
 
 ## Issues
-Experiencing an issue? Check out the [Common Issues post](https://github.com/DartRuffian/A3-ChatWheel-Redux/issues/1) to see if your issue is listed.<br>
-If your issue is not listed, please create one with the appropiate [label](https://github.com/DartRuffian/A3-ChatWheel-Redux/labels).
+Experiencing an issue? Check out the [Common Issues post](https://github.com/Dart-Armory/ChatWheel-Redux/issues/1) to see if your issue is listed.
+
+If your issue is not listed, you can [create a new issue](https://github.com/Dart-Armory/ChatWheel-Redux/issues/new).
 
 ## Usage & Modification
-This mod can be freely used by any player or any server.<br>
-Future work will remove the need to download and modify the scripts yourself, as the message options available will be moved to a config class instead of being defined in the scripts themselves.
+This mod can be freely used by any player or any server.
