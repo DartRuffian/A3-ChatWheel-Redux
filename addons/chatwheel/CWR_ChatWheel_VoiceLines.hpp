@@ -1,4 +1,4 @@
-class CWR_ChatWheel_VoiceLines {
+class GVAR(VoiceLines) {
     class NeedMedic {
         voiceLines[] = {};
     };

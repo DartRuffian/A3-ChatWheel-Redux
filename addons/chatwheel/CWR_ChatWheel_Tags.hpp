@@ -1,4 +1,4 @@
-class CWR_ChatWheel_Tags {
+class GVAR(Tags) {
     class Bearing {
         description = CSTRING(tag_Bearing);
         statement = QUOTE(round direction _this);

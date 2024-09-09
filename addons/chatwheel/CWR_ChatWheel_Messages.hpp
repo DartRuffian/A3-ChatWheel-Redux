@@ -1,4 +1,4 @@
-class CWR_ChatWheel_Messages {
+class GVAR(messages) {
     class NeedMedic {
         displayName = CSTRING(messageTitle_NeedMedic);
         message = CSTRING(message_NeedMedic);
