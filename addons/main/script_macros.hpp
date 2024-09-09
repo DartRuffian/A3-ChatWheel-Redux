@@ -1,5 +1,5 @@
 #ifdef __A3_DEBUG__
-    #include "\DA\CWR\addons\main\script_debug.hpp"
+    #include "\z\cwr\addons\main\script_debug.hpp"
 #endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
