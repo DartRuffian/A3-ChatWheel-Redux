@@ -1,5 +1,5 @@
 #define COMPONENT vanilla_voice
-#define COMPONENT_BEAUTIFIED Vanilla Voice - English
+#define COMPONENT_BEAUTIFIED Vanilla Voice
 #include "\z\cwr\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

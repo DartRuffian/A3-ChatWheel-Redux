@@ -1,50 +1,50 @@
 class CWR_ChatWheel_VoiceLines {
     class NeedMedic {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthiambadlyhurt.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthiamwounded.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthinjured.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthmedic.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthneedmedicnow.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthwounded.ogg", 1, 1}
+            {CSTRING(NeedMedic_01), 1, 1},
+            {CSTRING(NeedMedic_02), 1, 1},
+            {CSTRING(NeedMedic_03), 1, 1},
+            {CSTRING(NeedMedic_04), 1, 1},
+            {CSTRING(NeedMedic_05), 1, 1},
+            {CSTRING(NeedMedic_06), 1, 1}
         };
     };
     class NeedHelp {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthineedhelpnow.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthineedsomehelphere.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthneedhelp.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthsomebodyhelpme.ogg", 1, 1},
+            {CSTRING(NeedHelp_01), 1, 1},
+            {CSTRING(NeedHelp_02), 1, 1},
+            {CSTRING(NeedHelp_03), 1, 1},
+            {CSTRING(NeedHelp_04), 1, 1},
         };
     };
     class ContactInfantry {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combatcontact\010_vehicles\veh_infantry_p_2.ogg", 1, 1}
+            {CSTRING(ContactInfantry_01), 1, 1}
         };
     };
     class Unconscious {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\heishite.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_1.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_2.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_3.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_1.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_2.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_3.ogg", 1, 1}
+            {CSTRING(Unconscious_01), 1, 1},
+            {CSTRING(Unconscious_02), 1, 1},
+            {CSTRING(Unconscious_03), 1, 1},
+            {CSTRING(Unconscious_04), 1, 1},
+            {CSTRING(Unconscious_05), 1, 1},
+            {CSTRING(Unconscious_06), 1, 1},
+            {CSTRING(Unconscious_07), 1, 1}
         };
     };
 
     class ThrowGrenade {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_1.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_2.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_3.ogg", 1, 1}
+            {CSTRING(ThrowGrenade_01), 1, 1},
+            {CSTRING(ThrowGrenade_02), 1, 1},
+            {CSTRING(ThrowGrenade_03), 1, 1}
         };
     };
     class ThrowSmoke {
         voiceLines[] = {
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_1.ogg", 1, 1},
-            {"\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_2.ogg", 1, 1}
+            {CSTRING(ThrowSmoke_01), 1, 1},
+            {CSTRING(ThrowSmoke_02), 1, 1}
         };
     };
 };
