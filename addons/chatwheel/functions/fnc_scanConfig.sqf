@@ -4,7 +4,7 @@
  * Loads messages, tags, and voice line classes to HashMaps in uiNamespace.
  *
  * Arguments:
- * None
+ * 0: Reload from config (optional, default: false) <BOOL>
  *
  * Return Value:
  * None
@@ -16,14 +16,14 @@
  */
 
 params [
-    ["_reloadFromConfig", false, [false]]
+    ["_reload", false]
 ];
-TRACE_1("fnc_scanConfig",_reloadFromConfig);
+TRACE_1("fnc_scanConfig",_reload);
 
 private _messageConfig = configProperties [configFile >> QGVAR(messages)];
 private _messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 
-if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
+if (_reload or {_messageList isEqualTo createHashMap}) then {
     _messageList = createHashMap;
     {
         _messageList insert [[configName _x, [
@@ -39,12 +39,10 @@ if (count _messageList isEqualTo 0 or _reloadFromConfig) then {
 private _voiceLineConfig = configProperties [configFile >> QGVAR(voiceLines)];
 private _voiceLineList = uiNamespace getVariable [QGVAR(voiceLines), createHashMap];
 
-if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
+if (_reload or {_voiceLineList isEqualTo createHashMap}) then {
     _voiceLineList = createHashMap;
     {
-        _voiceLineList insert [[configName _x,
-            [_x, "voiceLines", []] call BIS_fnc_returnConfigEntry
-        ]];
+        _voiceLineList insert [[configName _x, getArray (_x >> "voiceLines")]];
     } forEach _voiceLineConfig;
 
     uiNamespace setVariable [QGVAR(voiceLines), _voiceLinesList];
@@ -53,7 +51,7 @@ if (count _voiceLineList isEqualTo 0 or _reloadFromConfig) then {
 _tagsConfig = configProperties [configFile >> QGVAR(tags)];
 _tagsList = uiNamespace getVariable [QGVAR(tags), createHashMap];
 
-if (count _tagsList isEqualTo 0 or _reloadFromConfig) then {
+if (_reload or {_tagsList isEqualTo createHashMap}) then {
     _tagsList = createHashMap;
     {
         _tagsList insert [[configName _x, [

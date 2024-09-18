@@ -1,59 +1,25 @@
+#define EMPTY(var1) class var1 { \
+    voiceLines[] = {}; \
+}
+
 class GVAR(VoiceLines) {
-    class NeedMedic {
-        voiceLines[] = {};
-    };
-    class NeedHelp {
-        voiceLines[] = {};
-    };
-    class Sorry {
-        voiceLines[] = {};
-    };
-    class Thanks {
-        voiceLines[] = {};
-    };
-    class FollowMe {
-        voiceLines[] = {};
-    };
-    class ContactInfantry {
-        voiceLines[] = {};
-    };
-    class ContactVehicle {
-        voiceLines[] = {};
-    };
-    class ContactFortification {
-        voiceLines[] = {};
-    };
-    class NeedAmmo {
-        voiceLines[] = {};
-    };
-    class ACECheck {
-        voiceLines[] = {};
-    };
-    class StatusGreen {
-        voiceLines[] = {};
-    };
-    class StatusYellow {
-        voiceLines[] = {};
-    };
-    class StatusRed {
-        voiceLines[] = {};
-    };
-    class StatusBlack {
-        voiceLines[] = {};
-    };
-    class AskFirePermission {
-        voiceLines[] = {};
-    };
-    class ClearBackblast {
-        voiceLines[] = {};
-    };
-    class BackblastClear {
-        voiceLines[] = {};
-    };
-    class RocketFire {
-        voiceLines[] = {};
-    };
-    class Unconscious {
-        voiceLines[] = {};
-    };
+    EMPTY(NeedMedic);
+    EMPTY(NeedHelp);
+    EMPTY(Sorry);
+    EMPTY(Thanks);
+    EMPTY(FollowMe);
+    EMPTY(ContactInfantry);
+    EMPTY(ContactVehicle);
+    EMPTY(ContactFortification);
+    EMPTY(NeedAmmo);
+    EMPTY(ACECheck);
+    EMPTY(StatusGreen);
+    EMPTY(StatusYellow);
+    EMPTY(StatusRed);
+    EMPTY(StatusBlack);
+    EMPTY(AskFirePermission);
+    EMPTY(ClearBackblast);
+    EMPTY(BackblastClear);
+    EMPTY(RocketFire);
+    EMPTY(Unconscious);
 };

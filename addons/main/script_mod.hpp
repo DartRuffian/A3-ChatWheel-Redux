@@ -1,6 +1,7 @@
 #define MAINPREFIX DA
 #define PREFIX CWR
 #define MOD_NAME Chat Wheel Redux
+#define AUTHOR "Dart"
 
 #ifdef __A3_DEBUG__
     #include "\z\cwr\addons\main\script_debug.hpp"

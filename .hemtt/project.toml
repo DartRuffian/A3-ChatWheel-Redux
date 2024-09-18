@@ -20,3 +20,6 @@ exclude = ["*.psd"]
 [properties]
 author = "Dart"
 url = "https://github.com/Dart-Armory/ChatWheel-Redux"
+
+[hemtt.release]
+archive = false
