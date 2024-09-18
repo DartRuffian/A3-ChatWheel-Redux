@@ -1,4 +1,4 @@
-#define COMPONENT vanilla_voice
+#define COMPONENT vanillavoice
 #define COMPONENT_BEAUTIFIED Vanilla Voice
 #include "\z\cwr\addons\main\script_mod.hpp"
 

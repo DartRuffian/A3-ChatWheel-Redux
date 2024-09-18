@@ -15,6 +15,6 @@ workshop = [
     "463939057",  # ACE
 ]
 
-[vanilla_voice]
+[vanillavoice]
 extends = "default"
-optionals = ["vanilla_voice"]
+optionals = ["vanillavoice"]

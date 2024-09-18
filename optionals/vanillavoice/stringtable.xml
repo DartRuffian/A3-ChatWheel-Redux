@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CWR">
-    <Package name="vanilla_voice">
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_01">
+    <Package name="vanillavoice">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthiambadlyhurt.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_02">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_02">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthiamwounded.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_03">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_03">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthinjured.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_04">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_04">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthmedic.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_05">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_05">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthneedmedicnow.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedMedic_06">
+        <Key ID="STR_CWR_vanillavoice_NeedMedic_06">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthwounded.ogg</English>
         </Key>
 
-        <Key ID="STR_CWR_vanilla_voice_NeedHelp_01">
+        <Key ID="STR_CWR_vanillavoice_NeedHelp_01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthineedhelpnow.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedHelp_02">
+        <Key ID="STR_CWR_vanillavoice_NeedHelp_02">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthineedsomehelphere.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedHelp_03">
+        <Key ID="STR_CWR_vanillavoice_NeedHelp_03">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthneedhelp.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_NeedHelp_04">
+        <Key ID="STR_CWR_vanillavoice_NeedHelp_04">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\healthsomebodyhelpme.ogg</English>
         </Key>
 
-        <Key ID="STR_CWR_vanilla_voice_ContactInfantry_01">
+        <Key ID="STR_CWR_vanillavoice_ContactInfantry_01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combatcontact\010_vehicles\veh_infantry_p_2.ogg</English>
         </Key>
 
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_01">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\heishite.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_02">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_02">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_1.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_03">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_03">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_2.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_04">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_04">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\mandowne_3.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_05">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_05">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_1.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_06">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_06">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_2.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_Unconscious_07">
+        <Key ID="STR_CWR_vanillavoice_Unconscious_07">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\normal\140_com_status\wegotamandowne_3.ogg</English>
         </Key>
 
-        <Key ID="STR_CWR_vanilla_voice_ThrowGrenade_01">
+        <Key ID="STR_CWR_vanillavoice_ThrowGrenade_01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_1.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_ThrowGrenade_02">
+        <Key ID="STR_CWR_vanillavoice_ThrowGrenade_02">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_2.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_ThrowGrenade_03">
+        <Key ID="STR_CWR_vanillavoice_ThrowGrenade_03">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwinggrenadee_3.ogg</English>
         </Key>
 
-        <Key ID="STR_CWR_vanilla_voice_ThrowGSmoke01">
+        <Key ID="STR_CWR_vanillavoice_ThrowGSmoke01">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_1.ogg</English>
         </Key>
-        <Key ID="STR_CWR_vanilla_voice_ThrowSmoke_02">
+        <Key ID="STR_CWR_vanillavoice_ThrowSmoke_02">
             <English>\a3\dubbing_radio_f\data\eng\male01eng\radioprotocoleng\combat\200_combatshouts\throwingsmokee_2.ogg</English>
         </Key>
     </Package>
