@@ -30,12 +30,6 @@ Chat Wheel Redux is mostly feature complete; however, some of the planned featur
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
----
-
-> "Thank you Dart for making my 'minimum fit for purpose' mod I made for, like, three of my unit members into something legit super accessible to the broader community."
-> <br>- _Jenna_, the original creator of the script this mod is based on. [Source (Legion Studios Discord)](https://ptb.discord.com/channels/461042140756180992/1130867599345987604/1130901200498343938)
-
-
 ## Issues
 Experiencing an issue? Check out the [Common Issues post](https://github.com/DartRuffian/A3-ChatWheel-Redux/issues/1) to see if your issue is listed.<br>
 If your issue is not listed, please create [a new issue](https://github.com/DartsArmaMods/ChatWheelRedux/issues/new)
@@ -45,3 +39,8 @@ This mod can be freely used by any player or any non-monetized server.<br>
 You are free to modify the mod for you or your group's own purposes if you:
  - Notify me on Discord (dartruffian).
  - Acknowledge that a fork Chat Wheel Redux is included in your mod(s).
+
+---
+
+> "Thank you Dart for making my 'minimum fit for purpose' mod I made for, like, three of my unit members into something legit super accessible to the broader community."
+> <br>- _Jenna_, the original creator of the script this mod is based on. [Source (Legion Studios Discord)](https://ptb.discord.com/channels/461042140756180992/1130867599345987604/1130901200498343938)
