@@ -4,7 +4,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/Version-1.4.0-blue?style=flat-square" alt="Chat Wheel Redux Version">
     <a href="https://github.com/DartsArmaMods/ChatWheelRedux/issues">
-        <img src="https://img.shields.io/github/issues-raw/DartRuffian/ChatWheelRedux.svg?style=flat-square&label=Issues" alt="Chat Wheel Redux Issues">
+        <img src="https://img.shields.io/github/issues-raw/DartsArmaMods/ChatWheelRedux.svg?style=flat-square&label=Issues" alt="Chat Wheel Redux Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621">
         <img src="https://img.shields.io/steam/downloads/3005504621.svg?style=flat-square&label=Downloads" alt="Chat Wheel Redux Downloads">
@@ -31,7 +31,7 @@ Chat Wheel Redux is mostly feature complete; however, some of the planned featur
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
 ## Issues
-Experiencing an issue? Check out the [Common Issues post](https://github.com/DartRuffian/A3-ChatWheel-Redux/issues/1) to see if your issue is listed.<br>
+Experiencing an issue? Check out the [Common Issues post](https://github.com/DartsArmaMods/A3-ChatWheel-Redux/issues/1) to see if your issue is listed.<br>
 If your issue is not listed, please create [a new issue](https://github.com/DartsArmaMods/ChatWheelRedux/issues/new)
 
 ## Usage and modification
