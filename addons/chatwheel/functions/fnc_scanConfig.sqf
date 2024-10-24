@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Loads messages, tags, and voice line classes to HashMaps in uiNamespace.
  *
  * Arguments:

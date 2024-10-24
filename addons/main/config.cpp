@@ -3,11 +3,10 @@
 class CfgPatches {
     class ADDON {
         author = AUTHOR;
-        authors[] = {"Dart"};
+        authors[] = {"DartRuffian"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "A3_Data_F_Decade_Loadorder",
             "cba_main"
         };
         units[] = {};
@@ -17,3 +16,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgSettings.hpp"

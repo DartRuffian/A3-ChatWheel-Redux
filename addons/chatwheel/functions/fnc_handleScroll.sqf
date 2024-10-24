@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Logic for handling mouse wheel scrolling to select different options in the Chat Wheel.
  *
  * Arguments:

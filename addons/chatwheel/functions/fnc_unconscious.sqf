@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Sends a message for a unit falling unconscious, only works for ACE Medical.
  *
  * Arguments:

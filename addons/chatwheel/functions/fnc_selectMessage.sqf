@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Selects a message from the Chat Wheel to then be processed and sent.
  *
  * Arguments:

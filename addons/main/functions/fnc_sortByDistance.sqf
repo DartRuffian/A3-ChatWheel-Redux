@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Sorts an array of objects based on distance from a given position.
  *
  * Arguments:

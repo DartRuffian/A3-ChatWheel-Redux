@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Opens or closes the Chat Wheel, based on its current state.
  *
  * Arguments:

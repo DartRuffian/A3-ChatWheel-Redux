@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Converts a bearing, a number from 0 to 360 inclusive, to a localized direction name.
  *
  * Arguments:

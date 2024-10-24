@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Takes messages stored in CWR_ChatWheel_messages from uiNamespace and populates the message listbox control. If the data to populate the list with is empty, the saved message list will be used instead.
  *
  * Arguments:

@@ -1,7 +1,7 @@
 name = "Chat Wheel Redux"
-author = "Dart"
-prefix = "CWR"
-mainprefix = "DA"
+author = "DartRuffian"
+prefix = "cwr"
+mainprefix = "z"
 
 [version]
 path = "addons/main/script_version.hpp"
@@ -18,8 +18,5 @@ include = [
 exclude = ["*.psd"]
 
 [properties]
-author = "Dart"
-url = "https://github.com/Dart-Armory/ChatWheel-Redux"
-
-[hemtt.release]
-archive = false
+author = "DartRuffian"
+url = "https://github.com/DartsArmaMods/ChatWheelRedux"

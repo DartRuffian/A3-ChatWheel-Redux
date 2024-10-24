@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Finds and returns all voice line tags in a message. Voice line tags are tags that begin with "vl-". A voice line tag must match the regex pattern: "\[vl-[A-z0-9]+\]/g" to be recognized and processed properly.
  *
  * Arguments:

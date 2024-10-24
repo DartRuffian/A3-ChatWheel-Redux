@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Leopard20
- * Edited By Dart
+ * Edited By DartRuffian
  * Plays a sound local to the current system.
  *
  * Arguments:

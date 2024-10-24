@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Opens the Chat Wheel menu, but does not populate it with any data.
  *
  * Arguments:

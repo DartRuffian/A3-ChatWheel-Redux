@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Removes a message from the Chat Wheel menu.
  *
  * Arguments:
