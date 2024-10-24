@@ -1,5 +1,3 @@
-#define TRUNC_MESSAGE(var1) (var1 select [0, 10])
-
 [
     QGVAR(useInvertedScrolling), "CHECKBOX",
     [LLSTRING(setting_useInvertedScrolling), LLSTRING(settingDescription_useInvertedScrolling)],
@@ -13,7 +11,8 @@
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "", 0, {
         if (_this != "") then {
-            ["UserCustom1", TRUNC_MESSAGE(_this), _this, -1, true] call FUNC(addMessage);
+            private _name = _this call EFUNC(common,truncate);
+            ["UserCustom1", _name, _this, -1, true] call FUNC(addMessage);
         } else {
             "UserCustom1" call FUNC(removeMessage);
         };
@@ -26,7 +25,8 @@
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "", 0, {
         if (!(_this isEqualTo "")) then {
-            ["UserCustom2", TRUNC_MESSAGE(_this), _this, -1, true] call FUNC(addMessage);
+            private _name = _this call EFUNC(common,truncate);
+            ["UserCustom2", _name, _this, -1, true] call FUNC(addMessage);
         } else {
             "UserCustom2" call FUNC(removeMessage);
         };
@@ -40,7 +40,8 @@
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "", 0, {
         if (!(_this isEqualTo "")) then {
-            ["UserCustom3", TRUNC_MESSAGE(_this), _this, -1, true] call FUNC(addMessage);
+            private _name = _this call EFUNC(common,truncate);
+            ["UserCustom3", _name, _this, -1, true] call FUNC(addMessage);
         } else {
             "UserCustom3" call FUNC(removeMessage);
         };
@@ -54,7 +55,8 @@
     [QUOTE(MOD_NAME), LLSTRING(settingCategory_customMessages)],
     "", 0, {
         if (!(_this isEqualTo "")) then {
-            ["UserCustom4", TRUNC_MESSAGE(_this), _this, -1, true] call FUNC(addMessage);
+            private _name = _this call EFUNC(common,truncate);
+            ["UserCustom4", _name, _this, -1, true] call FUNC(addMessage);
         } else {
             "UserCustom4" call FUNC(removeMessage);
         };
