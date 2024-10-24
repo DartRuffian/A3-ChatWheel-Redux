@@ -1,6 +1,8 @@
-#ifdef __A3_DEBUG__
-    #include "\z\cwr\addons\main\script_debug.hpp"
-#endif
+// Global toggles for caching/logging
+// #define DISABLE_COMPILE_CACHE
+// #define DEBUG_MODE_FULL
+#define DEBUG_SYNCHRONOUS
+
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 #define QQUOTE(var1) QUOTE(QUOTE(var1))

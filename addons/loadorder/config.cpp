@@ -7,8 +7,9 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cwr_main",
-            "cwr_chatwheel"
+            "cwr_chatwheel",
+            "cwr_common",
+            "cwr_main"
         };
         units[] = {};
         weapons[] = {};

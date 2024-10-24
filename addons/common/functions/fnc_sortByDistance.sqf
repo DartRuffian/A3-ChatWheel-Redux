@@ -12,7 +12,7 @@
  * The sorted objects <ARRAY>
  *
  * Example:
- * [ASLtoAGL getPosASL player, [unit1]] call cwr_main_fnc_sortByDistance;
+ * [ASLtoAGL getPosASL player, [unit1]] call cwr_common_fnc_sortByDistance;
  *
  * Public: Yes
  */

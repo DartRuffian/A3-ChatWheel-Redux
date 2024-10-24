@@ -3,10 +3,6 @@
 #define MOD_NAME Chat Wheel Redux
 #define AUTHOR "DartRuffian"
 
-#ifdef __A3_DEBUG__
-    #include "\z\cwr\addons\main\script_debug.hpp"
-#endif
-
 #include "\z\cwr\addons\main\script_version.hpp"
 
 #define REQUIRED_VERSION 2.18

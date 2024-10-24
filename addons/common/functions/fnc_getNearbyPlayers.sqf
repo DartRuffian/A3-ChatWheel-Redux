@@ -11,7 +11,7 @@
  * Array of player units <ARRAY>
  *
  * Example:
- * [getPosAGL player, 30] call cwr_main_fnc_getNearbyPlayers;
+ * [getPosAGL player, 30] call cwr_common_fnc_getNearbyPlayers;
  *
  * Public: Yes
  */

@@ -7,7 +7,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cwr_common"
+            "cwr_main"
         };
         units[] = {};
         weapons[] = {};
@@ -16,10 +16,3 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgUIGrids.hpp"
-#include "RscTitles.hpp"
-#include "CfgHints.hpp"
-#include "CWR_ChatWheel_Messages.hpp"
-#include "CWR_ChatWheel_Tags.hpp"
-#include "CWR_ChatWheel_VoiceLines.hpp"

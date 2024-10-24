@@ -31,7 +31,7 @@ _message = _message regexReplace [REGEX_LOWERCASE_TAGS]; // lowercase everything
     _y params ["", "_statement"];
 
     if (_statement isNotEqualTo {}) then {
-        _message = [_message, _tag, _author call _statement] call EFUNC(main,stringReplace);
+        _message = [_message, _tag, _author call _statement] call EFUNC(common,stringReplace);
     };
 } forEach _tagsList;
 
@@ -41,6 +41,6 @@ if (_author call FUNC(canUseVoiceLine)) then {
 
     [_author, _voiceLineClass] call FUNC(useVoiceLine);
 };
-_message = [_message, _voiceLine, ""] call EFUNC(main,stringReplace);
+_message = [_message, _voiceLine, ""] call EFUNC(common,stringReplace);
 
 _message;

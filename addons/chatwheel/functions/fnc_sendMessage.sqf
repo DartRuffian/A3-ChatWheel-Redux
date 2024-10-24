@@ -38,7 +38,7 @@ _message = [_author, _rawMessage] call FUNC(processTags);
 private _target = switch (_channel) do {
     case "group": {["groupChat", group _author]};
     case "side-local": {
-        private _nearbyPlayers = [ASLToAGL getPosASL _author, _targetData] call EFUNC(main,getNearbyPlayers);
+        private _nearbyPlayers = [ASLToAGL getPosASL _author, _targetData] call EFUNC(common,getNearbyPlayers);
         ["sideChat", _nearbyPlayers];
     };
     default {["sideChat", side _author]};

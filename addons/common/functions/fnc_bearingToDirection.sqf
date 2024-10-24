@@ -10,7 +10,7 @@
  * The direction for the bearing <STRING>
  *
  * Example:
- * 90 call cwr_main_fnc_getDirFromBearing; // Returns "East"
+ * 90 call cwr_common_fnc_getDirFromBearing; // Returns "East"
  *
  * Public: Yes
  */

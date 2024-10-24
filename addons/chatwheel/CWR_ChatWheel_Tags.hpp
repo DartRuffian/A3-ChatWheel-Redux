@@ -7,7 +7,7 @@ class GVAR(Tags) {
 
     class Direction {
         description = CSTRING(tag_Direction);
-        statement = QUOTE(round direction _this call EFUNC(main,bearingToDirection));
+        statement = QUOTE(round direction _this call EFUNC(common,bearingToDirection));
         example = CSTRING(tagExample_Direction);
     };
 

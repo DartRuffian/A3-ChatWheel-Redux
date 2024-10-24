@@ -28,7 +28,7 @@ if (_voiceLines isEqualTo []) exitWith {};
 
 (selectRandom _voiceLines) params ["_file", "_volume", "_pitch"];
 
-private _nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
+private _nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(common,getNearbyPlayers);
 private _positionASL = getPosASL _unit;
 
 [_file, _positionASL, _volume, _pitch] remoteExecCall [QFUNC(playLocalSound), _nearbyPlayers];

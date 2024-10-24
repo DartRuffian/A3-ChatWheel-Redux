@@ -13,8 +13,8 @@
  * The edited string <STRING>
  *
  * Example:
- * ["xxx is awesome, I love xxx!", "xxx", "Arma"] call cwr_main_fnc_stringReplace;
- * ["xxx is awesome, I love yyy!", ["xxx", "yyy"], "Arma"] call cwr_main_fnc_stringReplace;
+ * ["xxx is awesome, I love xxx!", "xxx", "Arma"] call cwr_common_fnc_stringReplace;
+ * ["xxx is awesome, I love yyy!", ["xxx", "yyy"], "Arma"] call cwr_common_fnc_stringReplace;
  *
  * Public: Yes
  */
