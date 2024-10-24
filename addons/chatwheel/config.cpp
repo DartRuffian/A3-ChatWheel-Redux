@@ -16,6 +16,7 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgUIGrids.hpp"
 #include "RscTitles.hpp"
 #include "CfgHints.hpp"

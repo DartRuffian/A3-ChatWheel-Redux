@@ -31,10 +31,7 @@ if (_voiceLines isEqualTo []) exitWith {};
 private _nearbyPlayers = [ASLToAGL getPosASL _unit, GVAR(voice_radius)] call EFUNC(main,getNearbyPlayers);
 private _positionASL = getPosASL _unit;
 
-{
-    [_file, _positionASL, _volume, _pitch] remoteExecCall [QFUNC(playLocalSound), _x];
-} forEach _nearbyPlayers;
-
+[_file, _positionASL, _volume, _pitch] remoteExecCall [QFUNC(playLocalSound), _nearbyPlayers];
 _unit setVariable [QGVAR(lastUsedVoice), CBA_missionTime];
 
 nil;

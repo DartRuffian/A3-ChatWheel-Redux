@@ -15,3 +15,9 @@ class Extended_PostInit_EventHandlers {
         clientInit = QUOTE(call COMPILE_SCRIPT(XEH_postInitClient));
     };
 };
+
+class Extended_FiredBIS_EventHandlers {
+    class CAManBase {
+        ADDON = QUOTE(call FUNC(fired));
+    };
+};

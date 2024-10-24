@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Dart
+ * Author: DartRuffian
  * Sends a message for a unit throwing a grenade. Some parameters are unused and are carried over from the vanilla Fired and ace_firedPlayer event handlers. These can be safely ignored by passing an empty string for their value.
  *
  * Arguments:
@@ -14,25 +14,32 @@
  * Return Value:
  * None
  *
- * Examples:
- * player addEventHandler ["Fired", cwr_chatwheel_fnc_fired];
- * ["ace_firedPlayer", cwr_chatwheel_fnc_fired] call CBA_fnc_addEventHandler;
- *
  * Public: No
  */
 
 params ["_unit", "_weapon", "", "", "", "_magazine"];
-TRACE_3("fnc_fired",_unit,_weapon,_magzine);
+TRACE_3("fnc_fired",_unit,_weapon,_magazine);
 
-private _grenadeType = switch (true) do {
-    case (_magazine isKindOf "SmokeShell"): {["Smoke", LLSTRING(grenadeType_Smoke)]};
-    default {["Grenade", LLSTRING(grenadeType_Grenade)]};
+if (!GVAR(autoMessages_enabled) or
+    {!GVAR(autoMessages_enabledGrenades)} or
+    {!isThrowable _magazine} or
+    {_unit isNotEqualTo ([] call CBA_fnc_currentUnit)}
+) exitWith {};
+
+
+private _magazineConfig = configFile >> "CfgMagazines" >> _magazine;
+private _grenadeType = getText (_magazineConfig >> QGVARMAIN(grenadeType));
+private _grenadeLocalized = getText (_magazineConfig >> QGVARMAIN(grenadeLocalized));
+
+if (_grenadeType == "") then {
+    _grenadeType = "Grenade";
 };
-_grenadeType params ["_voiceLineClass", "_localized"];
 
-if (!GVAR(autoMessages_enabled) or {!GVAR(autoMessages_enabledGrenades)} or {isNull _unit} or {_weapon != "throw"}) exitWith {};
+if (_grenadeLocalized == "") then {
+    _grenadeLocalized = _grenadeType;
+};
 
-private _message = format [LLSTRING(message_GrenadeThrown), _voiceLineClass, _localized];
+private _message = format [LLSTRING(message_GrenadeThrown), _grenadeType, _grenadeLocalized];
 [_message, _unit, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
 
 nil;

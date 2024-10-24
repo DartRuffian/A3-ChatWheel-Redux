@@ -22,4 +22,8 @@ class GVAR(VoiceLines) {
     EMPTY(BackblastClear);
     EMPTY(RocketFire);
     EMPTY(Unconscious);
+    EMPTY(ThrowGrenade);
+    EMPTY(ThrowSmoke);
+    EMPTY(ThrowChemlight);
+    EMPTY(ThrowIR);
 };

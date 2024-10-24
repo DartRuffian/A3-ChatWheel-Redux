@@ -205,6 +205,15 @@
         <Key ID="STR_CWR_chatwheel_grenadeType_Smoke">
             <English>Smoke</English>
         </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Chemlight">
+            <English>Chemlight</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_IR">
+            <English>IR</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_IR_localized">
+            <English>IR Strobe</English>
+        </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Bearing">
             <English>Your current bearing.</English>
