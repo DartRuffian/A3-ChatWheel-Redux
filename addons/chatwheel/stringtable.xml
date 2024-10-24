@@ -212,7 +212,19 @@
             <English>IR</English>
         </Key>
         <Key ID="STR_CWR_chatwheel_grenadeType_IR_localized">
-            <English>IR Strobe</English>
+            <English>IR strobe</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Flare">
+            <English>Flare</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Flashbang">
+            <English>Flashbang</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Incendiary">
+            <English>Incendiary</English>
+        </Key>
+        <Key ID="STR_CWR_chatwheel_grenadeType_Incendiary_localized">
+            <English>Incendiary grenade</English>
         </Key>
 
         <Key ID="STR_CWR_chatwheel_tag_Bearing">

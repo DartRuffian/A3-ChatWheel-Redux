@@ -1,5 +1,5 @@
-#define MAINPREFIX DA
-#define PREFIX CWR
+#define MAINPREFIX z
+#define PREFIX cwr
 #define MOD_NAME Chat Wheel Redux
 #define AUTHOR "DartRuffian"
 
@@ -11,6 +11,7 @@
 
 #define REQUIRED_VERSION 2.18
 #define REQUIRED_CBA_VERSION {3,18,0}
+#define REQUIRED_ACE_VERSION {3,18,0}
 
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCH.BUILD
