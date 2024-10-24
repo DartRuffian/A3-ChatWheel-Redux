@@ -1,6 +1,7 @@
-#define EMPTY(var1) class var1 { \
-    voiceLines[] = {}; \
-}
+#define EMPTY(var1) \
+    class var1 { \
+        voiceLines[] = {}; \
+    }
 
 class GVAR(VoiceLines) {
     EMPTY(NeedMedic);
