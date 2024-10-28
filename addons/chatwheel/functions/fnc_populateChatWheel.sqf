@@ -40,6 +40,5 @@ if (count _lbData isEqualTo 0) then {
 
     _messagesCtrl lbSortBy ["VALUE"];
 
-    // Select first element by default
-    [{ _this lbSetCurSel 0; }, _messagesCtrl, 0.01] call CBA_fnc_waitAndExecute;
+    [{ _this lbSetCurSel 0; }, _messagesCtrl] call CBA_fnc_execNextFrame;
 }, [_lbData]] call CBA_fnc_waitUntilAndExecute;

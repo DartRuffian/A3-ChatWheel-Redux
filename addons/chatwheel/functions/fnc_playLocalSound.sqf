@@ -21,7 +21,7 @@
 
 params [
     ["_file", "", [""]],
-    ["_positionASL", [0,0,0], [[]], 3],
+    ["_positionASL", [0, 0, 0], [[]], 3],
     ["_volume", 1, [0]],
     ["_pitch", 1, [0]]
 ];

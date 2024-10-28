@@ -29,13 +29,13 @@ params [
 ];
 TRACE_5("fnc_addMessage",_key,_displayName,_message,_order,_overwrite);
 
-if (_key isEqualTo "" or {_displayName isEqualTo ""} or {_message isEqualTo ""}) exitWith { false };
+if (_key == "" or {_displayName == ""} or {_message = ""}) exitWith { false };
 
 private _messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
 
 if (_key in _messageList and {!_overwrite}) exitWith {false};
 
-if (_order isEqualTo -1) then {
+if (_order == -1) then {
     _order = count _messageList;
 };
 

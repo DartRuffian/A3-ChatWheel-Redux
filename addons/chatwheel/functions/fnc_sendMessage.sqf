@@ -11,7 +11,9 @@
  *      1: "side" - Sends message in side channel on author's side.
  *      2: "group" - Sends message in group channel in author's group.
  *      3: "side-local" - Sends message in side chat, but only displays to player's within a given distance. Fourth parameter is range in meters.
- * 3: Target data, varies depending on channel (optional, default: nil) <ANY>
+ *      4: "global" - Sends message in global chat <ANY>
+ * 3: Target data (optional, default: nil) <ANY>
+ *    - This parameter will be used differently for each channel or target.
  *
  * Return Value:
  * None
@@ -25,13 +27,17 @@
 
 params [
     ["_rawMessage", "", [""]],
-    ["_author", player, [objNull]],
+    ["_author", objNull, [objNull]],
     ["_channel", "side", [""]],
     ["_targetData", nil, []]
 ];
 TRACE_4("fnc_sendMessage",_rawMessage,_author,_channel,_targetData);
 
 if (_rawMessage isEqualTo "") exitWith {};
+
+if (isNull _author) then {
+    _author = [] call CBA_fnc_currentUnit;
+};
 
 _message = [_author, _rawMessage] call FUNC(processTags);
 
@@ -41,6 +47,7 @@ private _target = switch (_channel) do {
         private _nearbyPlayers = [ASLToAGL getPosASL _author, _targetData] call EFUNC(common,getNearbyPlayers);
         ["sideChat", _nearbyPlayers];
     };
+    case "global": {["globalChat", 0]};
     default {["sideChat", side _author]};
 };
 

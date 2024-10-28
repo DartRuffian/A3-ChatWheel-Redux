@@ -28,8 +28,8 @@ private _selectedIndex = lbCurSel _messagesCtrl;
 private _className = _messagesCtrl lbData _selectedIndex;
 
 private _messageList = uiNamespace getVariable [QGVAR(messages), createHashMap];
-(_messageList get _className) params ["_displayName", "_message", "_order"];
+(_messageList get _className) params ["", "_message"];
 
-[_message, player, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
+[_message, [] call CBA_fnc_currentUnit, "side-local", GVAR(voice_radius)] call FUNC(sendMessage);
 
 nil;
